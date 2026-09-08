@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pièces en euro — EuroRare</title>
+<meta name="description" content="Parcourez les pièces en euro par pays, valeur faciale et particularité pour évaluer leur rareté potentielle.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="hud-root"></div>
+
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Pièces en euro</h1>
+      <p>Filtrez par pays, valeur faciale ou particularité, ou laissez l'assistant vous guider vers la fiche correspondant à votre pièce.</p>
+    </div>
+
+    <div class="card identify-panel" id="identify-panel"></div>
+
+    <div class="card filters">
+      <div class="filter-group" style="flex:1 1 220px;">
+        <label for="f-search">Recherche libre</label>
+        <input type="search" id="f-search" placeholder="Pays, thème, année…" class="search-input">
+      </div>
+      <div class="filter-group">
+        <label for="f-pays">Pays</label>
+        <select id="f-pays"><option value="">Tous les pays</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-valeur">Valeur faciale</label>
+        <select id="f-valeur"><option value="">Toutes les valeurs</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-categorie">Particularité</label>
+        <select id="f-categorie"><option value="">Toutes les catégories</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-rarete">Rareté</label>
+        <select id="f-rarete">
+          <option value="">Toutes</option>
+          <option value="commune">Commune</option>
+          <option value="peu-commune">Peu commune</option>
+          <option value="recherchee">Recherchée</option>
+          <option value="rare">Rare</option>
+          <option value="tres-rare">Très rare</option>
+        </select>
+      </div>
+      <button class="filter-reset" id="f-reset">Réinitialiser</button>
+    </div>
+
+    <div class="results-count" id="results-count"></div>
+    <div class="list-layout">
+      <div class="grid" id="grid"></div>
+      <aside class="card inspector" id="inspector"></aside>
+    </div>
+  </div>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/list.js"></script>
+<script>
+  initListPage('piece', 'data/pieces.json');
+</script>
+</body>
+</html>

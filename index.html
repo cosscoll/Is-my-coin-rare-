@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EuroRare — Reconnaître les pièces et billets euro rares</title>
+<meta name="description" content="Identifiez et comprenez la rareté potentielle de vos pièces et billets en euro : critères d'identification, contexte historique, niveau de rareté indicatif.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="hud-root"></div>
+
+<main class="home-hero">
+  <div class="wrap home-content">
+    <span class="eyebrow-free">Identification numismatique &middot; zone euro</span>
+
+    <div class="coin-medallion" style="color:var(--oxblood);" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 4"/>
+        <text x="100" y="118" font-family="Fraunces, serif" font-style="italic" font-size="58" text-anchor="middle" fill="currentColor">&#8364;</text>
+        <g fill="currentColor">
+          <circle cx="100" cy="24" r="2.6"/><circle cx="140" cy="34" r="2.6"/><circle cx="168" cy="62" r="2.6"/>
+          <circle cx="178" cy="100" r="2.6"/><circle cx="168" cy="138" r="2.6"/><circle cx="140" cy="166" r="2.6"/>
+          <circle cx="100" cy="176" r="2.6"/><circle cx="60" cy="166" r="2.6"/><circle cx="32" cy="138" r="2.6"/>
+          <circle cx="22" cy="100" r="2.6"/><circle cx="32" cy="62" r="2.6"/><circle cx="60" cy="34" r="2.6"/>
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="home-title">Cette pièce dans<br>votre poche est-elle<br><em>rare</em> ?</h1>
+    <p class="home-sub">Un guide visuel pas à pas pour identifier l'origine, l'année et les particularités de vos pièces et billets en euro — et comprendre pourquoi certains sont recherchés par les collectionneurs.</p>
+
+    <div class="home-choices">
+      <a class="card choice-card pieces" href="pieces.html">
+        <div class="choice-icon">●</div>
+        <h3>Pièces</h3>
+        <p>1 centime à 2 euros, des 20 pays émetteurs aux commémoratives et erreurs de frappe.</p>
+        <div class="go">Explorer les pièces &rarr;</div>
+      </a>
+      <a class="card choice-card billets" href="billets.html">
+        <div class="choice-icon">▭</div>
+        <h3>Billets</h3>
+        <p>Signatures de la BCE, numéros de série, codes d'imprimerie et coupures retirées.</p>
+        <div class="go">Explorer les billets &rarr;</div>
+      </a>
+    </div>
+
+    <div class="stats-row" id="stats-row">
+      <div class="stat-item"><div class="stat-num" id="stat-pieces">0</div><div class="stat-label">fiches de pièces</div></div>
+      <div class="stat-item"><div class="stat-num" id="stat-billets">0</div><div class="stat-label">fiches de billets</div></div>
+      <div class="stat-item"><div class="stat-num" id="stat-pays">0</div><div class="stat-label">pays &amp; micro-États</div></div>
+    </div>
+
+    <p class="home-note">Les indications de rareté et de valeur sont pédagogiques et générales — elles ne remplacent pas l'avis d'un professionnel de la numismatique.</p>
+  </div>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="assets/js/main.js"></script>
+<script>
+  renderHUD(null, null);
+  renderFooter();
+  fetch('data/pieces.json').then(r => r.json()).then(p => {
+    fetch('data/billets.json').then(r => r.json()).then(b => {
+      countUp(document.getElementById('stat-pieces'), p.length);
+      countUp(document.getElementById('stat-billets'), b.length);
+      const pays = new Set([...p, ...b].map(i => i.pays));
+      countUp(document.getElementById('stat-pays'), pays.size);
+    });
+  });
+</script>
+</body>
+</html>

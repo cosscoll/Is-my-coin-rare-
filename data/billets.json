@@ -1,0 +1,130 @@
+[
+  {
+    "id": "serie-2002-signature-duisenberg",
+    "pays": "Zone euro (1ère série)",
+    "valeur": "Toutes coupures (5€ à 500€)",
+    "annees": "2002–2003 (émission)",
+    "categorie": "signature",
+    "tirage": "Non isolément quantifié : la signature figure sur une partie seulement de la production totale de la première série, avant le passage progressif à la signature de Jean-Claude Trichet.",
+    "criteres": [
+      { "titre": "Signature imprimée en bas à droite (recto)", "detail": "La signature miniaturisée du président de la Banque centrale européenne est imprimée en diagonale sur le recto. Comparez-la à celle de Jean-Claude Trichet (à partir de fin 2003) ou de Mario Draghi (à partir de 2012) : chaque président a une signature bien distincte." },
+      { "titre": "Petites coupures usées rapidement", "detail": "Les billets de 5€ et 10€ ont une durée de vie moyenne en circulation de seulement 13 à 15 mois avant d'être retirés et détruits : trouver un exemplaire Duisenberg en bon état sur ces coupures est plus difficile que sur les grosses coupures, moins manipulées." },
+      { "titre": "Lettre de préfixe du numéro de série", "detail": "La première lettre du numéro de série identifie la banque centrale nationale émettrice (par exemple U pour la France, X pour l'Allemagne, N pour l'Autriche) : combinée à la signature, elle permet de dater et situer précisément l'impression." }
+    ],
+    "rarete": "recherchee",
+    "explication": "Willem Duisenberg a été le tout premier président de la BCE et sa signature n'apparaît que sur les billets imprimés au tout début de la première série. Une grande partie de ces premiers tirages, en particulier sur les petites coupures très utilisées, a depuis été retirée de la circulation et détruite, ce qui rend les exemplaires encore en bon état recherchés par les collectionneurs.",
+    "source": "Slate.fr (dossier collectionneurs), Banque centrale du Luxembourg (documentation technique des billets), négociants numismatiques spécialisés"
+  },
+  {
+    "id": "numeros-serie-particuliers",
+    "pays": "Zone euro (toutes séries)",
+    "valeur": "Toutes coupures",
+    "annees": "2002–en cours",
+    "categorie": "numero-de-serie",
+    "tirage": "Sans objet : il s'agit d'une catégorie transversale basée sur la configuration du numéro imprimé, présente en très faible proportion dans n'importe quel tirage.",
+    "criteres": [
+      { "titre": "Numéro radar", "detail": "Le numéro de série se lit de façon identique de gauche à droite et de droite à gauche (palindrome), par exemple une séquence du type AA0123210." },
+      { "titre": "Numéro répétiteur ou en escalier", "detail": "Un « répétiteur » présente le même chiffre répété sur toute la séquence (ex. AA1111111), un « escalier » présente des chiffres qui se suivent dans l'ordre (ex. AA1234567)." },
+      { "titre": "Petit numéro de série", "detail": "Les tout premiers numéros d'une série (par exemple se terminant par 0000001 à 0000010) sont recherchés comme symboles du tout début d'un tirage donné." }
+    ],
+    "rarete": "recherchee",
+    "explication": "Ces configurations de numéro sont statistiquement rares dans n'importe quel tirage massif de billets, et les collectionneurs de numéros de série (numismatique dite « fantaisiste » ou « de numéros ») leur attribuent une prime indépendamment de l'état du billet ou de la coupure concernée. Le niveau de rareté dépend fortement de la coupure, de la série et de l'état de conservation : toute estimation chiffrée doit être vérifiée auprès d'un professionnel.",
+    "source": "Slate.fr (dossier collectionneurs), Banque centrale du Luxembourg (documentation technique des billets)"
+  },
+  {
+    "id": "code-imprimeur-pays-emetteur",
+    "pays": "Zone euro (toutes séries)",
+    "valeur": "Toutes coupures",
+    "annees": "2002–en cours",
+    "categorie": "code-imprimeur",
+    "tirage": "Variable selon la combinaison lettre-pays et imprimerie ; les petits pays de la zone euro ont mécaniquement des tirages nationaux plus faibles que la France ou l'Allemagne.",
+    "criteres": [
+      { "titre": "Lettre de préfixe (pays émetteur)", "detail": "Chaque lettre correspond à la banque centrale nationale à l'origine de l'impression (par exemple F pour Malte, G pour Chypre, contre U pour la France ou X pour l'Allemagne) — et non nécessairement au pays où le billet a physiquement circulé." },
+      { "titre": "Code court (imprimerie)", "detail": "Un second code, plus discret, identifie l'atelier d'impression exact. Certaines combinaisons lettre-pays + code imprimeur + signature sont documentées comme nettement plus rares que d'autres par les catalogues spécialisés de cotation." },
+      { "titre": "Confrontation avec la circulation réelle", "detail": "Les lettres des petits pays (Malte, Chypre, Slovénie, Estonie...) sont peu représentées en dehors de leur territoire d'origine, ce qui les rend plus difficiles à réunir pour un collectionneur basé dans un grand pays." }
+    ],
+    "rarete": "peu-commune",
+    "explication": "Les billets en euros ne portent pas de mention de valeur faciale ni de série « étoile » comme le dollar américain, mais le préfixe du pays émetteur et le code d'imprimerie jouent un rôle équivalent pour les collectionneurs : les combinaisons associées aux plus petits pays de la zone euro sont statistiquement moins fréquentes en circulation générale.",
+    "source": "Banque centrale du Luxembourg (documentation technique des billets en euros), catalogues de cotation spécialisés"
+  },
+  {
+    "id": "capacite-numerotation-par-lettre",
+    "pays": "Zone euro (toutes séries)",
+    "valeur": "Toutes coupures",
+    "annees": "2002–en cours",
+    "categorie": "code-imprimeur",
+    "tirage": "Non applicable directement : il s'agit de la capacité théorique du système de numérotation par pays, à ne pas confondre avec le nombre réel de billets imprimés.",
+    "criteres": [
+      { "titre": "Lettre + longueur du numéro", "detail": "Sur la face arrière, le numéro horizontal commence par une lettre correspondant à la banque centrale émettrice, suivie de dix chiffres. La façon dont ces dix chiffres sont utilisés (numérotation continue ou encodage par valeur faciale et feuille d'impression) diffère d'un pays à l'autre." },
+      { "titre": "Capacité de numérotation très inégale selon la lettre", "detail": "Certains pays codent une partie du numéro pour indiquer la valeur faciale et la position sur la planche d'impression, ce qui réduit fortement le nombre de combinaisons disponibles pour leur lettre : environ 3 milliards pour le L finlandais ou 5,2 milliards pour le Z belge, contre 70 milliards pour un système de numérotation continue comme S (Italie), V (Espagne), X (Allemagne) ou Y (Grèce)." },
+      { "titre": "Ne pas confondre capacité et tirage réel", "detail": "Une capacité de numérotation plus restreinte ne signifie pas mécaniquement moins de billets imprimés : c'est une caractéristique du système d'encodage choisi par chaque banque centrale, pas une mesure directe du volume réel mis en circulation." }
+    ],
+    "rarete": "peu-commune",
+    "explication": "Le système de numérotation des billets en euros n'est pas uniforme : certaines banques centrales (Finlande, Belgique, Autriche, France...) encodent une partie du numéro pour indiquer la valeur faciale et la position d'impression, ce qui réduit mathématiquement le nombre de combinaisons possibles pour leur lettre par rapport à un pays utilisant une numérotation continue simple sur dix chiffres. C'est une curiosité technique intéressante pour un collectionneur de numéros, mais elle ne doit pas être interprétée à tort comme une mesure directe de rareté du billet lui-même.",
+    "source": "CoinsWeekly (« The meaning of the symbols on the euro banknotes »), Deutsche Bundesbank (FAQ techniques sur les billets en euros)"
+  },
+  {
+    "id": "billet-500e-retire",
+    "pays": "Zone euro (1ère série)",
+    "valeur": "500€",
+    "annees": "2002–2019 (émission), retiré en 2019",
+    "categorie": "coupure-retiree",
+    "tirage": "Coupure la moins imprimée de la première série en nombre d'exemplaires en circulation, en raison de son usage très ciblé.",
+    "criteres": [
+      { "titre": "Couleur mauve et grand format", "detail": "Le billet de 500€, de couleur mauve, est la plus grande coupure de la première série et représente un pont moderne en acier et verre." },
+      { "titre": "Arrêt de l'émission en 2019", "detail": "La Banque centrale européenne a cessé d'émettre de nouveaux billets de 500€ à partir de 2019, invoquant son usage marginal dans les transactions courantes ; les billets déjà en circulation restent cependant valides et échangeables sans limite de temps." },
+      { "titre": "Signature et état de conservation", "detail": "Comme pour les autres coupures, un exemplaire signé Duisenberg est plus ancien qu'un exemplaire Trichet ou Draghi ; un billet resté en excellent état, peu manipulé du fait de sa faible circulation courante, est également valorisé." }
+    ],
+    "rarete": "recherchee",
+    "explication": "L'arrêt définitif de l'impression en 2019 fait du 500€ une coupure « fermée » dont le nombre d'exemplaires ne peut plus augmenter, contrairement aux autres valeurs faciales toujours produites. Il reste légalement échangeable dans toutes les banques centrales nationales de la zone euro sans limite de temps, mais sa faible présence dans les usages quotidiens en fait une pièce de collection recherchée à long terme.",
+    "source": "Banque centrale européenne (communiqués officiels sur l'arrêt d'émission du billet de 500€)"
+  },
+  {
+    "id": "erreurs-impression-billets",
+    "pays": "Zone euro (toutes séries)",
+    "valeur": "Variable",
+    "annees": "2002–en cours",
+    "categorie": "erreur-impression",
+    "tirage": "Accidents de production isolés, non quantifiables et non reproductibles à volonté.",
+    "criteres": [
+      { "titre": "Numéro de série absent ou incomplet", "detail": "Un billet dont le numéro de série au verso est partiellement ou totalement absent constitue un défaut d'impression documenté et recherché." },
+      { "titre": "Décalage d'impression ou tache d'encre", "detail": "Un défaut de superposition entre les couches d'impression (couleurs décalées) ou une tache d'encre anormale peut signaler un accident de fabrication plutôt qu'un dommage postérieur." },
+      { "titre": "Authentification indispensable", "detail": "Ce type de billet fait l'objet de nombreuses imitations volontaires (dommages simulés) : une expertise par un professionnel est fortement recommandée avant tout achat, vente ou estimation." }
+    ],
+    "rarete": "tres-rare",
+    "explication": "Comme pour les erreurs de frappe sur les pièces, les défauts d'impression documentés sur les billets échappent aux contrôles qualité des imprimeries nationales et ne concernent qu'un nombre extrêmement restreint d'exemplaires, ce qui explique leur cote élevée chez les collectionneurs spécialisés — à condition que l'authenticité du défaut soit certifiée.",
+    "source": "eBay/négociants spécialisés (exemples documentés de billets sans numéro de série), catalogues de variétés et erreurs d'impression"
+  },
+  {
+    "id": "premiers-billets-serie-europa",
+    "pays": "Zone euro (2ème série, dite « Europa »)",
+    "valeur": "5€ à 100€",
+    "annees": "2013–2019 (introduction progressive)",
+    "categorie": "premiere-emission",
+    "tirage": "Introduction progressive coupure par coupure sur plusieurs années ; les tout premiers tirages de chaque nouvelle coupure représentent une fraction limitée du total imprimé sur toute la durée de vie de la série.",
+    "criteres": [
+      { "titre": "Nouveau filigrane portrait", "detail": "La série Europa introduit un filigrane représentant le visage de la princesse phénicienne Europe, visible par transparence, absent de la première série (2002)." },
+      { "titre": "Bande holographique élargie", "detail": "La bande de sécurité holographique est plus large et intègre le même portrait, avec un effet de couleur changeante renforcé par rapport à la première série." },
+      { "titre": "Ordre d'introduction des coupures", "detail": "Le 5€ Europa a été le premier introduit en 2013, suivi du 10€ (2014), du 20€ (2015), puis du 50€, 100€ et 200€ : un exemplaire de la toute première vague de sa coupure (par exemple un 5€ daté 2013) marque le début de la transition vers cette nouvelle série." }
+    ],
+    "rarete": "peu-commune",
+    "explication": "Chaque coupure de la série Europa a été introduite l'une après l'autre sur plusieurs années plutôt que simultanément : les tout premiers exemplaires de chaque nouvelle coupure, correspondant à son année de lancement, sont recherchés par les collectionneurs qui suivent la transition entre les deux séries de billets en euros.",
+    "source": "Banque centrale européenne (calendrier officiel d'introduction de la série Europa)"
+  },
+  {
+    "id": "petits-pays-lettres-rares",
+    "pays": "Malte, Chypre, Estonie, Slovénie, Lettonie, Lituanie",
+    "valeur": "Toutes coupures",
+    "annees": "Selon date d'adhésion à la zone euro",
+    "categorie": "petit-pays",
+    "tirage": "Tirages nationaux nettement inférieurs à ceux de la France ou de l'Allemagne, proportionnels à la taille de chaque économie.",
+    "criteres": [
+      { "titre": "Lettre de préfixe propre à chaque pays", "detail": "Repérez la lettre initiale du numéro horizontal au verso : F pour Malte, G pour Chypre, D pour l'Estonie, H pour la Slovénie, E pour la Slovaquie — chacune correspondant à une banque centrale nationale de petite taille, activée seulement à partir de la date d'adhésion du pays à l'euro." },
+      { "titre": "Date d'adhésion à la zone euro", "detail": "Un billet portant la lettre d'un pays n'a pu être imprimé qu'à partir de la date d'adhésion de ce pays à la zone euro (2008 pour Chypre et Malte, 2009 pour la Slovaquie, 2011 pour l'Estonie) : un préfixe antérieur à cette date sur un exemplaire donné est un point à vérifier." },
+      { "titre": "Circulation hors du pays d'origine", "detail": "Ces lettres sont statistiquement sous-représentées dans les caisses de change et les portefeuilles en dehors de leur pays d'émission, ce qui les rend plus difficiles à collectionner pour qui ne s'y rend pas régulièrement." }
+    ],
+    "rarete": "peu-commune",
+    "explication": "Sans qu'il s'agisse d'un accident de fabrication ou d'un tirage volontairement limité, la taille économique réduite de ces pays se traduit mécaniquement par des volumes d'impression plus faibles et une circulation internationale plus rare de leurs lettres de préfixe, un phénomène analogue à celui observé sur les petites coupures des petits pays pour les pièces.",
+    "source": "Banque centrale européenne (dates d'adhésion à la zone euro), documentation technique des billets en euros"
+  }
+]

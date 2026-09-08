@@ -1,0 +1,79 @@
+# EuroRare — Reconnaissance des pièces et billets euro rares
+
+Site web statique et pédagogique pour aider un visiteur à identifier une pièce ou un billet en euro (pays, année, atelier, particularités) et à comprendre s'il peut présenter un intérêt pour les collectionneurs, avec un niveau de rareté indicatif et le contexte qui l'explique.
+
+**Aucune dépendance de build.** HTML / CSS / JS purs, aucune bibliothèque 3D — prêt à être servi tel quel par GitHub Pages. Direction artistique « archive numismatique » : papier chamois, typographie éditoriale (Fraunces + Inter), vraies photos de pièces (sous licence Creative Commons, via Numista) plutôt que des reconstitutions 3D.
+
+## ⚠️ Avertissement important
+
+Les niveaux de rareté, les fourchettes de valeur et les explications présentées sur ce site sont **des indications pédagogiques et générales**, construites à partir de sources numismatiques publiques (Numista, banques centrales nationales, maisons numismatiques, presse spécialisée). Elles :
+
+- **ne constituent pas une expertise individuelle** de votre pièce ou billet ;
+- peuvent varier d'une source à l'autre, en particulier pour les tirages exacts ;
+- ne remplacent en aucun cas l'avis d'un professionnel de la numismatique ou d'une maison de vente spécialisée avant tout achat, vente ou estimation.
+
+## Structure du projet
+
+```
+/index.html              Page d'accueil (choix Pièces / Billets)
+/pieces.html              Liste filtrable des pièces + assistant d'identification
+/billets.html             Liste filtrable des billets + assistant d'identification
+/detail.html               Fiche de détail (photo réelle ou espace réservé, étapes d'identification, rareté)
+/assets/css/style.css      Feuille de style unique (thème « archive numismatique »)
+/assets/js/main.js         Utilitaires partagés (HUD, footer, badges de rareté, outil « Ma pièce »)
+/assets/js/list.js         Logique des pages de liste + assistant "Identifie ma pièce/mon billet"
+/assets/js/detail.js       Logique de la page de détail
+/data/pieces.json          Base de données des pièces
+/data/billets.json         Base de données des billets
+```
+
+
+Tous les chemins sont relatifs : le site fonctionne aussi bien à la racine d'un domaine que dans un sous-dossier de type `https://<utilisateur>.github.io/<nom-du-repo>/`.
+
+## Activer GitHub Pages
+
+1. Créez un dépôt public sur GitHub et poussez-y l'intégralité de ces fichiers (en conservant l'arborescence ci-dessus).
+2. Dans le dépôt, allez dans **Settings** → **Pages**.
+3. Sous **Build and deployment**, choisissez **Deploy from a branch**.
+4. Sélectionnez la branche `main` (ou celle utilisée) et le dossier `/ (root)`, puis cliquez sur **Save**.
+5. GitHub Pages publie le site sous quelques minutes à l'adresse indiquée en haut de la page Settings → Pages (généralement `https://<utilisateur>.github.io/<nom-du-repo>/`).
+
+Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
+
+## Étendue de la base de données
+
+`data/pieces.json` contient désormais **204 fiches** de pièces de 2€ commémoratives réelles (15 pays de la zone euro, millésimes 2004 à 2018 dans le détail, plus quelques émissions récentes notables), avec le **tirage officiel exact** pour la grande majorité d'entre elles, sourcé auprès de fleur-de-coin.com (mintages officiels) et recoupé avec Numista. L'Allemagne y figure avec le détail des 5 ateliers de frappe (Berlin/Munich/Stuttgart/Karlsruhe/Hambourg) pour chaque millésime, ainsi qu'une variante d'erreur de frappe documentée (Hambourg 2008, carte de l'Europe erronée sur environ 600 000 exemplaires de l'atelier de Stuttgart). Le niveau de rareté de ces fiches est **calculé automatiquement à partir du tirage réel** selon le barème suivant : moins de 50 000 pièces → Très rare · 50 000–300 000 → Rare · 300 000–1 500 000 → Recherchée · 1 500 000–5 000 000 → Peu commune · plus de 5 000 000 → Commune. Ce barème est une convention numismatique courante, pas une cotation officielle : la demande réelle des collectionneurs (popularité du thème, état de conservation) peut faire varier la cote au-delà de ce que le tirage seul indique.
+
+S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
+
+Ceci ne couvre pas encore l'intégralité des ~584 variantes de 2€ commémoratives émises depuis 2004 (notamment les millésimes 2019-2026 pour la plupart des pays, ainsi que les Pays-Bas, le Portugal, San Marin (détail par millésime), la Slovaquie, la Slovénie (au-delà de 2007) et l'Espagne) : voir la section suivante pour l'étendre.
+
+## Compléter la base de données
+
+Les fichiers `data/pieces.json` et `data/billets.json` contiennent une sélection volontairement restreinte de cas réels et documentés (2€ Grace Kelly de Monaco, tirages des micro-États, erreurs de frappe, signatures et numéros de série des billets, etc.). Chaque entrée suit le même schéma :
+
+```json
+{
+  "id": "identifiant-unique-utilise-dans-l-url",
+  "pays": "Pays ou zone d'émission",
+  "valeur": "Valeur faciale",
+  "annees": "Année(s) concernée(s)",
+  "categorie": "commemorative | premiere-frappe | erreur-de-frappe | petit-pays | signature | numero-de-serie | code-imprimeur | coupure-retiree | erreur-impression | premiere-emission",
+  "tirage": "Description qualitative du tirage — éviter les chiffres non vérifiés",
+  "criteres": [{ "titre": "…", "detail": "…" }],
+  "rarete": "commune | peu-commune | recherchee | rare | tres-rare",
+  "explication": "Contexte expliquant le niveau de rareté",
+  "source": "Sources / repères utilisés"
+}
+```
+
+Pour ajouter une entrée, il suffit de l'ajouter au tableau JSON correspondant : les pages de liste, les filtres et la fiche de détail se mettent à jour automatiquement, sans modification de code.
+
+## Accessibilité et responsive
+
+- Toutes les animations non déclenchées par l'utilisateur respectent `prefers-reduced-motion` (shimmer de la barre de progression, transitions de page compris).
+- Les étapes d'identification pas à pas (`.step`) sont accessibles au clavier (`tabindex`, `role="button"`, `aria-pressed`, activation par Entrée/Espace), pas seulement à la souris.
+- Une recherche libre (pays, thème, année) complète les filtres à facettes sur les pages Pièces et Billets, utile dès que la liste dépasse quelques dizaines de fiches.
+- Les zones sûres iOS (`env(safe-area-inset-*)`) sont prises en compte dans le HUD et le pied de page.
+- Les vignettes de photo (`.specimen-frame`) utilisent `aspect-ratio` plutôt que des dimensions fixes, pour rester nettes et bien cadrées à toutes les tailles d'écran.
+- Plusieurs seuils responsive sont prévus (`max-width` et un filet de sécurité `aspect-ratio`) pour éviter tout chevauchement sur mobile.
