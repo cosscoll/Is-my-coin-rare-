@@ -37,7 +37,7 @@
       <a class="card choice-card pieces" href="pieces.html">
         <div class="choice-icon">●</div>
         <h3>Pièces</h3>
-        <p>1 centime à 2 euros, des 20 pays émetteurs aux commémoratives et erreurs de frappe.</p>
+        <p>Pièces en euro documentées par pays, commémoratives, premières frappes et erreurs connues.</p>
         <div class="go">Explorer les pièces &rarr;</div>
       </a>
       <a class="card choice-card billets" href="billets.html">
@@ -51,7 +51,7 @@
     <div class="stats-row" id="stats-row">
       <div class="stat-item"><div class="stat-num" id="stat-pieces">0</div><div class="stat-label">fiches de pièces</div></div>
       <div class="stat-item"><div class="stat-num" id="stat-billets">0</div><div class="stat-label">fiches de billets</div></div>
-      <div class="stat-item"><div class="stat-num" id="stat-pays">0</div><div class="stat-label">pays &amp; micro-États</div></div>
+      <div class="stat-item"><div class="stat-num" id="stat-pays">0</div><div class="stat-label">pays &amp; micro-États couverts</div></div>
     </div>
 
     <p class="home-note">Les indications de rareté et de valeur sont pédagogiques et générales — elles ne remplacent pas l'avis d'un professionnel de la numismatique.</p>
@@ -68,7 +68,7 @@
     fetch('data/billets.json').then(r => r.json()).then(b => {
       countUp(document.getElementById('stat-pieces'), p.length);
       countUp(document.getElementById('stat-billets'), b.length);
-      const pays = new Set([...p, ...b].map(i => i.pays));
+      const pays = new Set(p.map(i => i.pays));
       countUp(document.getElementById('stat-pays'), pays.size);
     });
   });
