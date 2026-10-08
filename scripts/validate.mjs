@@ -5,7 +5,18 @@ const root = path.resolve(new URL('..', import.meta.url).pathname);
 const readJSON = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 const pieces = readJSON('data/pieces.json');
 const billets = readJSON('data/billets.json');
+const officialCommemoratives = readJSON('data/official-commemoratives-2019-2025.json');
 const errors = [];
+const normalizeUrl = value => String(value || '').replace(/[?#].*$/, '').replace(/\/$/, '');
+const catalogueSourceUrls = new Set(pieces.map(x => normalizeUrl(x.source_url)).filter(Boolean));
+if (officialCommemoratives.length !== 159) errors.push(`manifest officiel 2019–2025: ${officialCommemoratives.length} entrées, attendu 159`);
+for (const record of officialCommemoratives) {
+  if (!record.sourceUrl || !/^https:\/\/economy-finance\.ec\.europa\.eu\//.test(record.sourceUrl)) {
+    errors.push(`manifest officiel: URL invalide pour ${record.subject || '?'}`);
+    continue;
+  }
+  if (!catalogueSourceUrls.has(normalizeUrl(record.sourceUrl))) errors.push(`catalogue: commémorative officielle manquante ${record.year} — ${record.subject}`);
+}
 
 function checkItems(items, type) {
   const ids = new Set();
