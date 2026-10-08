@@ -74,7 +74,7 @@ Le site privilégie :
 
 Une annonce active isolée n’est jamais considérée comme une preuve de valeur. Les pièces exceptionnelles, les erreurs de frappe et les émissions de Monaco / Chypre disposent de fourchettes spécifiques lorsque des transactions documentées existent.
 
-Les **20 fiches de billets** disposent également d’une estimation de revente dédiée, adaptée au type de billet (signature Duisenberg, numéro particulier, code imprimeur, 500 € retiré, erreur d’impression, première série Europa, etc.). Les références privilégient les ventes réalisées, les cotes Numista et les plateformes numismatiques spécialisées plutôt que les simples prix demandés par les vendeurs.
+Les **24 fiches de billets** disposent également d’une estimation de revente dédiée, adaptée au type de billet (signature Duisenberg, numéro particulier, code imprimeur, 500 € retiré, erreur d’impression, première série Europa, etc.). Les références privilégient les ventes réalisées, les cotes Numista et les plateformes numismatiques spécialisées plutôt que les simples prix demandés par les vendeurs.
 
 ## Compléter la base de données
 

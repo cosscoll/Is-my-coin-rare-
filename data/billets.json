@@ -607,5 +607,137 @@
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
     },
     "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
+  },
+  {
+    "id": "signature-trichet-premiere-serie",
+    "pays": "Zone euro (1ère série)",
+    "valeur": "Toutes coupures (5€ à 500€)",
+    "annees": "Première série — signature Trichet",
+    "categorie": "signature",
+    "tirage": "Non isolément quantifié : la signature de Jean-Claude Trichet apparaît sur une partie importante des billets de la première série.",
+    "criteres": [
+      {
+        "titre": "Signature au recto",
+        "detail": "La signature du président de la BCE apparaît sur le recto du billet. Comparez sa forme aux signatures Duisenberg et Draghi également utilisées sur la première série."
+      },
+      {
+        "titre": "Première série",
+        "detail": "Le billet ne présente pas le portrait d’Europe propre à la seconde série. La coupure et les éléments de sécurité correspondent au graphisme lancé en 2002."
+      },
+      {
+        "titre": "Préfixe et imprimeur",
+        "detail": "Pour une identification de collection précise, relevez aussi le numéro de série et le code d’imprimerie : la signature seule ne suffit pas à établir une rareté."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La signature de Jean-Claude Trichet est une variante normale de la première série. Elle permet de situer la période d’impression mais ne crée pas automatiquement une forte prime. L’état, la coupure, le préfixe, l’imprimeur et le numéro exact sont plus déterminants.",
+    "source": "Banque centrale européenne — signatures des présidents de la BCE sur les billets en euros",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+    "photo": {
+      "recto": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_fr_ES1_thumb.png",
+      "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES1_thumb.png",
+      "source_name": "Banque centrale européenne",
+      "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+      "representative": true
+    }
+  },
+  {
+    "id": "signature-draghi-premiere-serie",
+    "pays": "Zone euro (1ère série)",
+    "valeur": "Toutes coupures (5€ à 500€)",
+    "annees": "Première série — signature Draghi",
+    "categorie": "signature",
+    "tirage": "Non isolément quantifié : la signature de Mario Draghi existe sur des billets de la première série encore imprimés sous sa présidence.",
+    "criteres": [
+      {
+        "titre": "Signature Mario Draghi",
+        "detail": "Repérez la signature au recto et comparez-la aux deux autres signatures possibles de la première série : Willem Duisenberg et Jean-Claude Trichet."
+      },
+      {
+        "titre": "Graphisme de première série",
+        "detail": "L’absence du portrait d’Europe dans le filigrane permet de distinguer cette version des billets de la série Europe également signés Mario Draghi."
+      },
+      {
+        "titre": "Ne pas confondre série et signature",
+        "detail": "Deux billets signés Draghi peuvent appartenir à des séries différentes. La signature doit donc toujours être croisée avec le graphisme et les signes de sécurité."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La présence de la signature Draghi sur un billet de première série est un critère d’identification, pas une preuve de rareté. Une prime éventuelle dépend de la combinaison coupure, état, numéro, préfixe et imprimeur.",
+    "source": "Banque centrale européenne — signatures des présidents de la BCE sur les billets en euros",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+    "photo": {
+      "recto": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_fr_ES1_thumb.png",
+      "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES1_thumb.png",
+      "source_name": "Banque centrale européenne",
+      "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+      "representative": true
+    }
+  },
+  {
+    "id": "signature-draghi-serie-europe",
+    "pays": "Zone euro (série Europe)",
+    "valeur": "5€ à 200€",
+    "annees": "2013–2019 — signature Draghi",
+    "categorie": "signature",
+    "tirage": "Billets de circulation de la série Europe émis sous la présidence de Mario Draghi ; volumes variables selon les coupures et années.",
+    "criteres": [
+      {
+        "titre": "Signature Mario Draghi",
+        "detail": "La signature est imprimée sur le recto des billets de la série Europe émis sous sa présidence."
+      },
+      {
+        "titre": "Portrait d’Europe",
+        "detail": "Le filigrane et l’hologramme comportent le portrait d’Europe, ce qui confirme qu’il s’agit de la seconde série et non d’un billet de première série signé Draghi."
+      },
+      {
+        "titre": "Coupure et numéro",
+        "detail": "Pour déterminer un intérêt de collection, identifiez ensuite la coupure, le numéro de série et la lettre d’imprimerie."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Les billets de la série Europe signés Mario Draghi sont des billets standards de circulation. La signature permet de distinguer une période de production mais ne justifie pas, à elle seule, une cote supérieure à la valeur faciale.",
+    "source": "Banque centrale européenne — signatures des présidents de la BCE sur les billets en euros",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+    "photo": {
+      "recto": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_fr_ES2_thumb.png",
+      "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES2_thumb.png",
+      "source_name": "Banque centrale européenne",
+      "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+      "representative": true
+    }
+  },
+  {
+    "id": "signature-lagarde-serie-europe",
+    "pays": "Zone euro (série Europe)",
+    "valeur": "5€ à 200€",
+    "annees": "2019–en cours — signature Lagarde",
+    "categorie": "signature",
+    "tirage": "Billets de circulation de la série Europe signés Christine Lagarde ; volumes variables selon les coupures et années.",
+    "criteres": [
+      {
+        "titre": "Signature Christine Lagarde",
+        "detail": "La signature de Christine Lagarde apparaît sur le recto des billets produits sous sa présidence de la BCE."
+      },
+      {
+        "titre": "Série Europe",
+        "detail": "Le portrait d’Europe dans le filigrane et l’hologramme confirme l’appartenance à la seconde série."
+      },
+      {
+        "titre": "Billet standard sauf autre particularité",
+        "detail": "Une signature Lagarde ordinaire ne suffit pas à rendre le billet rare. Vérifiez surtout numéro, imprimeur, état et éventuelle erreur."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La signature Lagarde est une variante normale des billets actuels de la série Europe. Elle sert à identifier la période d’impression ; une valeur de collection supérieure doit être justifiée par une autre caractéristique documentée.",
+    "source": "Banque centrale européenne — signatures des présidents de la BCE sur les billets en euros",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+    "photo": {
+      "recto": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_fr_ES2_thumb.png",
+      "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES2_thumb.png",
+      "source_name": "Banque centrale européenne",
+      "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html",
+      "representative": true
+    }
   }
 ]
