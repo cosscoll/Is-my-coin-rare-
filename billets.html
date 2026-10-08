@@ -47,6 +47,10 @@
         <select id="f-valeur"><option value="">Toutes les coupures</option></select>
       </div>
       <div class="filter-group">
+        <label for="f-annee">Année</label>
+        <select id="f-annee"><option value="">Toutes les années</option></select>
+      </div>
+      <div class="filter-group">
         <label for="f-categorie">Particularité</label>
         <select id="f-categorie"><option value="">Toutes les catégories</option></select>
       </div>
@@ -59,6 +63,16 @@
           <option value="recherchee">Recherchée</option>
           <option value="rare">Rare</option>
           <option value="tres-rare">Très rare</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="f-sort">Trier</label>
+        <select id="f-sort">
+          <option value="default">Ordre du catalogue</option>
+          <option value="recent">Plus récentes</option>
+          <option value="ancien">Plus anciennes</option>
+          <option value="rarete">Plus rares d’abord</option>
+          <option value="pays">Pays A–Z</option>
         </select>
       </div>
       <button class="filter-reset" id="f-reset">Réinitialiser</button>
