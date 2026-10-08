@@ -311,7 +311,7 @@ function openAnalysisModal() {
       <div id="analysis-body">
         <div class="analysis-loading">
           <div class="analysis-spinner"></div>
-          <p style="font-size:13.5px;color:var(--text-dim);">Lecture du texte visible sur la photo (pays, année)…</p>
+          <p style="font-size:13.5px;color:var(--ink-dim);">Lecture du texte visible sur la photo (pays, année)…</p>
         </div>
       </div>
     </div>`;
@@ -375,10 +375,10 @@ async function runCoinAnalysis(photoDataUrl, triggerBtn) {
       bodyEl().innerHTML = `
         <p class="sub">Basé sur le texte lu automatiquement sur votre photo (OCR) — pas sur le dessin lui-même. Vérifiez visuellement avant de conclure.</p>
         <div class="analysis-detected">${chips.join('')}</div>
-        <p style="font-size:13px;color:var(--text-dim);margin-bottom:10px;">${matches.length} correspondance${matches.length > 1 ? 's' : ''} possible${matches.length > 1 ? 's' : ''} :</p>
+        <p style="font-size:13px;color:var(--ink-dim);margin-bottom:10px;">${matches.length} correspondance${matches.length > 1 ? 's' : ''} possible${matches.length > 1 ? 's' : ''} :</p>
         ${matches.map(m => `
           <a class="analysis-result-item" href="${detailHref(m._type, m)}">
-            <span>${m.nom || (m.pays + ' — ' + m.valeur)} <span style="color:var(--text-faint)">(${m.annees})</span></span>
+            <span>${m.nom || (m.pays + ' — ' + m.valeur)} <span style="color:var(--ink-faint)">(${m.annees})</span></span>
             ${raretyBadge(m.rarete, 'sm')}
           </a>`).join('')}
       `;
