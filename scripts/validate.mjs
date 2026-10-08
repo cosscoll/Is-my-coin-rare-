@@ -103,6 +103,12 @@ const rareCount = pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare']
 
 if (!piecesHtml.includes(`Parcourez ${pieces.length} fiches de pièces`)) errors.push(`pieces.html: compteur SEO obsolète (attendu ${pieces.length})`);
 if (!billetsHtml.includes(`Parcourez ${billets.length} fiches de billets`)) errors.push(`billets.html: compteur SEO obsolète (attendu ${billets.length})`);
+if (!piecesHtml.includes(`<meta property="og:description" content="Parcourez ${pieces.length} fiches`)) errors.push('og:description pièces obsolète');
+if (!billetsHtml.includes(`<meta property="og:description" content="Parcourez ${billets.length} fiches`)) errors.push('og:description billets obsolète');
+const indexHtml = fs.readFileSync(path.join(root,'index.html'),'utf8');
+if (!indexHtml.includes(`id="stat-pieces">${pieces.length}</div>`)) errors.push('index: compteur pièces statique obsolète');
+if (!indexHtml.includes(`id="stat-billets">${billets.length}</div>`)) errors.push('index: compteur billets statique obsolète');
+if (!indexHtml.includes(`id="stat-pays">${countryCount}</div>`)) errors.push('index: compteur pays statique obsolète');
 if (!rareGuide.includes(`<h2>${rareCount} fiches actuellement classées Rare ou Très rare</h2>`)) errors.push(`guide rareté: compteur obsolète (attendu ${rareCount})`);
 for (const item of pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete))) {
   if (!rareGuide.includes('../pieces/' + item.id + '.html')) errors.push(`guide rareté: lien cassé ou absent ${item.id}`);

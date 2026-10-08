@@ -216,14 +216,25 @@ function syncCatalogueShells(countries, years) {
   } else {
     piecesHtml = piecesHtml.replace(countryLinks, countryLinks + '\n' + yearLinks);
   }
-  write('pieces.html', piecesHtml);
+  const pieceDesc = 'Parcourez ' + pieces.length + ' fiches de pièces en euro avec photos, tirages, rareté, critères d’identification et estimations de revente.';
+  piecesHtml = piecesHtml.replace(/<meta property="og:description" content="[^"]*">/, '<meta property="og:description" content="' + pieceDesc + '">');
+  write('pieces.html', piecesHtml); // og:description synchronisé
 
   let billetsHtml = fs.readFileSync(path.join(root, 'billets.html'), 'utf8');
   billetsHtml = billetsHtml.replace(
     /<meta name="description" content="Parcourez \d+ fiches de billets euro[^"]*">/,
     '<meta name="description" content="Parcourez ' + billets.length + ' fiches de billets euro : coupures des deux séries, signatures, numéros, codes imprimeur, erreurs et estimations.">'
   );
+  const billetDesc = 'Parcourez ' + billets.length + ' fiches de billets euro : coupures des deux séries, signatures, numéros, codes imprimeur, erreurs et estimations.';
+  billetsHtml = billetsHtml.replace(/<meta property="og:description" content="[^"]*">/, '<meta property="og:description" content="' + billetDesc + '">');
   write('billets.html', billetsHtml);
+
+  let indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  indexHtml = indexHtml
+    .replace(/(<div class="stat-num" id="stat-pieces">)\d+(<\/div>)/, '$1' + pieces.length + '$2')
+    .replace(/(<div class="stat-num" id="stat-billets">)\d+(<\/div>)/, '$1' + billets.length + '$2')
+    .replace(/(<div class="stat-num" id="stat-pays">)\d+(<\/div>)/, '$1' + countries.length + '$2');
+  write('index.html', indexHtml);
 }
 
 for (const item of pieces) write(`pieces/${item.id}.html`, coinPage(item));
