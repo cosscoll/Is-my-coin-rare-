@@ -119,4 +119,4 @@ npm run validate
 
 `npm run build` régénère les pages SEO, les pages pays, les compteurs de catalogue et le sitemap à partir des fichiers JSON.
 
-Le workflow GitHub Actions `.github/workflows/validate.yml` exécute ce contrôle à chaque push ou pull request afin de détecter les IDs dupliqués, champs manquants, pages SEO absentes, photos incomplètes, entrées manquantes dans le sitemap et erreurs de syntaxe JavaScript.
+Le workflow GitHub Actions `.github/workflows/validate.yml` exécute `npm run validate` à chaque push ou pull request afin de détecter les IDs dupliqués, champs manquants, pages SEO ou pages pays absentes, canonical incorrects, photos incomplètes, incohérences de sitemap/robots, liens manquants du guide rareté et erreurs de syntaxe JavaScript. `npm run check:generated` reste disponible localement pour comparer les sorties du générateur.
