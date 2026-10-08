@@ -438,6 +438,13 @@ async function boot() {
   const root = document.getElementById('detail-root');
   const hasPhoto = !!item.photo;
   root.innerHTML = `
+    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
+      <a href="${base}index.html">EuroRare</a>
+      <span aria-hidden="true">›</span>
+      <a href="${listPage}">${listLabel}</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">${item.nom || (item.pays + ' — ' + item.valeur)}</span>
+    </nav>
     <div class="detail-grid">
       <div class="stage">
         ${renderSpecimenFrame(item, type)}

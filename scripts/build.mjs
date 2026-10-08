@@ -130,7 +130,7 @@ for (const country of countries) write(`pays/${slug(country)}.html`, countryPage
 
 const fixed = [
   '', 'pieces.html', 'billets.html', 'methodologie.html', 'sources.html', 'confidentialite.html',
-  'guides/', 'guides/piece-2-euros-rare.html', 'guides/billet-euro-rare.html',
+  'guides/', 'guides/pieces-2-euros-rares.html', 'guides/piece-2-euros-rare.html', 'guides/billet-euro-rare.html',
   'guides/etat-conservation.html', 'guides/vendre-piece-rare.html'
 ];
 const urls = [

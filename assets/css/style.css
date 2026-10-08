@@ -800,3 +800,15 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible, select:foc
   transform: translateY(-150%); transition: transform .15s ease;
 }
 .skip-link:focus { transform: translateY(0); }
+
+.breadcrumbs {
+  display:flex; flex-wrap:wrap; align-items:center; gap:7px;
+  margin: 4px 0 20px; font-size:12px; color:var(--ink-faint);
+}
+.breadcrumbs a { color:var(--ink-dim); text-decoration:underline; text-underline-offset:3px; }
+.breadcrumbs [aria-current="page"] { color:var(--ink); }
+.rare-list { display:grid; gap:12px; margin-top:16px; }
+.rare-list-item { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px; padding:16px; align-items:center; }
+.rare-list-item strong { display:block; margin-bottom:4px; }
+.rare-list-item p { margin:0; font-size:12.5px; color:var(--ink-dim); }
+@media (max-width:650px) { .rare-list-item { grid-template-columns:1fr; } }
