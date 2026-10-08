@@ -441,7 +441,9 @@ async function boot() {
     return;
   }
 
-  document.title = `${item.pays} — ${item.valeur} (${item.annees}) · EuroRare`;
+  if (!staticType) {
+    document.title = `${item.pays} — ${item.valeur} (${item.annees}) · EuroRare`;
+  }
 
   const root = document.getElementById('detail-root');
   const hasPhoto = !!item.photo;
