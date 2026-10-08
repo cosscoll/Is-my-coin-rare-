@@ -59,8 +59,8 @@ function renderInspector(type, item) {
     </button>
     <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
   `) : `
-    <div class="specimen-frame">
-      <span class="specimen-badge stylised-badge">Photo à venir</span>
+    <div class="specimen-frame ${type === 'billet' ? 'square' : ''}">
+      <span class="specimen-badge stylised-badge">${type === 'billet' ? 'Visuel de référence à venir' : 'Photo à venir'}</span>
       <div class="specimen-face placeholder">
         <span class="monogram">${initial}</span>
       </div>
@@ -126,7 +126,7 @@ async function initListPage(type, dataPath) {
       if (c && i.categorie !== c) return false;
       if (r && i.rarete !== r) return false;
       if (q) {
-        const haystack = [i.pays, i.annees, i.valeur, i.explication, categorieLabel(i.categorie),
+        const haystack = [i.pays, i.annees, i.valeur, i.nom, i.explication, categorieLabel(i.categorie),
           ...(i.criteres || []).map(cr => cr.titre + ' ' + cr.detail)].join(' ').toLowerCase();
         if (!haystack.includes(q)) return false;
       }
@@ -194,19 +194,26 @@ function initIdentifyWizard(type, items, filterRefs) {
 
   const paysList = [...new Set(items.map(i => i.pays))].sort((a, b) => a.localeCompare(b, 'fr'));
   const catList = [...new Set(items.map(i => i.categorie))];
-  const questions = [
-    {
-      key: 'pays',
-      label: type === 'piece' ? 'De quel pays vient votre pièce ?' : 'Quel pays a émis votre billet ?',
-      options: paysList
-    },
-    {
-      key: 'categorie',
-      label: 'Qu\'avez-vous remarqué de particulier ?',
-      options: catList,
-      display: (c) => CATEGORIE_LABELS[c] || c
-    }
-  ];
+  const questions = type === 'billet'
+    ? [{
+        key: 'categorie',
+        label: 'Quel détail voulez-vous vérifier sur votre billet ?',
+        options: catList,
+        display: (c) => CATEGORIE_LABELS[c] || c
+      }]
+    : [
+        {
+          key: 'pays',
+          label: 'De quel pays vient votre pièce ?',
+          options: paysList
+        },
+        {
+          key: 'categorie',
+          label: 'Qu\'avez-vous remarqué de particulier ?',
+          options: catList,
+          display: (c) => CATEGORIE_LABELS[c] || c
+        }
+      ];
 
   let step = 0;
   const answers = {};
