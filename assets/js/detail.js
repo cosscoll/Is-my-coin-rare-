@@ -465,7 +465,7 @@ async function boot() {
           <h1>${item.pays} — ${item.valeur}</h1>
         </div>
         ${item.nom ? `<p style="font-size:16px;color:var(--ink);margin-bottom:6px;font-style:italic;">${item.nom}</p>` : ''}
-        <div class="detail-meta-line">${item.annees} &middot; ${CATEGORIE_LABELS[item.categorie] || item.categorie}</div>
+        <div class="detail-meta-line">${item.annees} &middot; ${CATEGORIE_LABELS[item.categorie] || item.categorie}${item.date_emission ? ` &middot; Émission : ${item.date_emission}` : ""}</div>
 
         <div class="section-block">
           <h2>01 — Identification pas à pas</h2>
