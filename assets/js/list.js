@@ -31,16 +31,22 @@ function renderInspector(type, item) {
 
   const initial = (item.pays || '?').charAt(0);
 
-  const frameHtml = item.photo ? `
+  const frameHtml = item.photo ? (item.photo.combined ? `
+    <div class="specimen-frame">
+      <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
+      <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
+    </div>
+    <p class="specimen-hint">Avers et revers sur le même visuel</p>
+  ` : `
     <div class="specimen-frame" id="insp-frame">
-      <span class="specimen-badge real">✓ Photo réelle</span>
+      <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
       <div class="specimen-flip" id="insp-flip">
         <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
         <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
       </div>
     </div>
     <p class="specimen-hint">Cliquez pour voir le revers</p>
-  ` : `
+  `) : `
     <div class="specimen-frame">
       <span class="specimen-badge stylised-badge">Photo à venir</span>
       <div class="specimen-face placeholder">
@@ -59,7 +65,7 @@ function renderInspector(type, item) {
     <a class="go-btn" href="detail.html?type=${type}&id=${item.id}">Voir la fiche complète &rarr;</a>
   `;
 
-  if (item.photo) {
+  if (item.photo && !item.photo.combined) {
     const frame = document.getElementById('insp-frame');
     const flip = document.getElementById('insp-flip');
     frame.addEventListener('click', () => flip.classList.toggle('flipped'));
