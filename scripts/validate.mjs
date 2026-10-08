@@ -45,18 +45,18 @@ const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).length;
 
-if (!piecesHtml.includes(\`Parcourez \${pieces.length} fiches de pièces\`)) errors.push(\`pieces.html: compteur SEO obsolète (attendu \${pieces.length})\`);
-if (!billetsHtml.includes(\`Parcourez \${billets.length} fiches de billets\`)) errors.push(\`billets.html: compteur SEO obsolète (attendu \${billets.length})\`);
-if (!rareGuide.includes(\`<h2>\${rareCount} fiches actuellement classées Rare ou Très rare</h2>\`)) errors.push(\`guide rareté: compteur obsolète (attendu \${rareCount})\`);
-if (sitemapUrlCount !== expectedSitemapUrls) errors.push(\`sitemap: \${sitemapUrlCount} URL, attendu \${expectedSitemapUrls}\`);
+if (!piecesHtml.includes(`Parcourez ${pieces.length} fiches de pièces`)) errors.push(`pieces.html: compteur SEO obsolète (attendu ${pieces.length})`);
+if (!billetsHtml.includes(`Parcourez ${billets.length} fiches de billets`)) errors.push(`billets.html: compteur SEO obsolète (attendu ${billets.length})`);
+if (!rareGuide.includes(`<h2>${rareCount} fiches actuellement classées Rare ou Très rare</h2>`)) errors.push(`guide rareté: compteur obsolète (attendu ${rareCount})`);
+if (sitemapUrlCount !== expectedSitemapUrls) errors.push(`sitemap: ${sitemapUrlCount} URL, attendu ${expectedSitemapUrls}`);
 
 for (const item of pieces) {
   const p = item.photo || {};
   for (const field of ['recto','verso','source_url']) {
-    if (p[field] && !/^https:\/\//.test(p[field])) errors.push(\`piece \${item.id}: photo.\${field} doit utiliser HTTPS\`);
+    if (p[field] && !/^https:\/\//.test(p[field])) errors.push(`piece ${item.id}: photo.${field} doit utiliser HTTPS`);
   }
   if (p.source_name === 'Commission européenne' && p.verso?.includes('numista.com') && (!p.credit || !p.licence)) {
-    errors.push(\`piece \${item.id}: crédit/licence du revers Numista manquant\`);
+    errors.push(`piece ${item.id}: crédit/licence du revers Numista manquant`);
   }
 }
 
