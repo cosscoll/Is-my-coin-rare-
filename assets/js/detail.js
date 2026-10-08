@@ -14,6 +14,7 @@ const CATEGORIE_LABELS = {
   'coupure-retiree': 'Coupure retirée',
   'erreur-impression': "Erreur d'impression",
   'premiere-emission': 'Première émission',
+  'serie-billet': 'Série de billets',
 };
 
 function renderPhotoCredit(item) {
@@ -188,11 +189,22 @@ const BANKNOTE_MARKET_ESTIMATE_OVERRIDES = {
 };
 
 function isBanknoteItem(item) {
-  return ['signature','numero-de-serie','code-imprimeur','coupure-retiree','erreur-impression','premiere-emission'].includes(item.categorie)
+  return ['signature','numero-de-serie','code-imprimeur','coupure-retiree','erreur-impression','premiere-emission','serie-billet'].includes(item.categorie)
     || Object.prototype.hasOwnProperty.call(BANKNOTE_MARKET_ESTIMATE_OVERRIDES, item.id);
 }
 
 function getResaleEstimate(item) {
+  if (item.categorie === 'serie-billet') {
+    const face = Number(String(item.valeur || '').replace(/[^0-9]/g, '')) || 0;
+    const firstSeries = item.serie === 'Première série';
+    return {
+      headline: firstSeries ? `En général ${face}–${Math.ceil(face * 1.15)} €` : `En général proche de ${face} €`,
+      circulated: firstSeries ? `Souvent ${face}–${Math.ceil(face * 1.05)} € selon état et variante` : `Le plus souvent autour de la valeur faciale (${face} €)`,
+      unc: firstSeries ? `Une prime est possible en UNC, surtout selon signature/préfixe/imprimeur` : `Faible prime possible en UNC selon numéro et combinaison d’impression`,
+      collector: 'Un numéro spécial, une combinaison rare ou une erreur authentifiée doit être évalué séparément.',
+      basis: 'Billet standard : estimation prudente. Comparer une variante strictement identique avant de conclure.'
+    };
+  }
   if (BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id]) return BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id];
   if (MARKET_ESTIMATE_OVERRIDES[item.id]) return MARKET_ESTIMATE_OVERRIDES[item.id];
 

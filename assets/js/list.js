@@ -14,6 +14,7 @@ const CATEGORIE_LABELS = {
   'coupure-retiree': 'Coupure retirée',
   'erreur-impression': "Erreur d'impression",
   'premiere-emission': 'Première émission',
+  'serie-billet': 'Série de billets',
 };
 
 function categorieLabel(c) { return CATEGORIE_LABELS[c] || c; }
@@ -127,7 +128,7 @@ async function initListPage(type, dataPath) {
       if (c && i.categorie !== c) return false;
       if (r && i.rarete !== r) return false;
       if (q) {
-        const haystack = [i.pays, i.annees, i.valeur, i.nom, i.explication, categorieLabel(i.categorie),
+        const haystack = [i.pays, i.annees, i.valeur, i.nom, i.serie, i.explication, categorieLabel(i.categorie),
           ...(i.criteres || []).map(cr => cr.titre + ' ' + cr.detail)].join(' ').toLowerCase();
         if (!haystack.includes(q)) return false;
       }
