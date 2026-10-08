@@ -59,16 +59,19 @@ function detailHref(type, item) {
 function renderHUD(active, back) {
   const root = document.getElementById('hud-root');
   if (!root) return;
+  const mainEl = document.querySelector('main');
+  if (mainEl && !mainEl.id) mainEl.id = 'main-content';
   const backHtml = back
     ? `<a class="hud-back" href="${back.href}">&larr; ${back.label}</a>`
     : `<span></span>`;
   root.innerHTML = `
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <div class="hud">
       <div class="wrap">
         <div class="hud-inner">
           <a class="hud-brand" href="${siteBase()}index.html"><span class="dot"></span>EuroRare</a>
           ${backHtml}
-          <nav class="hud-nav">
+          <nav class="hud-nav" aria-label="Navigation principale">
             <a href="${siteBase()}pieces.html" class="${active === 'pieces' ? 'active' : ''}">Pièces</a>
             <a href="${siteBase()}billets.html" class="${active === 'billets' ? 'active' : ''}">Billets</a>
           </nav>
