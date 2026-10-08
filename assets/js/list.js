@@ -314,7 +314,7 @@ function initIdentifyWizard(type, items, filterRefs) {
         <div class="identify-results-list">
         ${matches.length ? matches.map(i => `
           <a class="identify-result-item" href="${detailHref(type, i)}">
-            <span>${i.nom ? i.nom : (i.pays + ' — ' + i.valeur)} <span style="color:var(--text-faint)">(${i.annees})</span></span>
+            <span>${i.nom ? i.nom : (i.pays + ' — ' + i.valeur)} <span style="color:var(--ink-faint)">(${i.annees})</span></span>
             ${raretyBadge(i.rarete, 'sm')}
           </a>
         `).join('') : `<p style="font-size:14px;margin-bottom:16px;">Vos réponses ne correspondent à aucun cas documenté dans cette sélection — cela ne signifie pas que votre exemplaire est sans intérêt, seulement qu'il ne fait pas partie de nos fiches pédagogiques. Parcourez la liste complète ci-dessous ou affinez les filtres.</p>`}
