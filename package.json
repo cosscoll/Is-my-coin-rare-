@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "check:generated": "npm run build && git diff --exit-code"
   }
 }
