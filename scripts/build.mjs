@@ -18,6 +18,12 @@ const slug = value => String(value ?? '')
   .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+function stableCompare(a, b) {
+  const aa = slug(a);
+  const bb = slug(b);
+  return aa < bb ? -1 : aa > bb ? 1 : 0;
+}
+
 function ensureDir(file) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
 }
@@ -129,7 +135,7 @@ function rareGuidePage() {
   const rare = pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete))
     .sort((a,b) => (rank[b.rarete] - rank[a.rarete]) ||
       ((a.tirage_nombre ?? Number.MAX_SAFE_INTEGER) - (b.tirage_nombre ?? Number.MAX_SAFE_INTEGER)) ||
-      a.pays.localeCompare(b.pays, 'fr'));
+      stableCompare(a.pays, b.pays));
   const cards = rare.map(x => `<article class="rare-list-item card">
 <div><strong><a href="../pieces/${esc(x.id)}.html">${esc(x.nom || `${x.valeur} ${x.pays} ${x.annees}`)}</a></strong>
 <p>${esc(x.pays)} · ${esc(x.annees)} · ${esc(x.tirage)}</p></div>
@@ -179,7 +185,7 @@ function syncCatalogueShells(countries) {
 for (const item of pieces) write(`pieces/${item.id}.html`, coinPage(item));
 for (const item of billets) write(`billets/${item.id}.html`, banknotePage(item));
 
-const countries = [...new Set(pieces.map(x => x.pays))].sort((a,b) => a.localeCompare(b, 'fr'));
+const countries = [...new Set(pieces.map(x => x.pays))].sort(stableCompare);
 for (const country of countries) write(`pays/${slug(country)}.html`, countryPage(country));
 syncCatalogueShells(countries);
 write('guides/pieces-2-euros-rares.html', rareGuidePage());
