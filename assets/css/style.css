@@ -578,6 +578,44 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 .disclaimer-box p { font-size: 13.5px; color: var(--ink-dim); }
 
 .market-panel { padding: 22px; border-radius: var(--radius-lg); }
+.market-estimate-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 18px;
+  padding-bottom: 18px; margin-bottom: 18px; border-bottom: 1px solid var(--border);
+}
+.market-kicker {
+  display: block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--ink-faint); margin-bottom: 5px;
+}
+.market-price {
+  display: block; font-family: var(--font-display); font-size: clamp(28px, 4vw, 40px);
+  line-height: 1; color: var(--oxblood); font-weight: 600;
+}
+.market-date {
+  font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint);
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 9px; white-space: nowrap;
+}
+.market-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 18px;
+}
+.market-grid .market-row {
+  margin: 0; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: rgba(255,255,255,.42);
+}
+.market-detail {
+  margin-top: 18px; padding-top: 18px; border-top: 1px dashed var(--border-strong);
+}
+.market-basis {
+  margin-top: 16px; font-size: 12.5px; line-height: 1.6; color: var(--ink-faint); font-style: italic;
+}
+.market-proof {
+  margin-top: 20px; padding: 16px; border-radius: var(--radius-sm);
+  border: 1px solid rgba(47,83,67,.24); background: rgba(47,83,67,.06);
+}
+.market-proof h4 {
+  font-family: var(--font-body); font-size: 13.5px; margin-bottom: 5px; color: var(--forest);
+}
+.market-proof p { font-size: 12.5px; color: var(--ink-dim); line-height: 1.55; }
+.market-links { margin-top: 12px; }
 .market-row { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
 .market-row .k { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.04em; }
 .market-row .v { font-size: 14px; color: var(--ink); line-height: 1.6; }
@@ -715,4 +753,9 @@ footer p { font-size: 12px; color: var(--ink-faint); }
   .home-choices { flex-direction: column; align-items: stretch; }
   .choice-card { width: 100%; }
   .hud-nav { display: none; }
+}
+
+@media (max-width: 700px) {
+  .market-estimate-head { flex-direction: column; }
+  .market-grid { grid-template-columns: 1fr; }
 }
