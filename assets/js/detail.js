@@ -330,7 +330,7 @@ function renderMarketPanel(item) {
       <p class="source-line">Les frais de port, commissions, état exact, variante, coffret et certificat peuvent modifier le prix net réellement récupéré par le vendeur.</p>
     </div>`;
 }
-function renderSpecimenFrame(item) {
+function renderSpecimenFrame(item, type) {
   const initial = (item.pays || '?').charAt(0);
   if (item.photo) {
     if (item.photo.combined) {
@@ -354,8 +354,8 @@ function renderSpecimenFrame(item) {
       <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
   }
   return `
-    <div class="specimen-frame">
-      <span class="specimen-badge stylised-badge">Photo à venir</span>
+    <div class="specimen-frame ${type === 'billet' ? 'square' : ''}">
+      <span class="specimen-badge stylised-badge">${type === 'billet' ? 'Visuel de référence à venir' : 'Photo à venir'}</span>
       <div class="specimen-face placeholder">
         <span class="monogram">${initial}</span>
         <span class="placeholder-label">Référence en cours de constitution</span>
@@ -412,7 +412,7 @@ async function boot() {
   root.innerHTML = `
     <div class="detail-grid">
       <div class="stage">
-        ${renderSpecimenFrame(item)}
+        ${renderSpecimenFrame(item, type)}
         <div class="stage-rarete-row">${raretyMeter(item.rarete)}</div>
       </div>
       <div class="detail-info">
@@ -442,16 +442,22 @@ async function boot() {
         </div>
 
         <div class="section-block">
-          <h2>03 — Voir une vraie photo</h2>
+          <h2>03 — ${type === 'billet' ? 'Comparer avec un billet authentique' : 'Voir une vraie photo'}</h2>
           ${hasPhoto ? `
-            <p style="font-size:14px;">${item.photo.representative ? "Le visuel affiché ci-contre est un exemplaire réel représentatif de cette fiche. La fiche couvre plusieurs millésimes ou variantes : vérifiez aussi les critères et l’année de votre exemplaire." : "Les visuels affichés ci-contre correspondent aux faces de cette pièce. Vous pouvez comparer directement votre exemplaire avec eux."}</p><p class="source-line">${renderPhotoCredit(item)}</p>
+            <p style="font-size:14px;">${item.photo.representative ? "Le visuel affiché ci-contre est un exemplaire réel représentatif de cette fiche. La fiche couvre plusieurs millésimes ou variantes : vérifiez aussi les critères et l’année de votre exemplaire." : "Les visuels affichés ci-contre correspondent aux faces de cet exemplaire. Vous pouvez le comparer directement au vôtre."}</p><p class="source-line">${renderPhotoCredit(item)}</p>
+          ` : (type === 'billet' ? `
+            <p style="font-size:14px;margin-bottom:10px;">Cette fiche regroupe plusieurs variantes de billets. Comparez votre exemplaire avec les références officielles de la Banque centrale européenne plutôt qu'avec une image générique unique.</p>
+            <div class="identify-links">
+              <a class="chip" target="_blank" rel="noopener" href="https://www.ecb.europa.eu/euro/banknotes/current/html/index.fr.html">Billets officiels BCE</a>
+              <a class="chip" target="_blank" rel="noopener" href="https://www.ecb.europa.eu/euro/banknotes/current/security/html/index.fr.html">Signes de sécurité BCE</a>
+            </div>
           ` : `
             <p style="font-size:14px;margin-bottom:10px;">Aucune photo vérifiée n'est encore disponible pour cette fiche. Pour comparer avec un exemplaire authentique :</p>
             <div class="identify-links">
-              <a class="chip" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=${encodeURIComponent((item.nom || item.pays) + ' ' + item.pays + ' ' + item.annees + ' euro coin')}">🔍 Rechercher des photos (Google Images)</a>
-              <a class="chip" target="_blank" rel="noopener" href="https://en.numista.com/catalogue/themes/euro-coins.php">📖 Catalogue Numista (référence numismatique)</a>
+              <a class="chip" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=${encodeURIComponent((item.nom || item.pays) + ' ' + item.pays + ' ' + item.annees + ' euro coin')}">Rechercher des photos</a>
+              <a class="chip" target="_blank" rel="noopener" href="https://en.numista.com/catalogue/themes/euro-coins.php">Catalogue Numista</a>
             </div>
-          `}
+          `)}
         </div>
 
         <div class="section-block">
