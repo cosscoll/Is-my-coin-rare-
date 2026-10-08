@@ -55,7 +55,7 @@ function renderInspector(type, item) {
     <div class="meta-line">${item.annees} &middot; ${categorieLabel(item.categorie)}</div>
     ${item.nom ? `<p style="font-size:13px;margin-bottom:10px;font-style:italic;">${item.nom}</p>` : ''}
     ${raretyBadge(item.rarete, 'sm')}
-    ${item.photo ? `<p class="inspector-credit">${item.photo.credit} (${item.photo.licence}) — via Numista</p>` : ''}
+    ${item.photo ? `<p class="inspector-credit">${renderListPhotoCredit(item)}</p>` : ''}
     <a class="go-btn" href="detail.html?type=${type}&id=${item.id}">Voir la fiche complète &rarr;</a>
   `;
 
