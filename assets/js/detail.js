@@ -17,6 +17,13 @@ const CATEGORIE_LABELS = {
   'serie-billet': 'Série de billets',
 };
 
+function detailPhotoBadgeLabel(item) {
+  const source = String(item.photo?.source_name || '');
+  if (item.photo?.representative) return 'Visuel représentatif';
+  if (/Banque centrale européenne|Commission européenne/i.test(source)) return 'Visuel officiel';
+  return 'Photo réelle';
+}
+
 function renderPhotoCredit(item) {
   const p = item.photo || {};
   const bits = [];
@@ -357,18 +364,18 @@ function renderSpecimenFrame(item, type) {
     if (item.photo.combined) {
       return `
         <div class="specimen-frame">
-          <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
-          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
+          <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
+          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="eager" fetchpriority="high" decoding="async"></div>
         </div>
         <p class="specimen-hint">Avers et revers sur le même visuel</p>
         <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
     }
     return `
       <button type="button" class="specimen-frame" id="specimen-frame" aria-label="Afficher le revers">
-        <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
+        <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
         <div class="specimen-flip" id="specimen-flip">
-          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
-          <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
+          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="eager" fetchpriority="high" decoding="async"></div>
+          <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="eager" fetchpriority="high" decoding="async"></div>
         </div>
       </button>
       <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
