@@ -22,7 +22,8 @@
     ],
     "rarete": "recherchee",
     "explication": "Willem Duisenberg a été le tout premier président de la BCE et sa signature n'apparaît que sur les billets imprimés au tout début de la première série. Une grande partie de ces premiers tirages, en particulier sur les petites coupures très utilisées, a depuis été retirée de la circulation et détruite, ce qui rend les exemplaires encore en bon état recherchés par les collectionneurs.",
-    "source": "Slate.fr (dossier collectionneurs), Banque centrale du Luxembourg (documentation technique des billets), négociants numismatiques spécialisés"
+    "source": "Banque centrale européenne — signatures des présidents de la BCE sur les billets en euros",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html"
   },
   {
     "id": "numeros-serie-particuliers",
@@ -47,7 +48,8 @@
     ],
     "rarete": "recherchee",
     "explication": "Ces configurations de numéro sont statistiquement rares dans n'importe quel tirage massif de billets, et les collectionneurs de numéros de série (numismatique dite « fantaisiste » ou « de numéros ») leur attribuent une prime indépendamment de l'état du billet ou de la coupure concernée. Le niveau de rareté dépend fortement de la coupure, de la série et de l'état de conservation : toute estimation chiffrée doit être vérifiée auprès d'un professionnel.",
-    "source": "Slate.fr (dossier collectionneurs), Banque centrale du Luxembourg (documentation technique des billets)"
+    "source": "Banque centrale européenne — structure officielle des numéros de série ; marché spécialisé pour les primes de collection",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html"
   },
   {
     "id": "code-imprimeur-pays-emetteur",
@@ -72,7 +74,8 @@
     ],
     "rarete": "peu-commune",
     "explication": "Les billets en euros ne portent pas de mention de valeur faciale ni de série « étoile » comme le dollar américain, mais le préfixe du pays émetteur et le code d'imprimerie jouent un rôle équivalent pour les collectionneurs : les combinaisons associées aux plus petits pays de la zone euro sont statistiquement moins fréquentes en circulation générale.",
-    "source": "Banque centrale du Luxembourg (documentation technique des billets en euros), catalogues de cotation spécialisés"
+    "source": "Banque centrale européenne — numéros de série et identification des imprimeries",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html"
   },
   {
     "id": "capacite-numerotation-par-lettre",
@@ -97,7 +100,8 @@
     ],
     "rarete": "peu-commune",
     "explication": "Le système de numérotation des billets en euros n'est pas uniforme : certaines banques centrales (Finlande, Belgique, Autriche, France...) encodent une partie du numéro pour indiquer la valeur faciale et la position d'impression, ce qui réduit mathématiquement le nombre de combinaisons possibles pour leur lettre par rapport à un pays utilisant une numérotation continue simple sur dix chiffres. C'est une curiosité technique intéressante pour un collectionneur de numéros, mais elle ne doit pas être interprétée à tort comme une mesure directe de rareté du billet lui-même.",
-    "source": "CoinsWeekly (« The meaning of the symbols on the euro banknotes »), Deutsche Bundesbank (FAQ techniques sur les billets en euros)"
+    "source": "Banque centrale européenne — structure des numéros de série et lettres d’imprimerie",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html"
   },
   {
     "id": "billet-500e-retire",
@@ -179,7 +183,8 @@
     ],
     "rarete": "peu-commune",
     "explication": "Chaque coupure de la série Europa a été introduite l'une après l'autre sur plusieurs années plutôt que simultanément : les tout premiers exemplaires de chaque nouvelle coupure, correspondant à son année de lancement, sont recherchés par les collectionneurs qui suivent la transition entre les deux séries de billets en euros.",
-    "source": "Banque centrale européenne (calendrier officiel d'introduction de la série Europa)"
+    "source": "Banque centrale européenne — calendrier officiel d’introduction de la série Europe",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/europa/html/index.fr.html"
   },
   {
     "id": "petits-pays-lettres-rares",
@@ -204,7 +209,8 @@
     ],
     "rarete": "peu-commune",
     "explication": "Sans qu'il s'agisse d'un accident de fabrication ou d'un tirage volontairement limité, la taille économique réduite de ces pays se traduit mécaniquement par des volumes d'impression plus faibles et une circulation internationale plus rare de leurs lettres de préfixe, un phénomène analogue à celui observé sur les petites coupures des petits pays pour les pièces.",
-    "source": "Banque centrale européenne (dates d'adhésion à la zone euro), documentation technique des billets en euros"
+    "source": "Banque centrale européenne — numéros de série, lettres d’imprimerie et conception des billets",
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/design/html/index.fr.html"
   },
   {
     "id": "billet-5e-premiere-serie-2002",
