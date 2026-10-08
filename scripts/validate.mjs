@@ -33,14 +33,34 @@ for (const file of ['index.html','pieces.html','billets.html','robots.txt','site
 }
 
 const sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-for (const item of pieces) if (!sitemap.includes('/pieces/' + item.id + '.html')) errors.push(`sitemap: pièce absente ${item.id}`);
-for (const item of billets) if (!sitemap.includes('/billets/' + item.id + '.html')) errors.push(`sitemap: billet absent ${item.id}`);
+for (const item of pieces) {
+  if (!sitemap.includes('/pieces/' + item.id + '.html')) errors.push(`sitemap: pièce absente ${item.id}`);
+  const file = path.join(root, 'pieces', item.id + '.html');
+  if (fs.existsSync(file)) {
+    const html = fs.readFileSync(file, 'utf8');
+    const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/pieces/' + item.id + '.html';
+    if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`piece ${item.id}: canonical absent ou incorrect`);
+    if (!html.includes('<meta name="description"')) errors.push(`piece ${item.id}: meta description absente`);
+  }
+}
+for (const item of billets) {
+  if (!sitemap.includes('/billets/' + item.id + '.html')) errors.push(`sitemap: billet absent ${item.id}`);
+  const file = path.join(root, 'billets', item.id + '.html');
+  if (fs.existsSync(file)) {
+    const html = fs.readFileSync(file, 'utf8');
+    const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/billets/' + item.id + '.html';
+    if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`billet ${item.id}: canonical absent ou incorrect`);
+    if (!html.includes('<meta name="description"')) errors.push(`billet ${item.id}: meta description absente`);
+  }
+}
 
 
 const piecesHtml = fs.readFileSync(path.join(root,'pieces.html'),'utf8');
 const billetsHtml = fs.readFileSync(path.join(root,'billets.html'),'utf8');
 const rareGuide = fs.readFileSync(path.join(root,'guides/pieces-2-euros-rares.html'),'utf8');
 const countryCount = new Set(pieces.map(x => x.pays)).size;
+const requiredCountryCount = 25;
+if (countryCount < requiredCountryCount) errors.push(`catalogue: ${countryCount} juridictions couvertes, attendu au moins ${requiredCountryCount}`);
 const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).length;
