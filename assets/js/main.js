@@ -72,8 +72,8 @@ function renderHUD(active, back) {
           <a class="hud-brand" href="${siteBase()}index.html"><span class="dot"></span>EuroRare</a>
           ${backHtml}
           <nav class="hud-nav" aria-label="Navigation principale">
-            <a href="${siteBase()}pieces.html" class="${active === 'pieces' ? 'active' : ''}">Pièces</a>
-            <a href="${siteBase()}billets.html" class="${active === 'billets' ? 'active' : ''}">Billets</a>
+            <a href="${siteBase()}pieces.html" class="${active === 'pieces' ? 'active' : ''}"${active === 'pieces' ? ' aria-current="page"' : ''}>Pièces</a>
+            <a href="${siteBase()}billets.html" class="${active === 'billets' ? 'active' : ''}"${active === 'billets' ? ' aria-current="page"' : ''}>Billets</a>
           </nav>
         </div>
       </div>
