@@ -383,7 +383,7 @@ function renderSpecimenFrame(item, type) {
         <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
         <div class="specimen-flip" id="specimen-flip">
           <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="eager" fetchpriority="high" decoding="async"></div>
-          <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="eager" fetchpriority="high" decoding="async"></div>
+          <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
         </div>
       </button>
       <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
