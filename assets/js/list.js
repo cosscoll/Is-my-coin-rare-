@@ -63,7 +63,7 @@ function renderInspector(type, item) {
       <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
       <div class="specimen-flip" id="insp-flip">
         <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
-        <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
+        <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
       </div>
     </button>
     <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
