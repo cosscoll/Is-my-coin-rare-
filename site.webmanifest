@@ -1,0 +1,9 @@
+{
+  "name": "EuroRare",
+  "short_name": "EuroRare",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2e9d8",
+  "theme_color": "#8a3324",
+  "icons": []
+}
