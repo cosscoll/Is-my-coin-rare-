@@ -113,25 +113,53 @@ async function initListPage(type, dataPath) {
 
   const paysSel = document.getElementById('f-pays');
   const valeurSel = document.getElementById('f-valeur');
+  const yearSel = document.getElementById('f-annee');
   const catSel = document.getElementById('f-categorie');
   const raretSel = document.getElementById('f-rarete');
+  const sortSel = document.getElementById('f-sort');
   const searchInput = document.getElementById('f-search');
   const resetBtn = document.getElementById('f-reset');
 
   const paysList = [...new Set(items.map(i => i.pays))].sort((a, b) => a.localeCompare(b, 'fr'));
   const valeurList = [...new Set(items.map(i => i.valeur))];
   const catList = [...new Set(items.map(i => i.categorie))];
+  const currentYear = new Date().getFullYear();
+  function yearsFor(item) {
+    const nums = [...String(item.annees || '').matchAll(/(19|20)\d{2}/g)].map(m => Number(m[0]));
+    if (!nums.length) return [];
+    const start = nums[0];
+    const end = /en cours/i.test(item.annees || '') ? currentYear : (nums[1] || start);
+    const out = [];
+    for (let y = start; y <= Math.min(end, currentYear); y++) out.push(y);
+    return out;
+  }
+  const yearList = [...new Set(items.flatMap(yearsFor))].sort((a,b) => b-a);
 
   paysList.forEach(p => paysSel.insertAdjacentHTML('beforeend', `<option value="${p}">${p}</option>`));
   valeurList.forEach(v => valeurSel.insertAdjacentHTML('beforeend', `<option value="${v}">${v}</option>`));
+  yearList.forEach(y => yearSel.insertAdjacentHTML('beforeend', `<option value="${y}">${y}</option>`));
   catList.forEach(c => catSel.insertAdjacentHTML('beforeend', `<option value="${c}">${categorieLabel(c)}</option>`));
 
+  function updateFilterUrl() {
+    const params = new URLSearchParams();
+    if (searchInput.value.trim()) params.set('q', searchInput.value.trim());
+    if (paysSel.value) params.set('pays', paysSel.value);
+    if (valeurSel.value) params.set('valeur', valeurSel.value);
+    if (yearSel.value) params.set('annee', yearSel.value);
+    if (catSel.value) params.set('categorie', catSel.value);
+    if (raretSel.value) params.set('rarete', raretSel.value);
+    if (sortSel.value && sortSel.value !== 'default') params.set('tri', sortSel.value);
+    const next = params.toString() ? '?' + params.toString() : window.location.pathname.split('/').pop();
+    history.replaceState(null, '', next);
+  }
+
   function applyFilters() {
-    const p = paysSel.value, v = valeurSel.value, c = catSel.value, r = raretSel.value;
+    const p = paysSel.value, v = valeurSel.value, y = yearSel.value, c = catSel.value, r = raretSel.value;
     const q = (searchInput.value || '').trim().toLowerCase();
-    const filtered = items.filter(i => {
+    let filtered = items.filter(i => {
       if (p && i.pays !== p) return false;
       if (v && i.valeur !== v) return false;
+      if (y && !yearsFor(i).includes(Number(y))) return false;
       if (c && i.categorie !== c) return false;
       if (r && i.rarete !== r) return false;
       if (q) {
@@ -141,6 +169,14 @@ async function initListPage(type, dataPath) {
       }
       return true;
     });
+
+    const firstYear = i => Number((String(i.annees || '').match(/(19|20)\d{2}/) || ['0'])[0]);
+    if (sortSel.value === 'recent') filtered.sort((a,b) => firstYear(b) - firstYear(a));
+    if (sortSel.value === 'ancien') filtered.sort((a,b) => firstYear(a) - firstYear(b));
+    if (sortSel.value === 'rarete') filtered.sort((a,b) => RARETE_ORDER.indexOf(b.rarete) - RARETE_ORDER.indexOf(a.rarete));
+    if (sortSel.value === 'pays') filtered.sort((a,b) => a.pays.localeCompare(b.pays, 'fr') || firstYear(b)-firstYear(a));
+
+    updateFilterUrl();
     render(filtered);
   }
 
@@ -178,19 +214,27 @@ async function initListPage(type, dataPath) {
     renderInspector(type, defaultItem);
   }
 
-  [paysSel, valeurSel, catSel, raretSel].forEach(el => el.addEventListener('change', applyFilters));
+  [paysSel, valeurSel, yearSel, catSel, raretSel, sortSel].forEach(el => el.addEventListener('change', applyFilters));
   let searchDebounce;
   searchInput.addEventListener('input', () => {
     clearTimeout(searchDebounce);
     searchDebounce = setTimeout(applyFilters, 180);
   });
   resetBtn.addEventListener('click', () => {
-    paysSel.value = ''; valeurSel.value = ''; catSel.value = ''; raretSel.value = ''; searchInput.value = '';
+    paysSel.value = ''; valeurSel.value = ''; yearSel.value = ''; catSel.value = ''; raretSel.value = ''; sortSel.value = 'default'; searchInput.value = '';
     applyFilters();
   });
 
-  render(items);
-  initIdentifyWizard(type, items, { paysSel, valeurSel, catSel, raretSel, applyFilters });
+  const initialParams = new URLSearchParams(window.location.search);
+  searchInput.value = initialParams.get('q') || '';
+  paysSel.value = initialParams.get('pays') || '';
+  valeurSel.value = initialParams.get('valeur') || '';
+  yearSel.value = initialParams.get('annee') || '';
+  catSel.value = initialParams.get('categorie') || '';
+  raretSel.value = initialParams.get('rarete') || '';
+  sortSel.value = initialParams.get('tri') || 'default';
+  applyFilters();
+  initIdentifyWizard(type, items, { paysSel, valeurSel, yearSel, catSel, raretSel, sortSel, applyFilters });
 }
 
 /* ---------------------------------------------------------
