@@ -65,6 +65,8 @@ Le site privilégie :
 
 Une annonce active isolée n’est jamais considérée comme une preuve de valeur. Les pièces exceptionnelles, les erreurs de frappe et les émissions de Monaco / Chypre disposent de fourchettes spécifiques lorsque des transactions documentées existent.
 
+Les **8 fiches de billets** disposent également d’une estimation de revente dédiée, adaptée au type de billet (signature Duisenberg, numéro particulier, code imprimeur, 500 € retiré, erreur d’impression, première série Europa, etc.). Les références privilégient les ventes réalisées, les cotes Numista et les plateformes numismatiques spécialisées plutôt que les simples prix demandés par les vendeurs.
+
 ## Compléter la base de données
 
 Les fichiers `data/pieces.json` et `data/billets.json` contiennent une sélection volontairement restreinte de cas réels et documentés (2€ Grace Kelly de Monaco, tirages des micro-États, erreurs de frappe, signatures et numéros de série des billets, etc.). Chaque entrée suit le même schéma :
