@@ -373,7 +373,7 @@ function renderSpecimenFrame(item, type) {
       return `
         <div class="specimen-frame ${type === 'billet' ? 'square' : ''}">
           <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
-          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="eager" fetchpriority="high" decoding="async"></div>
+          <div class="specimen-face front"><img referrerpolicy="no-referrer" src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="eager" fetchpriority="high" decoding="async"></div>
         </div>
         <p class="specimen-hint">Avers et revers sur le même visuel</p>
         <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
@@ -382,8 +382,8 @@ function renderSpecimenFrame(item, type) {
       <button type="button" class="specimen-frame ${type === 'billet' ? 'square' : ''}" id="specimen-frame" aria-label="Afficher le revers">
         <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
         <div class="specimen-flip" id="specimen-flip">
-          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="eager" fetchpriority="high" decoding="async"></div>
-          <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
+          <div class="specimen-face front"><img referrerpolicy="no-referrer" src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="eager" fetchpriority="high" decoding="async"></div>
+          <div class="specimen-face back"><img referrerpolicy="no-referrer" src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
         </div>
       </button>
       <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
