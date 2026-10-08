@@ -50,14 +50,14 @@ function renderInspector(type, item) {
     </div>
     <p class="specimen-hint">Avers et revers sur le même visuel</p>
   ` : `
-    <div class="specimen-frame" id="insp-frame">
+    <button type="button" class="specimen-frame" id="insp-frame" aria-label="Afficher le revers">
       <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
       <div class="specimen-flip" id="insp-flip">
         <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
         <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
       </div>
-    </div>
-    <p class="specimen-hint">Cliquez pour voir le revers</p>
+    </button>
+    <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
   `) : `
     <div class="specimen-frame">
       <span class="specimen-badge stylised-badge">Photo à venir</span>
@@ -80,7 +80,10 @@ function renderInspector(type, item) {
   if (item.photo && !item.photo.combined) {
     const frame = document.getElementById('insp-frame');
     const flip = document.getElementById('insp-flip');
-    frame.addEventListener('click', () => flip.classList.toggle('flipped'));
+    frame.addEventListener('click', () => {
+      const flipped = flip.classList.toggle('flipped');
+      frame.setAttribute('aria-label', flipped ? 'Afficher l’avers' : 'Afficher le revers');
+    });
   }
 }
 
