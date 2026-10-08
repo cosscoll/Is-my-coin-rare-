@@ -55,15 +55,15 @@ function renderInspector(type, item) {
   const frameHtml = item.photo ? (item.photo.combined ? `
     <div class="specimen-frame ${type === 'billet' ? 'square' : ''}">
       <span class="specimen-badge real">✓ ${photoBadgeLabel(item)}</span>
-      <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
+      <div class="specimen-face front"><img referrerpolicy="no-referrer" src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
     </div>
     <p class="specimen-hint">Avers et revers sur le même visuel</p>
   ` : `
     <button type="button" class="specimen-frame ${type === 'billet' ? 'square' : ''}" id="insp-frame" aria-label="Afficher le revers">
       <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
       <div class="specimen-flip" id="insp-flip">
-        <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
-        <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
+        <div class="specimen-face front"><img referrerpolicy="no-referrer" src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
+        <div class="specimen-face back"><img referrerpolicy="no-referrer" src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy" decoding="async"></div>
       </div>
     </button>
     <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
