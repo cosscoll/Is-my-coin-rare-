@@ -23,7 +23,14 @@
     "rarete": "rare",
     "explication": "Le Vatican, micro-État sans circulation monétaire courante significative, limite structurellement ses tirages à des quantités bien inférieures à celles des pays de la zone euro. La demande des collectionneurs dépasse presque systématiquement l'offre disponible, en particulier pour les années « sede vacante ».",
     "source": "Numista, Banque centrale européenne (typologie des micro-États)",
-    "nom": "2€ commémoratives du Vatican (thèmes variés)"
+    "nom": "2€ commémoratives du Vatican (thèmes variés)",
+    "photo": {
+      "recto": "https://www.ecb.europa.eu/euro/coins/comm/shared/img/comm_2004_va_800.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "Banque centrale européenne",
+      "source_url": "https://www.ecb.europa.eu/euro/coins/comm/html/comm_2004.fr.html",
+      "representative": true
+    }
   },
   {
     "id": "saint-marin-2e-commemoratives",
@@ -49,7 +56,14 @@
     "rarete": "rare",
     "explication": "Comme le Vatican, Saint-Marin frappe des quantités volontairement restreintes du fait de sa taille, et sa pièce de 2€ courante change de dessin chaque année — une particularité unique dans la zone euro qui multiplie le nombre de variantes à collectionner.",
     "source": "Numista, catalogues numismatiques européens",
-    "nom": "2€ courante annuelle de Saint-Marin"
+    "nom": "2€ courante annuelle de Saint-Marin",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_27.png?itok=q8XsN2ud",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/san-marino_en",
+      "representative": true
+    }
   },
   {
     "id": "andorre-premieres-frappes",
@@ -108,7 +122,14 @@
     "rarete": "recherchee",
     "explication": "Les millésimes 1999–2001, frappés en avance sur la mise en circulation, sont recherchés comme témoins du tout début de l'aventure de l'euro, et la faible circulation des petites coupures finlandaises hors de Finlande accentue leur rareté relative pour un collectionneur étranger.",
     "source": "Numista, Banque de Finlande (Suomen Pankki)",
-    "nom": "Petites coupures 1c à 50c — première série finlandaise"
+    "nom": "Petites coupures 1c à 50c — première série finlandaise",
+    "photo": {
+      "recto": "https://en.numista.com/catalogue/photos/finlande/1489-original.jpg",
+      "verso": "https://cnumis.com/img/illustrations/types/finland/coins/m/2986-coin-des-monnaies-finland-50-eurocents-lion-heraldique-revers.jpg",
+      "source_name": "Numista (avers) · CNumis (revers)",
+      "source_url": "https://fr.numista.com/94",
+      "representative": true
+    }
   },
   {
     "id": "allemagne-fehlpragung-fautees",
@@ -167,7 +188,15 @@
     "rarete": "tres-rare",
     "explication": "Comme pour l'Allemagne, les erreurs de frappe françaises documentées (mauvais flan, listel manquant, décentrage important) sont des accidents de fabrication non reproductibles à volonté, ce qui en fait l'une des catégories les plus prisées — et les plus sujettes à contrefaçon — de la numismatique euro.",
     "source": "Numista, catalogues spécialisés en variétés et erreurs de frappe",
-    "nom": "Erreurs de frappe françaises (pièces « fautées »)"
+    "nom": "Erreurs de frappe françaises (pièces « fautées »)",
+    "photo": {
+      "recto": "https://images3.cgb.fr/images/monnaies/v20/v20_1479.jpg",
+      "verso": "https://images3.cgb.fr/images/monnaies/v20/v20_1479.jpg",
+      "source_name": "CGB Numismatique — 2€ France fautée 1999, Pessac",
+      "source_url": "https://www.cgb.fr/banque-centrale-europeenne-2-euro-france-frappe-fautee-1999-sup,v20_1479,a.html",
+      "representative": true,
+      "combined": true
+    }
   },
   {
     "id": "luxembourg-2e-courantes",
@@ -189,7 +218,14 @@
     "rarete": "peu-commune",
     "explication": "Sans atteindre la rareté des micro-États sans siège à la BCE, le Luxembourg illustre bien la catégorie intermédiaire des « petits tirages nationaux » : la population réduite du pays limite mécaniquement le nombre de pièces mises en circulation chaque année.",
     "source": "Numista, Banque centrale du Luxembourg",
-    "nom": "1c à 2€ courantes du Luxembourg"
+    "nom": "1c à 2€ courantes du Luxembourg",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_13.png?itok=AI8mSwsQ",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/luxembourg_en",
+      "representative": true
+    }
   },
   {
     "id": "slovenie-2007-premiere-annee",
@@ -211,7 +247,14 @@
     "rarete": "recherchee",
     "explication": "Comme pour tout pays entrant dans la zone euro, le millésime de la première année d'adhésion est particulièrement suivi par les collectionneurs qui constituent des séries « pays par pays, première frappe », d'autant que la Slovénie a cumulé cette année-là sa série courante et la commémorative commune du Traité de Rome.",
     "source": "Numista, Banque de Slovénie (Banka Slovenije)",
-    "nom": "Série complète 1c à 2€ — première frappe slovène 2007"
+    "nom": "Série complète 1c à 2€ — première frappe slovène 2007",
+    "photo": {
+      "recto": "https://i.ebayimg.com/images/g/Rw4AAMXQDfdRutMu/s-l1200.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Exemplaire réel photographié · référence Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/slovenia_en",
+      "representative": true
+    }
   },
   {
     "id": "ad-2e-2014-20-ans-au-sein-du-conseil-de",
