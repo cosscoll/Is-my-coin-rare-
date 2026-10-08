@@ -2,7 +2,7 @@
 
 Site web statique et pédagogique pour aider un visiteur à identifier une pièce ou un billet en euro (pays, année, atelier, particularités) et à comprendre s'il peut présenter un intérêt pour les collectionneurs, avec un niveau de rareté indicatif et le contexte qui l'explique.
 
-**Aucune dépendance de build.** HTML / CSS / JS purs, aucune bibliothèque 3D — prêt à être servi tel quel par GitHub Pages. Direction artistique « archive numismatique » : papier chamois, typographie éditoriale (Fraunces + Inter), vraies photos de pièces (sous licence Creative Commons, via Numista) plutôt que des reconstitutions 3D.
+**Aucune dépendance de build.** HTML / CSS / JS purs, aucune bibliothèque 3D — prêt à être servi tel quel par GitHub Pages. Direction artistique « archive numismatique » : papier chamois, typographie éditoriale (Fraunces + Inter), visuels réels de pièces issus de sources numismatiques et institutionnelles référencées, plutôt que des reconstitutions 3D.
 
 ## ⚠️ Avertissement important
 
@@ -47,6 +47,12 @@ Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
 S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
 
 Ceci ne couvre pas encore l'intégralité des ~584 variantes de 2€ commémoratives émises depuis 2004 (notamment les millésimes 2019-2026 pour la plupart des pays, ainsi que les Pays-Bas, le Portugal, San Marin (détail par millésime), la Slovaquie, la Slovénie (au-delà de 2007) et l'Espagne) : voir la section suivante pour l'étendre.
+
+## Photos des pièces
+
+Les **204 fiches sur 204** disposent désormais d’un visuel réel associé. Les fiches correspondant à une émission précise affichent l’avers et le revers. Les fiches regroupant plusieurs millésimes, une série complète ou une famille d’erreurs utilisent un **visuel réel représentatif**, clairement signalé comme tel afin de ne pas le présenter comme l’unique variante possible.
+
+Chaque objet `photo` conserve les références du visuel (`recto`, `verso`, `source_name`, `source_url` et, lorsqu’ils sont disponibles, `credit` / `licence`). Le champ `combined` permet d’afficher correctement une photographie de référence qui montre les deux faces sur un même visuel.
 
 ## Compléter la base de données
 
