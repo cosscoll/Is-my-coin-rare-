@@ -36,6 +36,30 @@ const sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 for (const item of pieces) if (!sitemap.includes('/pieces/' + item.id + '.html')) errors.push(`sitemap: pièce absente ${item.id}`);
 for (const item of billets) if (!sitemap.includes('/billets/' + item.id + '.html')) errors.push(`sitemap: billet absent ${item.id}`);
 
+
+const piecesHtml = fs.readFileSync(path.join(root,'pieces.html'),'utf8');
+const billetsHtml = fs.readFileSync(path.join(root,'billets.html'),'utf8');
+const rareGuide = fs.readFileSync(path.join(root,'guides/pieces-2-euros-rares.html'),'utf8');
+const countryCount = new Set(pieces.map(x => x.pays)).size;
+const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
+const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
+const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).length;
+
+if (!piecesHtml.includes(\`Parcourez \${pieces.length} fiches de pièces\`)) errors.push(\`pieces.html: compteur SEO obsolète (attendu \${pieces.length})\`);
+if (!billetsHtml.includes(\`Parcourez \${billets.length} fiches de billets\`)) errors.push(\`billets.html: compteur SEO obsolète (attendu \${billets.length})\`);
+if (!rareGuide.includes(\`<h2>\${rareCount} fiches actuellement classées Rare ou Très rare</h2>\`)) errors.push(\`guide rareté: compteur obsolète (attendu \${rareCount})\`);
+if (sitemapUrlCount !== expectedSitemapUrls) errors.push(\`sitemap: \${sitemapUrlCount} URL, attendu \${expectedSitemapUrls}\`);
+
+for (const item of pieces) {
+  const p = item.photo || {};
+  for (const field of ['recto','verso','source_url']) {
+    if (p[field] && !/^https:\/\//.test(p[field])) errors.push(\`piece \${item.id}: photo.\${field} doit utiliser HTTPS\`);
+  }
+  if (p.source_name === 'Commission européenne' && p.verso?.includes('numista.com') && (!p.credit || !p.licence)) {
+    errors.push(\`piece \${item.id}: crédit/licence du revers Numista manquant\`);
+  }
+}
+
 const jsFiles=['assets/js/main.js','assets/js/list.js','assets/js/detail.js'];
 for(const f of jsFiles){
   const source=fs.readFileSync(path.join(root,f),'utf8');
