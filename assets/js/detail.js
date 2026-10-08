@@ -50,6 +50,15 @@ function renderMarketPanel(item) {
 function renderSpecimenFrame(item) {
   const initial = (item.pays || '?').charAt(0);
   if (item.photo) {
+    if (item.photo.combined) {
+      return `
+        <div class="specimen-frame">
+          <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
+          <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
+        </div>
+        <p class="specimen-hint">Avers et revers sur le même visuel</p>
+        <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
+    }
     return `
       <div class="specimen-frame" id="specimen-frame">
         <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
@@ -197,7 +206,7 @@ async function boot() {
   });
 
   // Real-photo flip (click the frame to see the reverse)
-  if (hasPhoto) {
+  if (hasPhoto && !item.photo.combined) {
     const frame = document.getElementById('specimen-frame');
     const flipEl = document.getElementById('specimen-flip');
     frame.addEventListener('click', () => flipEl.classList.toggle('flipped'));
