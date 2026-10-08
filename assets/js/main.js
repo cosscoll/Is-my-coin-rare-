@@ -36,6 +36,15 @@ function qs(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
+function siteBase() {
+  return (document.body && document.body.dataset && document.body.dataset.base) || '';
+}
+
+function detailHref(type, item) {
+  const folder = type === 'billet' ? 'billets' : 'pieces';
+  return `${siteBase()}${folder}/${item.id}.html`;
+}
+
 // Injects the floating HUD nav bar. `back` = {label, href} or null.
 function renderHUD(active, back) {
   const root = document.getElementById('hud-root');
@@ -47,11 +56,11 @@ function renderHUD(active, back) {
     <div class="hud">
       <div class="wrap">
         <div class="hud-inner">
-          <a class="hud-brand" href="index.html"><span class="dot"></span>EuroRare</a>
+          <a class="hud-brand" href="${siteBase()}index.html"><span class="dot"></span>EuroRare</a>
           ${backHtml}
           <nav class="hud-nav">
-            <a href="pieces.html" class="${active === 'pieces' ? 'active' : ''}">Pièces</a>
-            <a href="billets.html" class="${active === 'billets' ? 'active' : ''}">Billets</a>
+            <a href="${siteBase()}pieces.html" class="${active === 'pieces' ? 'active' : ''}">Pièces</a>
+            <a href="${siteBase()}billets.html" class="${active === 'billets' ? 'active' : ''}">Billets</a>
           </nav>
         </div>
       </div>
@@ -146,6 +155,9 @@ function processImageFile(file, callback) {
 }
 
 function initMyCoinWidget() {
+  const path = window.location.pathname.toLowerCase();
+  const isBanknoteSurface = path.endsWith('/billets.html') || path.includes('/billets/') || document.body?.dataset?.type === 'billet';
+  if (isBanknoteSurface) return;
   if (document.getElementById('my-coin-widget')) return;
   const el = document.createElement('div');
   el.id = 'my-coin-widget';
@@ -282,8 +294,8 @@ async function fetchAllItems() {
   }
   try {
     const [p, b] = await Promise.all([
-      fetch('data/pieces.json').then(r => r.json()),
-      fetch('data/billets.json').then(r => r.json())
+      fetch(siteBase() + 'data/pieces.json').then(r => r.json()),
+      fetch(siteBase() + 'data/billets.json').then(r => r.json())
     ]);
     return [...p.map(i => ({ ...i, _type: 'piece' })), ...b.map(i => ({ ...i, _type: 'billet' }))];
   } catch (e) {
@@ -322,7 +334,7 @@ async function runCoinAnalysis(photoDataUrl, triggerBtn) {
         <div class="analysis-detected">${chips.join('')}</div>
         <p style="font-size:13px;color:var(--text-dim);margin-bottom:10px;">${matches.length} correspondance${matches.length > 1 ? 's' : ''} possible${matches.length > 1 ? 's' : ''} :</p>
         ${matches.map(m => `
-          <a class="analysis-result-item" href="detail.html?type=${m._type}&id=${m.id}">
+          <a class="analysis-result-item" href="${detailHref(m._type, m)}">
             <span>${m.nom || (m.pays + ' — ' + m.valeur)} <span style="color:var(--text-faint)">(${m.annees})</span></span>
             ${raretyBadge(m.rarete, 'sm')}
           </a>`).join('')}
@@ -335,8 +347,8 @@ async function runCoinAnalysis(photoDataUrl, triggerBtn) {
           ? `Trop de résultats (${matches.length}) pour être utiles ici — affinez en prenant une photo plus nette et bien cadrée sur le texte, ou parcourez le catalogue filtré manuellement.`
           : `Aucune correspondance directe trouvée dans notre base. Cela peut venir d'une photo peu lisible (angle, reflet, usure) plutôt que d'une absence réelle dans le catalogue — essayez une photo plus nette du texte gravé, ou parcourez le catalogue manuellement.`}</p>
         <div class="identify-links">
-          <a class="chip" href="pieces.html">Parcourir toutes les pièces</a>
-          <a class="chip" href="billets.html">Parcourir tous les billets</a>
+          <a class="chip" href="${siteBase()}pieces.html">Parcourir toutes les pièces</a>
+          <a class="chip" href="${siteBase()}billets.html">Parcourir tous les billets</a>
         </div>
       `;
     }
