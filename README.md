@@ -54,6 +54,17 @@ Les **204 fiches sur 204** disposent désormais d’un visuel réel associé. Le
 
 Chaque objet `photo` conserve les références du visuel (`recto`, `verso`, `source_name`, `source_url` et, lorsqu’ils sont disponibles, `credit` / `licence`). Le champ `combined` permet d’afficher correctement une photographie de référence qui montre les deux faces sur un même visuel.
 
+## Valeur de revente
+
+Chaque fiche de pièce affiche désormais une **estimation prudente de revente** en fonction de l’état (circulée, UNC/BU/FDC, conditionnement collection), ainsi que des liens de comparaison vers des sources de marché plus fiables que de simples annonces actives.
+
+Le site privilégie :
+- les cotes et ventes réalisées référencées par Numista ;
+- les recherches eBay filtrées sur les objets réellement vendus / terminés ;
+- les offres de vendeurs professionnels sur MA-Shops, à utiliser comme prix boutique de comparaison et non comme prix de revente garanti.
+
+Une annonce active isolée n’est jamais considérée comme une preuve de valeur. Les pièces exceptionnelles, les erreurs de frappe et les émissions de Monaco / Chypre disposent de fourchettes spécifiques lorsque des transactions documentées existent.
+
 ## Compléter la base de données
 
 Les fichiers `data/pieces.json` et `data/billets.json` contiennent une sélection volontairement restreinte de cas réels et documentés (2€ Grace Kelly de Monaco, tirages des micro-États, erreurs de frappe, signatures et numéros de série des billets, etc.). Chaque entrée suit le même schéma :
