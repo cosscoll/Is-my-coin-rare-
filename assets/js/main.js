@@ -245,7 +245,9 @@ const COUNTRY_KEYWORDS = {
   'Andorre': ['ANDORRA', 'ANDORRE'],
   'Autriche': ['OSTERREICH', 'AUTRICHE', 'REPUBLIK'],
   'Belgique': ['BELGIE', 'BELGIQUE', 'BELGIEN'],
+  'Bulgarie': ['BULGARIA', 'BALGARIYA', 'БЪЛГАРИЯ'],
   'Chypre': ['KYPROS', 'KIBRIS', 'CHYPRE'],
+  'Croatie': ['HRVATSKA', 'CROATIA', 'CROATIE'],
   'Estonie': ['EESTI', 'ESTONIE'],
   'Finlande': ['SUOMI', 'FINLAND'],
   'France': ['FRANCE', 'REPUBLIQUE FRANCAISE'],
@@ -258,9 +260,13 @@ const COUNTRY_KEYWORDS = {
   'Luxembourg': ['LETZEBUERG', 'LUXEMBOURG'],
   'Malte': ['MALTA', 'MALTE'],
   'Monaco': ['MONACO'],
-  'Vatican': ['VATICANO', 'VATICAN'],
+  'Pays-Bas': ['NEDERLAND', 'NEDERLANDEN', 'PAYS-BAS', 'NETHERLANDS'],
+  'Portugal': ['PORTUGAL'],
   'Saint-Marin': ['SAN MARINO', 'SAINT-MARIN', 'SAINT MARIN'],
+  'Slovaquie': ['SLOVENSKO', 'SLOVAKIA', 'SLOVAQUIE'],
   'Slovénie': ['SLOVENIJA', 'SLOVENIE'],
+  'Espagne': ['ESPANA', 'ESPAÑA', 'SPAIN', 'ESPAGNE'],
+  'Vatican': ['VATICANO', 'VATICAN'],
 };
 
 function stripAccents(s) {
@@ -356,7 +362,7 @@ async function runCoinAnalysis(photoDataUrl, triggerBtn) {
     const { country, years } = detectCountryAndYear(data.text || '');
     const allItems = await fetchAllItems();
 
-    let matches = allItems;
+    let matches = allItems.filter(i => i._type === 'piece');
     if (country) matches = matches.filter(i => i.pays === country);
     if (years.length) matches = matches.filter(i => years.some(y => (i.annees || '').includes(y)));
 
