@@ -75,7 +75,14 @@
     "rarete": "recherchee",
     "explication": "En tant que dernier pays à avoir intégré l'usage de l'euro avec droit de frappe propre, Andorre offre une série de « premières frappes » activement recherchée par les collectionneurs qui constituent des séries complètes pays par pays.",
     "source": "Numista, Gouvernement d'Andorre (communiqués d'émission)",
-    "nom": "Série complète 1c à 2€ — premières frappes d'Andorre"
+    "nom": "Série complète 1c à 2€ — premières frappes d'Andorre",
+    "photo": {
+      "recto": "https://i.ucoin.net/coin/36/680/36680223-1/andorra-2-euro-2014.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "uCoin",
+      "source_url": "https://en.ucoin.net/coin/andorra-2-euro-2014-2025/?tid=42269",
+      "representative": true
+    }
   },
   {
     "id": "finlande-1999-2001-premiere-serie",
@@ -127,7 +134,14 @@
     "rarete": "tres-rare",
     "explication": "Les erreurs de frappe (Fehlprägungen) échappent aux contrôles qualité normaux et ne sont, par définition, jamais produites intentionnellement en grande série : chaque exemplaire authentifié constitue un cas quasi unique, ce qui explique leur cote élevée chez les spécialistes des variétés et erreurs.",
     "source": "Numista (catégorie « variétés et erreurs »), catalogues spécialisés en erreurs de frappe",
-    "nom": "Erreurs de frappe allemandes (Fehlprägungen)"
+    "nom": "Erreurs de frappe allemandes (Fehlprägungen)",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9322/1400.jpg?v=2496528aa00ec13e",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/42-germany-2008-hamburg-st-michael-s-church",
+      "representative": true
+    }
   },
   {
     "id": "france-fautees-1999-2002",
@@ -223,7 +237,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2014) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 20 ans au sein du Conseil de l'Europe »"
+    "nom": "2€ « 20 ans au sein du Conseil de l'Europe »",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/ewcms_metatag_image/public/2017-01/andora_400.jpg?itok=DYyKypaD",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/20-years-council-europe_en"
+    }
   },
   {
     "id": "ad-2e-2015-25-ans-de-l-union-douani-re-",
@@ -282,7 +302,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2015) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 30 ans de la majorité légale à 18 ans »"
+    "nom": "2€ « 30 ans de la majorité légale à 18 ans »",
+    "photo": {
+      "recto": "https://supermonety.pl/userdata/public/gfx/69edcdec3be7d70ca7ddd5937632f85f.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "supermonety.pl",
+      "source_url": "https://supermonety.pl/pl/p/2-euro-Andora-30-lat-cenzusu-wyborczego-2015/5592"
+    }
   },
   {
     "id": "ad-2e-2016-nouvelle-r-forme-de-1866",
@@ -341,7 +367,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2016) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Radio et Télévision »"
+    "nom": "2€ « Radio et Télévision »",
+    "photo": {
+      "recto": "https://www.muenzenlager.de/media/image/product/15326/md/2-euro-gedenkmuenze-andorra-2016-st-rundfunk-im-blister~4.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "muenzenlager.de",
+      "source_url": "https://www.muenzenlager.de/2-Euro-Gedenkmuenze-Andorra-2016-st-Rundfunk-im-Blister"
+    }
   },
   {
     "id": "ad-2e-2017-le-pays-pyr-n-en",
@@ -400,7 +432,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2017) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 100 ans de l'hymne national andorran »"
+    "nom": "2€ « 100 ans de l'hymne national andorran »",
+    "photo": {
+      "recto": "https://www.muenzen-engel.de/media/image/product/30157/md/andorra-2-euro-2017-100-jahre-hymne.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "muenzen-engel.de",
+      "source_url": "https://www.muenzen-engel.de/Andorra-2-Euro-2017-100-Jahre-Hymne"
+    }
   },
   {
     "id": "ad-2e-2022-la-l-gende-de-charlemagne",
@@ -426,7 +464,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2022) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « La légende de Charlemagne »"
+    "nom": "2€ « La légende de Charlemagne »",
+    "photo": {
+      "recto": "https://www.electacollections.com/Images/Products/Andorra-2-Euro-2022-Legend-of-Charlemagne-1_1.jpg",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Electa Collections",
+      "source_url": "https://www.electacollections.com/en/product/3257461/EURO-COINS-2-Euro-coins/Andorra-2-Euro-the-Legend-of-Charlemagne-2022/"
+    }
   },
   {
     "id": "ad-2e-2022-2-10-ans-de-l-accord-mon-taire",
@@ -452,7 +496,13 @@
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2022) affiche un tirage compris entre 100 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10 ans de l'accord monétaire avec l'UE »"
+    "nom": "2€ « 10 ans de l'accord monétaire avec l'UE »",
+    "photo": {
+      "recto": "https://www.laposte.fr/ecom/occ/ecommerce/medias/sys_master/productsmedias/h5b/h84/10577679351838/mp-600021173_media1/mp-600021173_media1.jpg_1200Wx1200H",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "La Poste",
+      "source_url": "https://www.laposte.fr/boutique/piece-de-monnaie-2-euro-commemorative-andorre-2022-bu-accord-monetaire-entre-lunion-europeenne-et-la-principaute/p/mp-600021173"
+    }
   },
   {
     "id": "at-2e-2005-50e-anniversaire-du-trait-d-",
@@ -478,7 +528,13 @@
     "rarete": "commune",
     "explication": "Cette pièce de Autriche (2005) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 50e anniversaire du traité d'État autrichien »"
+    "nom": "2€ « 50e anniversaire du traité d'État autrichien »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/3975/1400.jpg?v=bd8784b1e2d4f98b",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/8-austria-2005-50-years-state-treaty"
+    }
   },
   {
     "id": "at-2e-2007-50e-anniversaire-du-trait-de",
@@ -537,7 +593,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Autriche (2009) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10e anniversaire de l'UEM et de la naissance de l'euro »"
+    "nom": "2€ « 10e anniversaire de l'UEM et de la naissance de l'euro »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4067/1400.jpg?v=7736d3ce563b3f83",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/62-austria-2009-10-years-of-wwu"
+    }
   },
   {
     "id": "at-2e-2012-10-ans-des-billets-et-pi-ces",
@@ -563,7 +625,13 @@
     "rarete": "commune",
     "explication": "Cette pièce de Autriche (2012) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10 ans des billets et pièces en euros »"
+    "nom": "2€ « 10 ans des billets et pièces en euros »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4146/1400.jpg?v=a62cc70e908333e1",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/116-austria-2012-10-years-of-euro-cash"
+    }
   },
   {
     "id": "at-2e-2015-30e-anniversaire-du-drapeau-",
@@ -589,7 +657,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Autriche (2015) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 30e anniversaire du drapeau européen »"
+    "nom": "2€ « 30e anniversaire du drapeau européen »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4361/1400.jpg?v=cc76919c7e5d57d6",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/224-austria-2015-30-years-of-the-eu-flag"
+    }
   },
   {
     "id": "at-2e-2016-bicentenaire-de-la-banque-na",
@@ -615,7 +689,13 @@
     "rarete": "commune",
     "explication": "Cette pièce de Autriche (2016) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Bicentenaire de la Banque nationale d'Autriche »"
+    "nom": "2€ « Bicentenaire de la Banque nationale d'Autriche »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4401/1400.jpg?v=27be9aa2086bb9b1",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/232-austria-2016-200-years-austrian-nationalbank"
+    }
   },
   {
     "id": "at-2e-2018-100e-anniversaire-de-la-r-pu",
@@ -641,7 +721,13 @@
     "rarete": "commune",
     "explication": "Cette pièce de Autriche (2018) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 100e anniversaire de la République autrichienne »"
+    "nom": "2€ « 100e anniversaire de la République autrichienne »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4541/1400.jpg?v=70c24dd688a38348",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/296-austria-2018-100-years-of-republic-of-austria"
+    }
   },
   {
     "id": "be-2e-2005-union-conomique-belgo-luxemb",
@@ -966,7 +1052,7 @@
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
     "nom": "2€ « 100 ans de l'Institut royal météorologique »",
     "photo": {
-      "recto": "https://en.numista.com/catalogue/photos/belgique/65ae905d0f4f0.23252222-original.jpg",
+      "recto": "https://en.numista.com/catalogue/photos/belgique/65ae905d0f4a22.23252222-original.jpg",
       "verso": "https://en.numista.com/catalogue/photos/belgique/65ae905e8dd2c7.35612681-original.jpg",
       "credit": "© brismike",
       "licence": "CC BY-NC 4.0",
@@ -1294,7 +1380,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Chypre (2009) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10e anniversaire de l'UEM »"
+    "nom": "2€ « 10e anniversaire de l'UEM »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4069/1400.jpg?v=e1f1d69567240e4c",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/67-cyprus-2009-10-years-emu"
+    }
   },
   {
     "id": "cy-2e-2012-10-ans-des-billets-et-pi-ces",
@@ -1320,7 +1412,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Chypre (2012) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10 ans des billets et pièces en euros »"
+    "nom": "2€ « 10 ans des billets et pièces en euros »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4152/1400.jpg?v=8d18f171a9ef5d5c",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/121-cyprus-2012-10-years-of-euro-cash"
+    }
   },
   {
     "id": "cy-2e-2015-30e-anniversaire-du-drapeau-",
@@ -1346,7 +1444,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Chypre (2015) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 30e anniversaire du drapeau européen »"
+    "nom": "2€ « 30e anniversaire du drapeau européen »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4369/1400.jpg?v=6b4fd2c34bbf7e8c",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/229-cyprus-2015-30-years-of-the-eu-flag"
+    }
   },
   {
     "id": "cy-2e-2017-paphos-capitale-europ-enne-d",
@@ -1372,7 +1476,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Chypre (2017) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Paphos, capitale européenne de la culture »"
+    "nom": "2€ « Paphos, capitale européenne de la culture »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4537/1400.jpg?v=9c48a451db457d61",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/288-cyprus-2017-paphos-european-capital-of-culture-2017"
+    }
   },
   {
     "id": "cy-2e-2024-20-ans-d-adh-sion-de-chypre-",
@@ -1593,7 +1703,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2004) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Élargissement de l'Union européenne »"
+    "nom": "2€ « Élargissement de l'Union européenne »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/3965/1400.jpg?v=b5e0b485135b7bca",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/2-finland-2004-eu-enlargement"
+    }
   },
   {
     "id": "fi-2e-2005-60e-anniversaire-de-l-onu",
@@ -1619,7 +1735,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2005) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 60e anniversaire de l'ONU »"
+    "nom": "2€ « 60e anniversaire de l'ONU »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/3979/1400.jpg?v=3cd1a4cce86e3fe0",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/12-finland-2005-50-years-as-a-member-of-the-un"
+    }
   },
   {
     "id": "fi-2e-2006-100e-anniversaire-du-suffrag",
@@ -1645,7 +1767,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2006) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 100e anniversaire du suffrage universel et égal »"
+    "nom": "2€ « 100e anniversaire du suffrage universel et égal »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/3993/1400.jpg?v=15919fc14bb723e3",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/19-finland-2006-100-years-of-universal-suffrage"
+    }
   },
   {
     "id": "fi-2e-2007-50e-anniversaire-du-trait-de",
@@ -1704,7 +1832,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2007) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 90e anniversaire de l'indépendance de la Finlande »"
+    "nom": "2€ « 90e anniversaire de l'indépendance de la Finlande »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4030/1400.jpg?v=ec2bf685b8dca069",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/41-finland-2007-90-years-of-independence"
+    }
   },
   {
     "id": "fi-2e-2008-60e-anniversaire-de-la-d-cla",
@@ -1730,7 +1864,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2008) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 60e anniversaire de la Déclaration universelle des droits de l'homme »"
+    "nom": "2€ « 60e anniversaire de la Déclaration universelle des droits de l'homme »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4046/1400.jpg?v=0d0c2d62daf2970a",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/49-finland-2008-60th-anniversary-of-human-rights"
+    }
   },
   {
     "id": "fi-2e-2009-10e-anniversaire-de-l-uem",
@@ -1756,7 +1896,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2009) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10e anniversaire de l'UEM »"
+    "nom": "2€ « 10e anniversaire de l'UEM »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4059/1400.jpg?v=4d5aeffa52d3c80a",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/54-finland-2009-10-years-of-emu"
+    }
   },
   {
     "id": "fi-2e-2009-2-200e-anniversaire-de-l-auton",
@@ -1782,7 +1928,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2009) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 200e anniversaire de l'autonomie finlandaise »"
+    "nom": "2€ « 200e anniversaire de l'autonomie finlandaise »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4090/1400.jpg?v=50a276432d8e8d3f",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/74-finland-2009-200-years-of-finnish-autonomy"
+    }
   },
   {
     "id": "fi-2e-2010-d-cret-mon-taire-de-1860",
@@ -1808,7 +1960,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2010) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Décret monétaire de 1860 »"
+    "nom": "2€ « Décret monétaire de 1860 »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4098/1400.jpg?v=61a6aa53b3d58493",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/87-finland-2010-150-years-finnish-mint"
+    }
   },
   {
     "id": "fi-2e-2011-200e-anniversaire-de-la-banq",
@@ -1834,7 +1992,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2011) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 200e anniversaire de la Banque de Finlande »"
+    "nom": "2€ « 200e anniversaire de la Banque de Finlande »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4123/1400.jpg?v=56ee8018cc44c584",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/102-finland-2011-200-years-of-the-bank-of-finland"
+    }
   },
   {
     "id": "fi-2e-2012-10-ans-des-billets-et-pi-ces",
@@ -1860,7 +2024,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2012) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10 ans des billets et pièces en euros »"
+    "nom": "2€ « 10 ans des billets et pièces en euros »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4138/1400.jpg?v=72f1c079d471371e",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/108-finland-2012-10-years-of-euro-cash"
+    }
   },
   {
     "id": "fi-2e-2012-2-150e-anniversaire-de-la-nais",
@@ -1886,7 +2056,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2012) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 150e anniversaire de la naissance de Helene Schjerfbeck »"
+    "nom": "2€ « 150e anniversaire de la naissance de Helene Schjerfbeck »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4179/1400.jpg?v=73918e4835eb072c",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/130-finland-2012-150th-birthday-of-helene-schjerfbeck"
+    }
   },
   {
     "id": "fi-2e-2013-la-di-te-de-1863",
@@ -1912,7 +2088,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2013) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « La Diète de 1863 »"
+    "nom": "2€ « La Diète de 1863 »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4216/1400.jpg?v=1cbbd5f03061e4a7",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/149-finland-2013-the-landtag-of-1863"
+    }
   },
   {
     "id": "fi-2e-2013-2-125e-anniversaire-de-la-nais",
@@ -1938,7 +2120,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2013) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 125e anniversaire de la naissance de F. E. Sillanpää »"
+    "nom": "2€ « 125e anniversaire de la naissance de F. E. Sillanpää »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4218/1400.jpg?v=03f7c8e209b2c042",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/156-finland-2013-125th-birthday-of-nobel-prize-winner-frans"
+    }
   },
   {
     "id": "fi-2e-2014-ilmari-tapiovaara",
@@ -1964,7 +2152,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2014) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Ilmari Tapiovaara »"
+    "nom": "2€ « Ilmari Tapiovaara »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4254/1400.jpg?v=47fa0c16e20c62ce",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/180-finland-2014-100th-birthday-of-ilmari-tapiovaara"
+    }
   },
   {
     "id": "fi-2e-2014-2-100-ans-de-la-naissance-de-t",
@@ -1990,7 +2184,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2014) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 100 ans de la naissance de Tove Jansson »"
+    "nom": "2€ « 100 ans de la naissance de Tove Jansson »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4252/1400.jpg?v=a598d2455263a59a",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/168-finland-2014-100th-birthday-of-tove-jansson"
+    }
   },
   {
     "id": "fi-2e-2015-30e-anniversaire-du-drapeau-",
@@ -2016,7 +2216,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2015) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 30e anniversaire du drapeau européen »"
+    "nom": "2€ « 30e anniversaire du drapeau européen »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4339/1400.jpg?v=fec7e4169d2d4957",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/214-finland-2015-30-years-of-the-european-flag"
+    }
   },
   {
     "id": "fi-2e-2015-2-150e-anniversaire-de-la-nais",
@@ -2042,7 +2248,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2015) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 150e anniversaire de la naissance d'Akseli Gallen-Kallela »"
+    "nom": "2€ « 150e anniversaire de la naissance d'Akseli Gallen-Kallela »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4373/1400.jpg?v=ed6608bb16eb5cfc",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/204-finland-2015-150th-birthday-of-akseli-gallen-kallela"
+    }
   },
   {
     "id": "fi-2e-2015-3-150-ans-de-la-naissance-de-j",
@@ -2068,7 +2280,13 @@
     "rarete": "commune",
     "explication": "Cette pièce de Finlande (2015) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 150 ans de la naissance de Jean Sibelius »"
+    "nom": "2€ « 150 ans de la naissance de Jean Sibelius »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4311/1400.jpg?v=1414cb84956addf1",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/190-finland-2015-150th-anniversary-of-the-birth-of-jean-sibelius"
+    }
   },
   {
     "id": "fi-2e-2016-georg-henrik-von-wright",
@@ -2094,7 +2312,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2016) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Georg Henrik von Wright »"
+    "nom": "2€ « Georg Henrik von Wright »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4459/1400.jpg?v=71fb0196f21d3dee",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/257-finland-2016-100th-birthday-of-georg-henrik-von-wright"
+    }
   },
   {
     "id": "fi-2e-2016-2-eino-leino",
@@ -2120,7 +2344,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2016) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Eino Leino »"
+    "nom": "2€ « Eino Leino »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4451/1400.jpg?v=d307b413a7aa42a7",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/241-finland-2016-90th-anniversary-of-the-death-of-eino-leino"
+    }
   },
   {
     "id": "fi-2e-2017-la-nature-finlandaise",
@@ -2146,7 +2376,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2017) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « La nature finlandaise »"
+    "nom": "2€ « La nature finlandaise »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4494/1400.jpg?v=e8ff6bb16d48b9f0",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/286-finland-2017-finnish-nature"
+    }
   },
   {
     "id": "fi-2e-2017-2-100-ans-de-l-ind-pendance-de",
@@ -2172,7 +2408,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Finlande (2017) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 100 ans de l'indépendance de la Finlande »"
+    "nom": "2€ « 100 ans de l'indépendance de la Finlande »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4492/1400.jpg?v=f5781c83599c00d1",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/274-finland-2017-100-years-of-independence"
+    }
   },
   {
     "id": "fi-2e-2018-le-sauna-finlandais",
@@ -2198,7 +2440,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2018) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Le sauna finlandais »"
+    "nom": "2€ « Le sauna finlandais »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4620/1400.jpg?v=75bc3151ea4aca1e",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/327-finland-2018-finnish-sauna-culture"
+    }
   },
   {
     "id": "fi-2e-2018-2-parc-national-de-koli",
@@ -2224,7 +2472,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Finlande (2018) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Parc national de Koli »"
+    "nom": "2€ « Parc national de Koli »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4608/1400.jpg?v=29eb43c18dead72e",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/314-finland-2018-finnish-landscape-koli"
+    }
   },
   {
     "id": "fr-2e-2007-50e-anniversaire-du-trait-de",
@@ -3300,7 +3554,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Irlande (2009) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10e anniversaire de l'UEM »"
+    "nom": "2€ « 10e anniversaire de l'UEM »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4076/1400.jpg?v=db781c095dd0471f",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/57-ireland-2009-10-years-wwu"
+    }
   },
   {
     "id": "ie-2e-2012-10-ans-des-billets-et-pi-ces",
@@ -3326,7 +3586,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Irlande (2012) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 10 ans des billets et pièces en euros »"
+    "nom": "2€ « 10 ans des billets et pièces en euros »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4166/1400.jpg?v=240cc310caf6a97b",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/111-ireland-2012-10-years-of-euro-cash"
+    }
   },
   {
     "id": "ie-2e-2015-30e-anniversaire-du-drapeau-",
@@ -3352,7 +3618,13 @@
     "rarete": "recherchee",
     "explication": "Cette pièce de Irlande (2015) affiche un tirage compris entre 500 000 et 1,5 million d'exemplaires, sensiblement inférieur à la moyenne des 2€ commémoratives, ce qui en fait une pièce plus disputée par les collectionneurs qui visent une série complète. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « 30e anniversaire du drapeau européen »"
+    "nom": "2€ « 30e anniversaire du drapeau européen »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4351/1400.jpg?v=94b68e05577c490b",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/217-ireland-2015-30-years-of-the-eu-flag"
+    }
   },
   {
     "id": "ie-2e-2016-centenaire-de-l-insurrection",
@@ -3378,7 +3650,13 @@
     "rarete": "peu-commune",
     "explication": "Cette pièce de Irlande (2016) affiche un tirage compris entre 1,5 et 5 millions d'exemplaires, un niveau courant pour une 2€ commémorative mais qui limite tout de même sa disponibilité par rapport aux pièces de circulation ordinaires. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
     "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
-    "nom": "2€ « Centenaire de l'insurrection de Pâques 1916 »"
+    "nom": "2€ « Centenaire de l'insurrection de Pâques 1916 »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4431/1400.jpg?v=9fd2313981b2510d",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/234-ireland-2016-100-years-easter-rising-1916"
+    }
   },
   {
     "id": "it-2e-2004-50-ans-du-programme-alimenta",
@@ -5230,7 +5508,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2006) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Le Holstentor à Lübeck (Schleswig-Holstein) »"
+    "nom": "2€ « Le Holstentor à Lübeck (Schleswig-Holstein) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4268/1400.jpg?v=a27ecd2ff1171943",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/15-germany-2006-schleswig-holstein-holstentor"
+    }
   },
   {
     "id": "de-2e-2007-50e-anniversaire-du-trait-de",
@@ -5289,7 +5573,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2007) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Mecklembourg-Poméranie-Occidentale — Château de Schwerin »"
+    "nom": "2€ « Mecklembourg-Poméranie-Occidentale — Château de Schwerin »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9320/1400.jpg?v=13811dd3ab17dfbb",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/23-germany-2007-mecklenburg-western-pomerania-schwerin-palace"
+    }
   },
   {
     "id": "de-2e-2008-l-glise-saint-michel-de-hamb",
@@ -5315,7 +5605,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2008) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « L'église Saint-Michel de Hambourg (Sankt Michaeliskirche) »"
+    "nom": "2€ « L'église Saint-Michel de Hambourg (Sankt Michaeliskirche) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9322/1400.jpg?v=2496528aa00ec13e",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/42-germany-2008-hamburg-st-michael-s-church"
+    }
   },
   {
     "id": "de-2e-2009-10e-anniversaire-de-l-uem-et",
@@ -5341,7 +5637,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2009) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « 10e anniversaire de l'UEM et de la naissance de l'euro »"
+    "nom": "2€ « 10e anniversaire de l'UEM et de la naissance de l'euro »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4272/1400.jpg?v=f061eef3e559f045",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/53-germany-2009-10-years-of-emu"
+    }
   },
   {
     "id": "de-2e-2009-2-la-ludwigskirche-de-sarrebru",
@@ -5367,7 +5669,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2009) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « La Ludwigskirche de Sarrebruck (Sarre) »"
+    "nom": "2€ « La Ludwigskirche de Sarrebruck (Sarre) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9324/1400.jpg?v=2da0e7cf0e7a5434",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/69-germany-2009-saarland-ludwigskirche"
+    }
   },
   {
     "id": "de-2e-2010-l-h-tel-de-ville-et-le-rolan",
@@ -5393,7 +5701,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2010) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « L'hôtel de ville et le Roland de Brême »"
+    "nom": "2€ « L'hôtel de ville et le Roland de Brême »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9326/1400.jpg?v=0685fc4d09694788",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/78-germany-2010-bremen-rathaus-with-roland"
+    }
   },
   {
     "id": "de-2e-2011-la-cath-drale-de-cologne-rh-",
@@ -5419,7 +5733,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2011) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « La cathédrale de Cologne (Rhénanie-du-Nord-Westphalie) »"
+    "nom": "2€ « La cathédrale de Cologne (Rhénanie-du-Nord-Westphalie) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9128/1400.jpg?v=bb654ff73a3a974c",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/91-germany-2011-north-rhine-westphalia-cologne-cathedral"
+    }
   },
   {
     "id": "de-2e-2012-le-ch-teau-de-neuschwanstein",
@@ -5445,7 +5765,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2012) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Le château de Neuschwanstein (Bavière) »"
+    "nom": "2€ « Le château de Neuschwanstein (Bavière) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9112/1400.jpg?v=89f40e7894873acc",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/124-germany-2012-bavaria-schloss-neuschwanstein"
+    }
   },
   {
     "id": "de-2e-2012-2-10-ans-des-billets-et-pi-ces",
@@ -5471,7 +5797,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2012) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « 10 ans des billets et pièces en euros »"
+    "nom": "2€ « 10 ans des billets et pièces en euros »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9117/1400.jpg?v=5bc06cbf8fd3e44f",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/106-germany-2012-10-years-of-euro-cash"
+    }
   },
   {
     "id": "de-2e-2013-l-abbaye-de-maulbronn-bade-w",
@@ -5497,7 +5829,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2013) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « L'abbaye de Maulbronn (Bade-Wurtemberg) »"
+    "nom": "2€ « L'abbaye de Maulbronn (Bade-Wurtemberg) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9083/1400.jpg?v=5ee1f7a98b0ca956",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/137-germany-2013-baden-wuerttemberg-schloss-maulbronn"
+    }
   },
   {
     "id": "de-2e-2013-2-50-ans-de-l-amiti-franco-all",
@@ -5556,7 +5894,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2014) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « L'église Saint-Michel (série des Länder) »"
+    "nom": "2€ « L'église Saint-Michel (série des Länder) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4240/1400.jpg?v=4ed38d58cf53d2eb",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/159-germany-2014-lower-saxony-st-michaeliskirche-zu-hildesheim"
+    }
   },
   {
     "id": "de-2e-2015-la-paulskirche-de-francfort-",
@@ -5582,7 +5926,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2015) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « La Paulskirche de Francfort (Hesse) »"
+    "nom": "2€ « La Paulskirche de Francfort (Hesse) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4309/1400.jpg?v=5278c2464a221d66",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/185-germany-2015-hesse-frankfurter-paulskirche"
+    }
   },
   {
     "id": "de-2e-2015-2-25-ans-de-la-r-unification-a",
@@ -5608,7 +5958,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2015) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « 25 ans de la réunification allemande »"
+    "nom": "2€ « 25 ans de la réunification allemande »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4321/1400.jpg?v=2db662a69de9ea87",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/186-germany-2015-25-years-of-german-unity"
+    }
   },
   {
     "id": "de-2e-2015-3-30e-anniversaire-du-drapeau-",
@@ -5634,7 +5990,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2015) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « 30e anniversaire du drapeau européen »"
+    "nom": "2€ « 30e anniversaire du drapeau européen »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4345/1400.jpg?v=4428e4cbee83a9dc",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/212-germany-2015-30-years-of-the-eu-flag"
+    }
   },
   {
     "id": "de-2e-2016-le-palais-du-zwinger-dresde-",
@@ -5660,7 +6022,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2016) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Le palais du Zwinger à Dresde (Saxe) »"
+    "nom": "2€ « Le palais du Zwinger à Dresde (Saxe) »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4399/1400.jpg?v=57d76038cd755017",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/235-germany-2016-saxony-dresdner-zwinger"
+    }
   },
   {
     "id": "de-2e-2017-rh-nanie-palatinat-la-porta-",
@@ -5686,7 +6054,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2017) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Rhénanie-Palatinat : la Porta Nigra de Trèves »"
+    "nom": "2€ « Rhénanie-Palatinat : la Porta Nigra de Trèves »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4475/1400.jpg?v=69cbb45dbd3a6bfd",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/267-germany-2017-rhineland-palatinate-porta-nigra-in-trier"
+    }
   },
   {
     "id": "de-2e-2018-helmut-schmidt",
@@ -5712,7 +6086,13 @@
     "rarete": "commune",
     "explication": "Cette pièce allemande (2018) affiche un tirage supérieur à 5 millions d'exemplaires, ce qui en fait une pièce très largement disponible sur le marché des collectionneurs, le tirage total étant réparti entre les 5 ateliers monétaires du pays. Les commémoratives allemandes comptent structurellement parmi les plus abondantes de la zone euro : l'Allemagne, plus grande économie de la zone euro, en frappe généralement 30 millions d'exemplaires par millésime (contre quelques centaines de milliers à quelques millions pour la plupart des autres pays), ce qui explique leur faible cote de rareté malgré leur intérêt historique ou thématique. L'exception notable est le tirage 2013 (traité de l'Élysée), près de trois fois plus faible que la moyenne allemande, sans toutefois devenir rare au sens numismatique.",
     "source": "fleur-de-coin.com (mintages officiels par atelier), Numista",
-    "nom": "2€ « Helmut Schmidt »"
+    "nom": "2€ « Helmut Schmidt »",
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/4549/1400.jpg?v=30dff47c68884d28",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/301-germany-2018-100th-birthday-of-helmut-schmidt"
+    }
   },
   {
     "id": "de-2008-hambourg-erreur-carte-ancienne",
@@ -5744,6 +6124,12 @@
       "observation": "Les exemplaires identifiés avec l'ancienne carte (atelier F / Stuttgart) se négocient généralement avec une prime de quelques euros à quelques dizaines d'euros au-dessus de la valeur faciale sur les plateformes spécialisées, très inférieure aux tirages volontairement limités des micro-États.",
       "avertissement": "Cette variante nécessite une identification précise (lettre F + ancienne carte) : sans cette confirmation, la pièce ne vaut que sa valeur faciale.",
       "date_recherche": "septembre 2026"
+    },
+    "photo": {
+      "recto": "https://2euro.emuenzen.de/media/9322/1400.jpg?v=2496528aa00ec13e",
+      "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
+      "source_name": "2euro.emuenzen.de",
+      "source_url": "https://2euro.emuenzen.de/en/coins/42-germany-2008-hamburg-st-michael-s-church"
     }
   }
 ]
