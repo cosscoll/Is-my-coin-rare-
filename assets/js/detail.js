@@ -365,10 +365,12 @@ function renderSpecimenFrame(item) {
 }
 
 async function boot() {
-  const type = qs('type') === 'billet' ? 'billet' : 'piece';
-  const id = qs('id');
-  const dataPath = type === 'piece' ? 'data/pieces.json' : 'data/billets.json';
-  const listPage = type === 'piece' ? 'pieces.html' : 'billets.html';
+  const staticType = document.body?.dataset?.type;
+  const type = staticType ? (staticType === 'billet' ? 'billet' : 'piece') : (qs('type') === 'billet' ? 'billet' : 'piece');
+  const id = document.body?.dataset?.id || qs('id');
+  const base = siteBase();
+  const dataPath = base + (type === 'piece' ? 'data/pieces.json' : 'data/billets.json');
+  const listPage = base + (type === 'piece' ? 'pieces.html' : 'billets.html');
   const listLabel = type === 'piece' ? 'Pièces' : 'Billets';
 
   renderHUD(type === 'piece' ? 'pieces' : 'billets', { label: listLabel, href: listPage });
