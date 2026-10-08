@@ -213,6 +213,25 @@ function getResaleEstimate(item) {
     };
   }
   if (BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id]) return BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id];
+  if (isBanknoteItem(item)) {
+    const face = Number(String(item.valeur || '').replace(/[^0-9]/g, '')) || 0;
+    if (face > 0) {
+      return {
+        headline: `En général proche de ${face} €`,
+        circulated: `Le plus souvent autour de la valeur faciale (${face} €), sauf variante identifiable`,
+        unc: 'Une prime peut apparaître en UNC selon signature, préfixe, imprimeur ou numéro de série',
+        collector: 'Une combinaison rare, un numéro spécial ou une erreur authentifiée doit être évalué séparément.',
+        basis: 'Estimation générique d’un billet standard : comparer une variante strictement identique avant de conclure.'
+      };
+    }
+    return {
+      headline: 'Valeur faciale + prime éventuelle',
+      circulated: 'Le plus souvent proche de la valeur faciale de la coupure concernée',
+      unc: 'Une prime peut apparaître en UNC selon signature, préfixe, imprimeur ou numéro de série',
+      collector: 'La valeur dépend de la coupure et de la combinaison exacte des caractéristiques.',
+      basis: 'Estimation générique : la coupure et la variante exacte doivent être identifiées avant toute cote.'
+    };
+  }
   if (MARKET_ESTIMATE_OVERRIDES[item.id]) return MARKET_ESTIMATE_OVERRIDES[item.id];
 
   const base = {
