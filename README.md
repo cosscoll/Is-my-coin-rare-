@@ -19,9 +19,10 @@ Les niveaux de rareté, les fourchettes de valeur et les explications présenté
 /pieces.html              Liste filtrable des pièces + assistant d'identification
 /billets.html             Liste filtrable des billets + assistant d'identification
 /detail.html               Compatibilité avec les anciennes URL paramétrées (noindex)
-/pieces/<id>.html           Pages SEO statiques et indexables des 204 fiches pièces
+/pieces/<id>.html           Pages SEO statiques et indexables générées depuis data/pieces.json
 /billets/<id>.html          Pages SEO statiques et indexables des fiches billets
 /pays/<pays>.html           Pages pays pour le maillage interne
+/annees/<annee>.html        Pages année générées pour le maillage et le SEO
 /guides/                    Guides éditoriaux
 /methodologie.html          Méthode de rareté et d'estimation
 /sources.html               Sources institutionnelles et marché
@@ -54,7 +55,7 @@ Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
 
 S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
 
-Le catalogue couvre désormais les séries nationales de 2€ des 25 juridictions émettrices actuellement concernées, mais il ne couvre pas encore chaque émission commémorative individuellement. La principale lacune restante concerne les émissions 2026 encore insuffisamment publiées/indexées par les sources officielles et quelques commémoratives 2019–2025 que les recherches officielles peuvent encore manquer. Les ajouts sont faits uniquement à partir de fiches officielles ou de sources numismatiques recoupées.
+Le catalogue couvre désormais les séries nationales de 2€ des 25 juridictions émettrices et un large corpus de commémoratives officiellement vérifiées jusqu’en 2025. La collecte officielle de la Commission européenne utilisée le 8 octobre 2026 n’a identifié aucune commémorative disposant déjà d’une date d’émission 2026 exploitable. Les émissions 2026 ne sont donc ajoutées qu’au fur et à mesure de leur publication officielle.
 
 ## Photos des pièces
 
@@ -120,3 +121,5 @@ npm run validate
 `npm run build` régénère les pages SEO, les pages pays, les compteurs de catalogue et le sitemap à partir des fichiers JSON.
 
 Le workflow GitHub Actions `.github/workflows/validate.yml` exécute `npm run validate` à chaque push ou pull request afin de détecter les IDs dupliqués, champs manquants, pages SEO ou pages pays absentes, canonical incorrects, photos incomplètes, incohérences de sitemap/robots, liens manquants du guide rareté et erreurs de syntaxe JavaScript. `npm run check:generated` reste disponible localement pour comparer les sorties du générateur.
+
+Les pages pays et pages année sont elles aussi régénérées automatiquement par `npm run build` et ajoutées au sitemap.
