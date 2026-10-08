@@ -123,6 +123,36 @@ function countryPage(country) {
 </body></html>`;
 }
 
+
+function rareGuidePage() {
+  const rank = { 'tres-rare': 2, rare: 1 };
+  const rare = pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete))
+    .sort((a,b) => (rank[b.rarete] - rank[a.rarete]) ||
+      ((a.tirage_nombre ?? Number.MAX_SAFE_INTEGER) - (b.tirage_nombre ?? Number.MAX_SAFE_INTEGER)) ||
+      a.pays.localeCompare(b.pays, 'fr'));
+  const cards = rare.map(x => `<article class="rare-list-item card">
+<div><strong><a href="../pieces/${esc(x.id)}.html">${esc(x.nom || `${x.valeur} ${x.pays} ${x.annees}`)}</a></strong>
+<p>${esc(x.pays)} · ${esc(x.annees)} · ${esc(x.tirage)}</p></div>
+<span class="rarete-badge ${esc(x.rarete)}">${x.rarete === 'tres-rare' ? 'Très rare' : 'Rare'}</span>
+</article>`).join('\n');
+  return `<!DOCTYPE html><html lang="fr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pièces de 2 euros rares : sélection du catalogue | EuroRare</title>
+<meta name="description" content="Découvrez les pièces de 2 euros classées rares ou très rares dans le catalogue EuroRare, avec tirage, année, pays et fiche détaillée.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="${site}guides/pieces-2-euros-rares.html">
+<link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="../assets/css/style.css">
+</head><body data-base="../"><div id="hud-root"></div>
+<main class="wrap editorial-page"><article class="editorial-prose">
+<h1>Pièces de 2 euros rares dans le catalogue EuroRare</h1>
+<p>Cette sélection est générée automatiquement depuis les fiches actuellement classées <strong>Rare</strong> ou <strong>Très rare</strong> dans EuroRare. Elle reflète le catalogue vérifié disponible, sans prétendre qu’un faible tirage suffit à déterminer le prix.</p>
+<div class="editorial-note">Un faible tirage n’est pas synonyme de prix élevé. L’état, la demande, la présentation officielle et les transactions réellement conclues doivent toujours être vérifiés.</div>
+<h2>${rare.length} fiches actuellement classées Rare ou Très rare</h2>
+<div class="rare-list">${cards}</div>
+</article></main><div id="footer-root"></div>
+<script src="../assets/js/main.js"></script><script>renderHUD(null,{label:'Guides',href:'index.html'});renderFooter();</script>
+</body></html>`;
+}
+
 function syncCatalogueShells(countries) {
   const countryLinks = '<nav class="country-links" aria-label="Parcourir par pays">' +
     countries.map(country => '<a class="chip" href="pays/' + slug(country) + '.html">' + esc(country) + '</a>').join('') +
@@ -152,6 +182,7 @@ for (const item of billets) write(`billets/${item.id}.html`, banknotePage(item))
 const countries = [...new Set(pieces.map(x => x.pays))].sort((a,b) => a.localeCompare(b, 'fr'));
 for (const country of countries) write(`pays/${slug(country)}.html`, countryPage(country));
 syncCatalogueShells(countries);
+write('guides/pieces-2-euros-rares.html', rareGuidePage());
 
 const fixed = [
   '', 'pieces.html', 'billets.html', 'methodologie.html', 'sources.html', 'confidentialite.html',

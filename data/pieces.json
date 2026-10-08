@@ -519,15 +519,19 @@
     ],
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2022) affiche un tirage compris entre 50 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
-    "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
+    "source": "Commission européenne — La légende de Charlemagne",
     "nom": "2€ « La légende de Charlemagne »",
     "photo": {
-      "recto": "https://www.electacollections.com/Images/Products/Andorra-2-Euro-2022-Legend-of-Charlemagne-1_1.jpg",
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/embed_medium/public/2023-04/Andorra%20-%202%20euro%20commemorative%20coin%202022%20-%20the%20legend%20of%20Charlemagne.jpg?itok=cw1jMAlR",
       "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
-      "source_name": "Electa Collections",
-      "source_url": "https://www.electacollections.com/en/product/3257461/EURO-COINS-2-Euro-coins/Andorra-2-Euro-the-Legend-of-Charlemagne-2022/"
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/legend-charlemagne_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
     },
-    "tirage_nombre": 70000
+    "tirage_nombre": 70000,
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/legend-charlemagne_en",
+    "date_emission": "Last quarter of 2022"
   },
   {
     "id": "ad-2e-2022-2-10-ans-de-l-accord-mon-taire",
@@ -552,15 +556,19 @@
     ],
     "rarete": "rare",
     "explication": "Cette pièce de Andorre (2022) affiche un tirage compris entre 50 000 et 300 000 exemplaires, un niveau nettement inférieur à la moyenne des 2€ commémoratives. Pour les 2€ commémoratives, le tirage officiel — publié par la banque centrale ou l'atelier monétaire émetteur — reste l'indicateur le plus fiable de la rareté relative d'une pièce, bien plus que pour les pièces de circulation courante (1c à 1€) qui ne sont pratiquement jamais recherchées individuellement. La demande réelle des collectionneurs, qui dépend aussi de la popularité du thème et de l'état de conservation, peut toutefois faire varier la cote au-delà de ce que le tirage seul suggère.",
-    "source": "fleur-de-coin.com (mintages officiels), recoupé avec Numista et euro-coins.tv",
+    "source": "Commission européenne — 10 ans de l'accord monétaire avec l'UE",
     "nom": "2€ « 10 ans de l'accord monétaire avec l'UE »",
     "photo": {
-      "recto": "https://www.laposte.fr/ecom/occ/ecommerce/medias/sys_master/productsmedias/h5b/h84/10577679351838/mp-600021173_media1/mp-600021173_media1.jpg_1200Wx1200H",
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/embed_medium/public/2023-04/Andorra%20-%202%20euro%20commemorative%20coin%202022%20-%2010%20years%20entry%20into%20force%20Monetary%20Agreement.png?itok=AOc9h4zH",
       "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
-      "source_name": "La Poste",
-      "source_url": "https://www.laposte.fr/boutique/piece-de-monnaie-2-euro-commemorative-andorre-2022-bu-accord-monetaire-entre-lunion-europeenne-et-la-principaute/p/mp-600021173"
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/10-years-entry-force-monetary-agreement-between-andorra-and-european-union_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
     },
-    "tirage_nombre": 70000
+    "tirage_nombre": 70000,
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/10-years-entry-force-monetary-agreement-between-andorra-and-european-union_en",
+    "date_emission": "Last quarter of 2022"
   },
   {
     "id": "at-2e-2005-50e-anniversaire-du-trait-d-",
@@ -13342,5 +13350,423 @@
     "tirage_nombre": 145000,
     "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/maltese-ox-il-gendus-malti_en",
     "sujet_original": "Maltese ox ( _il-gendus Malti_)"
+  },
+  {
+    "id": "finlande-2e-2020-universities-and-society-university-of-turku-100-years",
+    "pays": "Finlande",
+    "valeur": "2€",
+    "annees": "2020",
+    "nom": "2€ « Universités et société – 100 ans de l’Université de Turku »",
+    "categorie": "commemorative",
+    "tirage": "800 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "Universités et société – 100 ans de l’Université de Turku"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2020-05-04"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "800 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Finlande, émise en 2020, compte 800 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — Universités et société – 100 ans de l’Université de Turku",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/universities-and-society-university-turku-100-years_en",
+    "date_emission": "2020-05-04",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/finnish_commemorative_coin_for_2020_-_design.jpg?itok=fhlrdWbP",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/universities-and-society-university-turku-100-years_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 800000,
+    "sujet_original": "Universities and society – University of Turku 100 years"
+  },
+  {
+    "id": "france-2e-2020-charles-de-gaulle",
+    "pays": "France",
+    "valeur": "2€",
+    "annees": "2020",
+    "nom": "2€ « Charles de Gaulle »",
+    "categorie": "commemorative",
+    "tirage": "18 061 940 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "Charles de Gaulle"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2020-06-18"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "18 061 940 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Cette émission commémorative officielle de France, émise en 2020, compte 18 061 940 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Commune ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — Charles de Gaulle",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/charles-de-gaulle_en",
+    "date_emission": "2020-06-18",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/charles_de_gaulle_2020.jpg?itok=gQzevWZI",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/charles-de-gaulle_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 18061940,
+    "sujet_original": "Charles de Gaulle"
+  },
+  {
+    "id": "grece-2e-2020-2-500-years-since-the-battle-of-thermopylae",
+    "pays": "Grèce",
+    "valeur": "2€",
+    "annees": "2020",
+    "nom": "2€ « 2 500 ans de la bataille des Thermopyles »",
+    "categorie": "commemorative",
+    "tirage": "750 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "2 500 ans de la bataille des Thermopyles"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2020-01-02"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "750 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Grèce, émise en 2020, compte 750 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — 2 500 ans de la bataille des Thermopyles",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/2-500-years-battle-thermopylae_en",
+    "date_emission": "2020-01-02",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/thermopylae.jpg?itok=A2jCn7jR",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/2-500-years-battle-thermopylae_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 750000,
+    "sujet_original": "2 500 years since the Battle of Thermopylae"
+  },
+  {
+    "id": "lituanie-2e-2020-aukstaitija-from-the-series-lithuanian-etnographic-regions",
+    "pays": "Lituanie",
+    "valeur": "2€",
+    "annees": "2020",
+    "nom": "2€ « Aukštaitija (de la série des régions ethnographiques lituaniennes) »",
+    "categorie": "commemorative",
+    "tirage": "500 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "Aukštaitija (de la série des régions ethnographiques lituaniennes)"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2020-03-03"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "500 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Lituanie, émise en 2020, compte 500 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — Aukštaitija (de la série des régions ethnographiques lituaniennes)",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/aukstaitija-series-lithuanian-etnographic-regions_en",
+    "date_emission": "2020-03-03",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-03/lt_etnographic-regions.jpg?itok=INRhWxe2",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/aukstaitija-series-lithuanian-etnographic-regions_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 500000,
+    "sujet_original": "Aukštaitija (from the series Lithuanian Etnographic Regions)"
+  },
+  {
+    "id": "finlande-2e-2021-journalism-and-open-communication-supporting-the-finnish-democracy",
+    "pays": "Finlande",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « Journalisme et communication ouverte au service de la démocratie finlandaise »",
+    "categorie": "commemorative",
+    "tirage": "800 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "Journalisme et communication ouverte au service de la démocratie finlandaise"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-03-21"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "800 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Finlande, émise en 2021, compte 800 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — Journalisme et communication ouverte au service de la démocratie finlandaise",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/journalism-and-open-communication-supporting-finnish-democracy_en",
+    "date_emission": "2021-03-21",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/fi_2021_2e_journalism.jpg?itok=3ibtX8D6",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/journalism-and-open-communication-supporting-finnish-democracy_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 800000,
+    "sujet_original": "Journalism and Open Communication Supporting the Finnish Democracy"
+  },
+  {
+    "id": "finlande-2e-2021-the-100-year-autonomy-of-aland",
+    "pays": "Finlande",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « Les 100 ans d’autonomie des îles Åland »",
+    "categorie": "commemorative",
+    "tirage": "800 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "Les 100 ans d’autonomie des îles Åland"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-10-21"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "800 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Finlande, émise en 2021, compte 800 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — Les 100 ans d’autonomie des îles Åland",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100-year-autonomy-aland_en",
+    "date_emission": "2021-10-21",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/2021_2e_fi_ahvenanmaan_itsehallinto_100v_eu_002.jpg?itok=nEJhE7XU",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100-year-autonomy-aland_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 800000,
+    "sujet_original": "The 100-year autonomy of Åland"
+  },
+  {
+    "id": "grece-2e-2021-200-years-since-the-greek-revolution",
+    "pays": "Grèce",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « 200 ans de la Révolution grecque »",
+    "categorie": "commemorative",
+    "tirage": "1 500 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "200 ans de la Révolution grecque"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-03-22"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "1 500 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "peu-commune",
+    "explication": "Cette émission commémorative officielle de Grèce, émise en 2021, compte 1 500 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Peu commune ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — 200 ans de la Révolution grecque",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/200-years-greek-revolution_en",
+    "date_emission": "2021-03-22",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/2_euro_2021_greece_1.jpg?itok=QQitemxO",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/200-years-greek-revolution_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 1500000,
+    "sujet_original": "200 years since the Greek Revolution"
+  },
+  {
+    "id": "slovenie-2e-2021-the-200th-anniversary-of-the-establishment-of-provincial-museum-for-carniola",
+    "pays": "Slovénie",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « 200e anniversaire de la création du Musée provincial de Carniole, premier musée de Slovénie »",
+    "categorie": "commemorative",
+    "tirage": "1 000 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "200e anniversaire de la création du Musée provincial de Carniole, premier musée de Slovénie"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-10-01"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "1 000 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Slovénie, émise en 2021, compte 1 000 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — 200e anniversaire de la création du Musée provincial de Carniole, premier musée de Slovénie",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/200th-anniversary-establishment-provincial-museum-carniola-first-museum-slovenia_en",
+    "date_emission": "2021-10-01",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/si_2021_carniola-new.jpg?itok=6jQV5Kg6",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/200th-anniversary-establishment-provincial-museum-carniola-first-museum-slovenia_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 1000000,
+    "sujet_original": "The 200th anniversary of the establishment of Provincial Museum for Carniola, the first museum in Slovenia"
+  },
+  {
+    "id": "espagne-2e-2021-unesco-toledo",
+    "pays": "Espagne",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « UNESCO – Tolède »",
+    "categorie": "commemorative",
+    "tirage": "400 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "UNESCO – Tolède"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-03-22"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "400 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "recherchee",
+    "explication": "Cette émission commémorative officielle de Espagne, émise en 2021, compte 400 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — UNESCO – Tolède",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/unesco-toledo_en",
+    "date_emission": "2021-03-22",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/2eu.1.toledo_2021.jpg?itok=HYxQC-dm",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/unesco-toledo_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 400000,
+    "sujet_original": "UNESCO - Toledo"
+  },
+  {
+    "id": "vatican-2e-2021-the-700th-anniversary-of-the-death-of-dante-alighieri",
+    "pays": "Vatican",
+    "valeur": "2€",
+    "annees": "2021",
+    "nom": "2€ « 700e anniversaire de la mort de Dante Alighieri »",
+    "categorie": "commemorative",
+    "tirage": "86 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "700e anniversaire de la mort de Dante Alighieri"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "2021-10-07"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "86 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "rare",
+    "explication": "Cette émission commémorative officielle de Vatican, émise en 2021, compte 86 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — 700e anniversaire de la mort de Dante Alighieri",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/700th-anniversary-death-dante-alighieri_en",
+    "date_emission": "2021-10-07",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-04/2_euro_2021_dante_alighieri_0.jpg?itok=_1vNUVBz",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/700th-anniversary-death-dante-alighieri_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 86000,
+    "sujet_original": "The 700th anniversary of the death of Dante Alighieri"
+  },
+  {
+    "id": "saint-marin-2e-2025-the-550th-anniversary-of-the-birth-of-michelangelo",
+    "pays": "Saint-Marin",
+    "valeur": "2€",
+    "annees": "2025",
+    "nom": "2€ « 550e anniversaire de la naissance de Michel-Ange »",
+    "categorie": "commemorative",
+    "tirage": "56 000 pièces (tirage officiel)",
+    "criteres": [
+      {
+        "titre": "Sujet commémoré",
+        "detail": "550e anniversaire de la naissance de Michel-Ange"
+      },
+      {
+        "titre": "Date d’émission officielle",
+        "detail": "July 2025"
+      },
+      {
+        "titre": "Tirage officiel",
+        "detail": "56 000 exemplaires selon la Commission européenne."
+      }
+    ],
+    "rarete": "rare",
+    "explication": "Cette émission commémorative officielle de Saint-Marin, émise en 2025, compte 56 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
+    "source": "Commission européenne — 550e anniversaire de la naissance de Michel-Ange",
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/550th-anniversary-birth-michelangelo-0_en",
+    "date_emission": "July 2025",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/embed_large/public/2026-06/RSM_2025_Michelangelo.jpg?itok=BfPrrPse",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/550th-anniversary-birth-michelangelo-0_en",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
+    },
+    "tirage_nombre": 56000,
+    "sujet_original": "The 550th anniversary of the birth of Michelangelo"
   }
 ]
