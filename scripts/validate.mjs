@@ -25,7 +25,17 @@ checkItems(billets, 'billet');
 
 for (const item of pieces) {
   if (!item.photo) errors.push(`piece ${item.id}: photo absente`);
-  else for (const k of ['recto','verso','source_url']) if (!item.photo[k]) errors.push(`piece ${item.id}: photo.${k} absent`);
+  else for (const k of ['recto','verso','source_url']) {
+    if (!item.photo[k]) errors.push(`piece ${item.id}: photo.${k} absent`);
+    else if (!/^https:\/\//.test(item.photo[k])) errors.push(`piece ${item.id}: photo.${k} doit être HTTPS`);
+  }
+  if (item.source_url && !/^https:\/\//.test(item.source_url)) errors.push(`piece ${item.id}: source_url doit être HTTPS`);
+}
+for (const item of billets) {
+  if (item.source_url && !/^https:\/\//.test(item.source_url)) errors.push(`billet ${item.id}: source_url doit être HTTPS`);
+  if (item.photo) for (const k of ['recto','verso','source_url']) {
+    if (item.photo[k] && !/^https:\/\//.test(item.photo[k])) errors.push(`billet ${item.id}: photo.${k} doit être HTTPS`);
+  }
 }
 
 for (const file of ['index.html','pieces.html','billets.html','robots.txt','sitemap.xml','404.html','favicon.svg','methodologie.html','sources.html','confidentialite.html']) {
@@ -43,6 +53,15 @@ for (const item of pieces) {
     const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/pieces/' + item.id + '.html';
     if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`piece ${item.id}: canonical absent ou incorrect`);
     if (!html.includes('<meta name="description"')) errors.push(`piece ${item.id}: meta description absente`);
+    const embedded = html.match(/<script type="application\/json" id="page-data">([\s\S]*?)<\/script>/);
+    if (!embedded) errors.push(`piece ${item.id}: page-data absent`);
+    else {
+      try {
+        const payload = JSON.parse(embedded[1]);
+        if (payload.item?.id !== item.id) errors.push(`piece ${item.id}: page-data incohérent`);
+        if (!Array.isArray(payload.related) || payload.related.length > 4) errors.push(`piece ${item.id}: recommandations embarquées invalides`);
+      } catch (_) { errors.push(`piece ${item.id}: page-data JSON invalide`); }
+    }
   }
 }
 for (const item of billets) {
@@ -53,6 +72,15 @@ for (const item of billets) {
     const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/billets/' + item.id + '.html';
     if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`billet ${item.id}: canonical absent ou incorrect`);
     if (!html.includes('<meta name="description"')) errors.push(`billet ${item.id}: meta description absente`);
+    const embedded = html.match(/<script type="application\/json" id="page-data">([\s\S]*?)<\/script>/);
+    if (!embedded) errors.push(`billet ${item.id}: page-data absent`);
+    else {
+      try {
+        const payload = JSON.parse(embedded[1]);
+        if (payload.item?.id !== item.id) errors.push(`billet ${item.id}: page-data incohérent`);
+        if (!Array.isArray(payload.related) || payload.related.length > 4) errors.push(`billet ${item.id}: recommandations embarquées invalides`);
+      } catch (_) { errors.push(`billet ${item.id}: page-data JSON invalide`); }
+    }
   }
 }
 
