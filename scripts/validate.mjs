@@ -71,6 +71,12 @@ if (!rareGuide.includes(`<h2>${rareCount} fiches actuellement classées Rare ou 
 if (sitemapUrlCount !== expectedSitemapUrls) errors.push(`sitemap: ${sitemapUrlCount} URL, attendu ${expectedSitemapUrls}`);
 
 for (const item of pieces) {
+  if (item.tirage_nombre !== undefined && (!Number.isInteger(item.tirage_nombre) || item.tirage_nombre < 0)) {
+    errors.push(`piece ${item.id}: tirage_nombre invalide`);
+  }
+  if (/^Commission européenne/.test(item.source || '') && !item.source_url) {
+    errors.push(`piece ${item.id}: source_url officielle absente`);
+  }
   const p = item.photo || {};
   for (const field of ['recto','verso','source_url']) {
     if (p[field] && !/^https:\/\//.test(p[field])) errors.push(`piece ${item.id}: photo.${field} doit utiliser HTTPS`);
