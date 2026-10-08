@@ -793,3 +793,10 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible, select:foc
   outline: 3px solid var(--oxblood);
   outline-offset: 3px;
 }
+
+.skip-link {
+  position: fixed; top: 6px; left: 8px; z-index: 1000;
+  padding: 8px 12px; background: var(--ink); color: var(--white);
+  transform: translateY(-150%); transition: transform .15s ease;
+}
+.skip-link:focus { transform: translateY(0); }
