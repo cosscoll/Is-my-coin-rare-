@@ -23,6 +23,7 @@
   --forest: #35563f;
   --forest-dim: rgba(53, 86, 63, 0.09);
   --brass: #9c7a2f;
+  --brass-text: #725619;
   --brass-dim: rgba(156, 122, 47, 0.13);
 
   --font-display: Georgia, 'Times New Roman', serif;
@@ -228,7 +229,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 .rarete[data-level="recherchee"] .pip  { background: var(--forest); }
 .rarete[data-level="rare"]        { color: var(--oxblood); border-color: rgba(138,51,36,0.45); background: var(--oxblood-dim); }
 .rarete[data-level="rare"] .pip   { background: var(--oxblood); }
-.rarete[data-level="tres-rare"]        { color: var(--brass); border-color: rgba(156,122,47,0.55); background: var(--brass-dim); }
+.rarete[data-level="tres-rare"]        { color: var(--brass-text); border-color: rgba(156,122,47,0.55); background: var(--brass-dim); }
 .rarete[data-level="tres-rare"] .pip   { background: var(--brass); }
 
 /* ---------------------------------------------------------
@@ -572,7 +573,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   display: flex; gap: 14px; align-items: flex-start;
 }
 .disclaimer-box .ico { font-size: 17px; flex-shrink: 0; margin-top: 1px; color: var(--brass); }
-.disclaimer-box h4 { font-size: 14px; color: var(--brass); margin-bottom: 6px; font-family: var(--font-body); font-weight: 600; }
+.disclaimer-box h4 { font-size: 14px; color: var(--brass-text); margin-bottom: 6px; font-family: var(--font-body); font-weight: 600; }
 .disclaimer-box p { font-size: 13.5px; color: var(--ink-dim); }
 
 .market-panel { padding: 22px; border-radius: var(--radius-lg); }
