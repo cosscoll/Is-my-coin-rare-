@@ -122,11 +122,35 @@ function countryPage(country) {
 </body></html>`;
 }
 
+function syncCatalogueShells(countries) {
+  const countryLinks = '<nav class="country-links" aria-label="Parcourir par pays">' +
+    countries.map(country => '<a class="chip" href="pays/' + slug(country) + '.html">' + esc(country) + '</a>').join('') +
+    '</nav>';
+
+  let piecesHtml = fs.readFileSync(path.join(root, 'pieces.html'), 'utf8');
+  piecesHtml = piecesHtml.replace(
+    /<meta name="description" content="Parcourez \d+ fiches de pièces en euro[^"]*">/,
+    '<meta name="description" content="Parcourez ' + pieces.length + ' fiches de pièces en euro avec photos, tirages, rareté, critères d’identification et estimations de revente.">'
+  );
+  if (/<nav class="country-links"[\s\S]*?<\/nav>/.test(piecesHtml)) {
+    piecesHtml = piecesHtml.replace(/<nav class="country-links"[\s\S]*?<\/nav>/, countryLinks);
+  }
+  write('pieces.html', piecesHtml);
+
+  let billetsHtml = fs.readFileSync(path.join(root, 'billets.html'), 'utf8');
+  billetsHtml = billetsHtml.replace(
+    /<meta name="description" content="Parcourez \d+ fiches de billets euro[^"]*">/,
+    '<meta name="description" content="Parcourez ' + billets.length + ' fiches de billets euro : coupures des deux séries, signatures, numéros, codes imprimeur, erreurs et estimations.">'
+  );
+  write('billets.html', billetsHtml);
+}
+
 for (const item of pieces) write(`pieces/${item.id}.html`, coinPage(item));
 for (const item of billets) write(`billets/${item.id}.html`, banknotePage(item));
 
 const countries = [...new Set(pieces.map(x => x.pays))].sort((a,b) => a.localeCompare(b, 'fr'));
 for (const country of countries) write(`pays/${slug(country)}.html`, countryPage(country));
+syncCatalogueShells(countries);
 
 const fixed = [
   '', 'pieces.html', 'billets.html', 'methodologie.html', 'sources.html', 'confidentialite.html',
