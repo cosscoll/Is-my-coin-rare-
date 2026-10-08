@@ -297,6 +297,8 @@ function renderMarketPanel(item) {
   const links = buildMarketLinks(item);
   const m = item.valeur_marche;
   const banknote = isBanknoteItem(item);
+  const specificallyChecked = !!MARKET_ESTIMATE_OVERRIDES[item.id] || !!BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id] || !!m;
+  const verificationLabel = specificallyChecked ? 'Vérifié : 8 oct. 2026' : 'Barème indicatif · comparer les ventes';
 
   return `
     <div class="card market-panel">
@@ -305,7 +307,7 @@ function renderMarketPanel(item) {
           <span class="market-kicker">Estimation de revente prudente</span>
           <strong class="market-price">${e.headline}</strong>
         </div>
-        <span class="market-date">Vérifié : 8 oct. 2026</span>
+        <span class="market-date">${verificationLabel}</span>
       </div>
 
       <div class="market-grid">
