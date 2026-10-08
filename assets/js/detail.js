@@ -258,14 +258,31 @@ function buildMarketLinks(item) {
   if (item.id === 'premiers-billets-serie-europa') directNumista = 'https://en.numista.com/201658';
   if (item.id === 'serie-2002-signature-duisenberg') directNumista = 'https://en.numista.com/201655';
 
+  let specialist = 'https://www.catawiki.com/fr/s?q=' + q;
+  let specialistLabel = 'Catawiki · enchères numismatiques';
+  if (item.id === 'billet-500e-retire') {
+    specialist = 'https://www.catawiki.com/en/l/106167885-european-union-6-x-500-euro-2002-duisenberg-trichet-no-reserve-price';
+    specialistLabel = 'Catawiki · vente réalisée : 6 × 500 €';
+  }
+  if (item.id === 'serie-2002-signature-duisenberg') {
+    specialist = 'https://www.catawiki.com/en/l/106266831-european-union-netherlands-5-10-20-and-50-euro-2002-duisenberg-pick-1p-2p-3p-4p';
+    specialistLabel = 'Catawiki · vente réalisée Duisenberg';
+  }
+  if (item.id === 'erreurs-impression-billets') {
+    specialist = 'https://www.delcampe.net/fr/collections/monnaies-billets/billets/euro/autres-non-classes/france-20-euro-2002-error-without-serial-number-ttb-2572702340.html';
+    specialistLabel = 'Delcampe · erreur sans numéro documentée';
+  }
+
   return banknote ? {
     numista: directNumista,
     ebaySold: 'https://www.ebay.fr/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1',
-    specialist: 'https://www.catawiki.com/fr/s?q=' + q
+    specialist: specialist,
+    specialistLabel: specialistLabel
   } : {
     numista: directNumista,
     ebaySold: 'https://www.ebay.fr/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1',
-    specialist: 'https://www.ma-shops.com/shops/search.php?searchstr=' + q + '&catid=0&submitBtn=Search'
+    specialist: 'https://www.ma-shops.com/shops/search.php?searchstr=' + q + '&catid=0&submitBtn=Search',
+    specialistLabel: 'MA-Shops · vendeurs numismatiques pros'
   };
 }
 function renderMarketPanel(item) {
@@ -306,7 +323,7 @@ function renderMarketPanel(item) {
         <div class="identify-links market-links">
           <a class="chip" target="_blank" rel="noopener" href="${links.numista}">Numista · cote & ventes réalisées</a>
           <a class="chip" target="_blank" rel="noopener" href="${links.ebaySold}">eBay · objets réellement vendus</a>
-          <a class="chip" target="_blank" rel="noopener" href="${links.specialist}">${banknote ? "Catawiki · enchères numismatiques" : "MA-Shops · vendeurs numismatiques pros"}</a>
+          <a class="chip" target="_blank" rel="noopener" href="${links.specialist}">${links.specialistLabel}</a>
         </div>
       </div>
 
