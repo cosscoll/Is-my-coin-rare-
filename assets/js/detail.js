@@ -335,7 +335,7 @@ async function boot() {
         </div>
 
         <div class="section-block">
-          <h2>04 — Valeur indicative sur le marché</h2>
+          <h2>04 — Valeur de revente & transactions vérifiées</h2>
           ${renderMarketPanel(item)}
         </div>
 
