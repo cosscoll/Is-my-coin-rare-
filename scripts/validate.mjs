@@ -33,6 +33,8 @@ for (const file of ['index.html','pieces.html','billets.html','robots.txt','site
 }
 
 const sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+const robots = fs.readFileSync(path.join(root,'robots.txt'),'utf8');
+if (!robots.includes('Sitemap: https://cosscoll.github.io/Is-my-coin-rare-/sitemap.xml')) errors.push('robots: sitemap absent ou incorrect');
 for (const item of pieces) {
   if (!sitemap.includes('/pieces/' + item.id + '.html')) errors.push(`sitemap: pièce absente ${item.id}`);
   const file = path.join(root, 'pieces', item.id + '.html');
@@ -60,7 +62,20 @@ const billetsHtml = fs.readFileSync(path.join(root,'billets.html'),'utf8');
 const rareGuide = fs.readFileSync(path.join(root,'guides/pieces-2-euros-rares.html'),'utf8');
 const countryCount = new Set(pieces.map(x => x.pays)).size;
 const requiredCountryCount = 25;
+const countrySlug = value => String(value || '')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 if (countryCount < requiredCountryCount) errors.push(`catalogue: ${countryCount} juridictions couvertes, attendu au moins ${requiredCountryCount}`);
+for (const country of new Set(pieces.map(x => x.pays))) {
+  const rel = path.join('pays', countrySlug(country) + '.html');
+  const file = path.join(root, rel);
+  if (!fs.existsSync(file)) errors.push(`page pays absente: ${rel}`);
+  else {
+    const html = fs.readFileSync(file, 'utf8');
+    const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/pays/' + countrySlug(country) + '.html';
+    if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`page pays ${country}: canonical absent ou incorrect`);
+  }
+}
 const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).length;
@@ -68,6 +83,9 @@ const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).le
 if (!piecesHtml.includes(`Parcourez ${pieces.length} fiches de pièces`)) errors.push(`pieces.html: compteur SEO obsolète (attendu ${pieces.length})`);
 if (!billetsHtml.includes(`Parcourez ${billets.length} fiches de billets`)) errors.push(`billets.html: compteur SEO obsolète (attendu ${billets.length})`);
 if (!rareGuide.includes(`<h2>${rareCount} fiches actuellement classées Rare ou Très rare</h2>`)) errors.push(`guide rareté: compteur obsolète (attendu ${rareCount})`);
+for (const item of pieces.filter(x => ['rare','tres-rare'].includes(x.rarete))) {
+  if (!rareGuide.includes('../pieces/' + item.id + '.html')) errors.push(`guide rareté: lien cassé ou absent ${item.id}`);
+}
 if (sitemapUrlCount !== expectedSitemapUrls) errors.push(`sitemap: ${sitemapUrlCount} URL, attendu ${expectedSitemapUrls}`);
 
 for (const item of pieces) {
