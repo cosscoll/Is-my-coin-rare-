@@ -403,3 +403,24 @@ async function runCoinAnalysis(photoDataUrl, triggerBtn) {
     if (triggerBtn) { triggerBtn.disabled = false; triggerBtn.textContent = '🔍 Trouver la correspondance'; }
   }
 }
+
+function initExternalImageFallbacks() {
+  document.addEventListener('error', (event) => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement) || !img.closest('.specimen-face')) return;
+    const face = img.closest('.specimen-face');
+    if (face.dataset.imageFailed === '1') return;
+    face.dataset.imageFailed = '1';
+    img.remove();
+    const fallback = document.createElement('span');
+    fallback.className = 'image-fallback-label';
+    fallback.textContent = 'Visuel temporairement indisponible';
+    face.appendChild(fallback);
+  }, true);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initExternalImageFallbacks, { once: true });
+} else {
+  initExternalImageFallbacks();
+}
