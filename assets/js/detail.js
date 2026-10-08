@@ -174,12 +174,12 @@ function buildMarketLinks(item) {
   const q = encodeURIComponent(raw.replace(/[«»]/g, ''));
   const directNumista = item.photo && item.photo.source_url && /numista\.com/i.test(item.photo.source_url)
     ? item.photo.source_url
-    : \`https://fr.numista.com/catalogue/index.php?r=\${q}&ct=coin\`;
+    : `https://fr.numista.com/catalogue/index.php?r=${q}&ct=coin`;
 
   return {
     numista: directNumista,
-    ebaySold: \`https://www.ebay.fr/sch/i.html?_nkw=\${q}&LH_Sold=1&LH_Complete=1\`,
-    maShops: \`https://www.ma-shops.com/shops/search.php?searchstr=\${q}&catid=0&submitBtn=Search\`
+    ebaySold: `https://www.ebay.fr/sch/i.html?_nkw=${q}&LH_Sold=1&LH_Complete=1`,
+    maShops: `https://www.ma-shops.com/shops/search.php?searchstr=${q}&catid=0&submitBtn=Search`
   };
 }
 
@@ -188,44 +188,44 @@ function renderMarketPanel(item) {
   const links = buildMarketLinks(item);
   const m = item.valeur_marche;
 
-  return \`
+  return `
     <div class="card market-panel">
       <div class="market-estimate-head">
         <div>
           <span class="market-kicker">Estimation de revente prudente</span>
-          <strong class="market-price">\${e.headline}</strong>
+          <strong class="market-price">${e.headline}</strong>
         </div>
         <span class="market-date">Vérifié : 8 oct. 2026</span>
       </div>
 
       <div class="market-grid">
-        <div class="market-row"><span class="k">Pièce circulée</span><span class="v">\${e.circulated}</span></div>
-        <div class="market-row"><span class="k">UNC / BU / FDC</span><span class="v">\${e.unc}</span></div>
-        <div class="market-row"><span class="k">Conditionnement collection</span><span class="v">\${e.collector}</span></div>
+        <div class="market-row"><span class="k">Pièce circulée</span><span class="v">${e.circulated}</span></div>
+        <div class="market-row"><span class="k">UNC / BU / FDC</span><span class="v">${e.unc}</span></div>
+        <div class="market-row"><span class="k">Conditionnement collection</span><span class="v">${e.collector}</span></div>
       </div>
 
-      \${m ? \`
+      ${m ? `
         <div class="market-detail">
-          <div class="market-row"><span class="k">Repère historique / prix d’émission</span><span class="v">\${m.prix_lancement}</span></div>
-          <div class="market-row"><span class="k">Marché secondaire documenté</span><span class="v">\${m.observation}</span></div>
-          <div class="market-row"><span class="k">Point de vigilance</span><span class="v">\${m.avertissement}</span></div>
+          <div class="market-row"><span class="k">Repère historique / prix d’émission</span><span class="v">${m.prix_lancement}</span></div>
+          <div class="market-row"><span class="k">Marché secondaire documenté</span><span class="v">${m.observation}</span></div>
+          <div class="market-row"><span class="k">Point de vigilance</span><span class="v">${m.avertissement}</span></div>
         </div>
-      \` : ''}
+      ` : ''}
 
-      <p class="market-basis">\${e.basis}</p>
+      <p class="market-basis">${e.basis}</p>
 
       <div class="market-proof">
         <h4>Comparer avec des prix crédibles</h4>
         <p>Le site privilégie les <strong>transactions réellement conclues</strong>. Une annonce encore en ligne, même à 10 000 €, ne prouve pas qu’une pièce vaut ce prix.</p>
         <div class="identify-links market-links">
-          <a class="chip" target="_blank" rel="noopener" href="\${links.numista}">Numista · cote & ventes réalisées</a>
-          <a class="chip" target="_blank" rel="noopener" href="\${links.ebaySold}">eBay · objets réellement vendus</a>
-          <a class="chip" target="_blank" rel="noopener" href="\${links.maShops}">MA-Shops · vendeurs numismatiques pros</a>
+          <a class="chip" target="_blank" rel="noopener" href="${links.numista}">Numista · cote & ventes réalisées</a>
+          <a class="chip" target="_blank" rel="noopener" href="${links.ebaySold}">eBay · objets réellement vendus</a>
+          <a class="chip" target="_blank" rel="noopener" href="${links.maShops}">MA-Shops · vendeurs numismatiques pros</a>
         </div>
       </div>
 
       <p class="source-line">Les frais de port, commissions, état exact, variante, coffret et certificat peuvent modifier le prix net réellement récupéré par le vendeur.</p>
-    </div>\`;
+    </div>`;
 }
 function renderSpecimenFrame(item) {
   const initial = (item.pays || '?').charAt(0);
