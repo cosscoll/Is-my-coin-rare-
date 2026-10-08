@@ -311,6 +311,14 @@ function buildMarketLinks(item) {
     specialistLabel: 'MA-Shops · vendeurs numismatiques pros'
   };
 }
+function renderItemSource(item) {
+  const label = item.source || 'Source de référence';
+  const url = item.photo?.source_url;
+  return url
+    ? `<a target="_blank" rel="noopener" href="${url}">${label}</a>`
+    : label;
+}
+
 function renderMarketPanel(item) {
   const e = getResaleEstimate(item);
   const links = buildMarketLinks(item);
@@ -472,7 +480,7 @@ async function boot() {
             </div>
             <p class="tirage">${item.tirage}</p>
             <p class="explication">${item.explication}</p>
-            <p class="source-line">Source / repères : ${item.source}</p>
+            <p class="source-line">Source / repères : ${renderItemSource(item)}</p>
           </div>
         </div>
 
