@@ -76,6 +76,13 @@ const MARKET_ESTIMATE_OVERRIDES = {
     collector: 'Les coincards et présentations officielles se négocient davantage.',
     basis: 'Comparables Andorre 2014–2015.'
   },
+  'fi-2e-2004-largissement-de-l-union-euro': {
+    headline: '15–45 €',
+    circulated: 'Environ 12–20 € selon usure réelle',
+    unc: 'Environ 30–45 € en UNC / FDC',
+    collector: 'BU / Proof : souvent autour de 25–40 € selon présentation',
+    basis: 'Numista valorise actuellement cette émission nettement au-dessus des autres pièces finlandaises de tirage comparable.'
+  },
   'finlande-1999-2001-premiere-serie': {
     headline: '5–15 € la série',
     circulated: 'Valeur proche de la faciale pour les pièces isolées',
@@ -137,10 +144,10 @@ function getResaleEstimate(item) {
       collector: 'BU / coincard : souvent 7–15 €'
     },
     'recherchee': {
-      headline: '5–18 €',
-      circulated: 'Environ 3–8 €',
-      unc: 'Environ 6–18 € en UNC / FDC',
-      collector: 'Coincard / BU : souvent 10–25 €'
+      headline: '3–10 €',
+      circulated: 'Environ 2,50–5 €',
+      unc: 'Environ 4–10 € en UNC / FDC',
+      collector: 'Coincard / BU : souvent 8–20 €'
     },
     'rare': {
       headline: '15–50 €',
