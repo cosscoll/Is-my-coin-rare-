@@ -85,7 +85,7 @@ Les fichiers `data/pieces.json` et `data/billets.json` contiennent une sélectio
   "pays": "Pays ou zone d'émission",
   "valeur": "Valeur faciale",
   "annees": "Année(s) concernée(s)",
-  "categorie": "commemorative | premiere-frappe | erreur-de-frappe | petit-pays | serie-courante | signature | numero-de-serie | code-imprimeur | coupure-retiree | erreur-impression | premiere-emission",
+  "categorie": "commemorative | premiere-frappe | erreur-de-frappe | petit-pays | serie-courante | signature | numero-de-serie | code-imprimeur | coupure-retiree | erreur-impression | premiere-emission | serie-billet",
   "tirage": "Description qualitative du tirage — éviter les chiffres non vérifiés",
   "criteres": [{ "titre": "…", "detail": "…" }],
   "rarete": "commune | peu-commune | recherchee | rare | tres-rare",
@@ -113,7 +113,10 @@ Chaque fiche possède désormais une page HTML statique indexable avec title, me
 Le dépôt contient un contrôle automatique sans dépendance :
 
 ```bash
+npm run build
 npm run validate
 ```
+
+`npm run build` régénère les pages SEO, les pages pays, les compteurs de catalogue et le sitemap à partir des fichiers JSON.
 
 Le workflow GitHub Actions `.github/workflows/validate.yml` exécute ce contrôle à chaque push ou pull request afin de détecter les IDs dupliqués, champs manquants, pages SEO absentes, photos incomplètes, entrées manquantes dans le sitemap et erreurs de syntaxe JavaScript.
