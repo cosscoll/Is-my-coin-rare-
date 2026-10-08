@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const site = 'https://cosscoll.github.io/Is-my-coin-rare-/';
 const pieces = JSON.parse(fs.readFileSync(path.join(root, 'data/pieces.json'), 'utf8'));
 const billets = JSON.parse(fs.readFileSync(path.join(root, 'data/billets.json'), 'utf8'));
+const buildDate = new Date().toISOString().slice(0, 10);
 
 const esc = value => String(value ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -164,7 +165,7 @@ const urls = [
   ...billets.map(i => site + 'billets/' + i.id + '.html')
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  urls.map(u => `  <url><loc>${esc(u)}</loc><lastmod>2026-10-08</lastmod></url>`).join('\n') +
+  urls.map(u => `  <url><loc>${esc(u)}</loc><lastmod>${buildDate}</lastmod></url>`).join('\n') +
   '\n</urlset>\n';
 write('sitemap.xml', sitemap);
 
