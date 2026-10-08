@@ -127,7 +127,72 @@ const MARKET_ESTIMATE_OVERRIDES = {
   }
 };
 
+const BANKNOTE_MARKET_ESTIMATE_OVERRIDES = {
+  "serie-2002-signature-duisenberg": {
+    "headline": "Valeur faciale à +70% env. pour les cas courants",
+    "circulated": "Souvent proche de la valeur faciale, surtout sur les coupures courantes et usées",
+    "unc": "Une prime apparaît surtout en UNC, selon la coupure, le préfixe pays et le code imprimeur",
+    "collector": "Certaines combinaisons rares peuvent valoir plusieurs fois la faciale ; un lot 5/10/20/50€ Duisenberg de 85€ faciaux a été adjugé 145€ en 2026.",
+    "basis": "Numista + adjudications Catawiki. Estimation volontairement large car cette fiche couvre toutes les coupures."
+  },
+  "numeros-serie-particuliers": {
+    "headline": "Faciale + 5–50 € de prime dans beaucoup de cas",
+    "circulated": "Un radar ou répétiteur modeste ne garantit pas une forte prime, surtout sur un billet usé",
+    "unc": "Les numéros très bas, solides, radars parfaits ou répétiteurs nets peuvent dépasser largement cette fourchette",
+    "collector": "La valeur dépend davantage du motif exact du numéro que de la coupure elle-même.",
+    "basis": "Marché des numéros spéciaux : comparer uniquement avec des numéros de structure réellement équivalente."
+  },
+  "code-imprimeur-pays-emetteur": {
+    "headline": "Souvent valeur faciale ; prime seulement pour combinaison rare",
+    "circulated": "Dans la majorité des cas : valeur faciale",
+    "unc": "En UNC, certaines combinaisons préfixe + imprimeur + signature peuvent obtenir une prime de quelques euros à plusieurs dizaines",
+    "collector": "Une lettre peu fréquente n’est pas suffisante : il faut identifier la combinaison complète.",
+    "basis": "Numista et catalogues spécialisés : la rareté se juge combinaison par combinaison."
+  },
+  "capacite-numerotation-par-lettre": {
+    "headline": "Pas de prime intrinsèque : valeur faciale",
+    "circulated": "Valeur faciale",
+    "unc": "Valeur faciale, sauf autre particularité collectionnable indépendante",
+    "collector": "La capacité théorique d’un système de numérotation n’est pas un critère de cote à elle seule.",
+    "basis": "Cette fiche décrit une caractéristique technique, pas une variété monnayable."
+  },
+  "billet-500e-retire": {
+    "headline": "500–600 € pour un exemplaire courant",
+    "circulated": "Environ 500–550 € pour un exemplaire authentique courant",
+    "unc": "Environ 550–600 € pour les variantes courantes en très bel état ; certains Duisenberg/préfixes rares peuvent monter vers 800–1 000 €+",
+    "collector": "Un lot de 6 billets de 500 € a été adjugé 3 300 € en 2026, soit environ 550 € par billet.",
+    "basis": "Adjudications Catawiki et cote Numista. Les offres à plusieurs milliers d’euros ne sont pas retenues sans vente réalisée comparable."
+  },
+  "erreurs-impression-billets": {
+    "headline": "À expertiser — souvent 50 € à plusieurs centaines d’euros",
+    "circulated": "Aucune estimation fiable sans identifier et authentifier précisément l’erreur",
+    "unc": "Les erreurs nettes, d’origine et documentées peuvent être fortement primées",
+    "collector": "Un dommage créé après impression, une découpe volontaire ou une altération n’est pas une erreur de fabrication.",
+    "basis": "Les erreurs sont évaluées individuellement ; priorité aux adjudications et aux exemplaires certifiés."
+  },
+  "premiers-billets-serie-europa": {
+    "headline": "Valeur faciale à +20% env. pour les cas courants",
+    "circulated": "Le plus souvent valeur faciale",
+    "unc": "Petite prime possible en UNC pour un premier tirage, un préfixe moins courant ou un numéro intéressant",
+    "collector": "Une année de lancement seule ne rend pas automatiquement le billet rare.",
+    "basis": "Numista : les premières émissions Europa courantes restent généralement proches de la valeur faciale."
+  },
+  "petits-pays-lettres-rares": {
+    "headline": "Souvent faciale à +30% ; davantage pour combinaisons rares",
+    "circulated": "La plupart restent proches de la valeur faciale",
+    "unc": "Une prime peut apparaître en UNC lorsque préfixe, imprimeur et signature forment une combinaison peu commune",
+    "collector": "Ne pas valoriser un billet uniquement parce qu’il provient d’un petit pays.",
+    "basis": "Numista et marché spécialisé ; comparaison indispensable avec le même préfixe, imprimeur, signature et état."
+  }
+};
+
+function isBanknoteItem(item) {
+  return ['signature','numero-de-serie','code-imprimeur','coupure-retiree','erreur-impression','premiere-emission'].includes(item.categorie)
+    || Object.prototype.hasOwnProperty.call(BANKNOTE_MARKET_ESTIMATE_OVERRIDES, item.id);
+}
+
 function getResaleEstimate(item) {
+  if (BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id]) return BANKNOTE_MARKET_ESTIMATE_OVERRIDES[item.id];
   if (MARKET_ESTIMATE_OVERRIDES[item.id]) return MARKET_ESTIMATE_OVERRIDES[item.id];
 
   const base = {
@@ -177,23 +242,37 @@ function getResaleEstimate(item) {
 }
 
 function buildMarketLinks(item) {
-  const raw = [item.pays, item.annees, item.nom || item.valeur, '2 euro'].filter(Boolean).join(' ');
+  const banknote = isBanknoteItem(item);
+  const raw = banknote
+    ? [item.pays, item.annees, item.valeur, item.nom || '', 'billet euro banknote'].filter(Boolean).join(' ')
+    : [item.pays, item.annees, item.nom || item.valeur, '2 euro'].filter(Boolean).join(' ');
   const q = encodeURIComponent(raw.replace(/[«»]/g, ''));
-  const directNumista = item.photo && item.photo.source_url && /numista\.com/i.test(item.photo.source_url)
-    ? item.photo.source_url
-    : `https://fr.numista.com/catalogue/index.php?r=${q}&ct=coin`;
 
-  return {
+  let directNumista = item.photo && item.photo.source_url && /numista\.com/i.test(item.photo.source_url)
+    ? item.photo.source_url
+    : banknote
+      ? 'https://fr.numista.com/catalogue/index.php?r=' + q + '&ct=banknote'
+      : 'https://fr.numista.com/catalogue/index.php?r=' + q + '&ct=coin';
+
+  if (item.id === 'billet-500e-retire') directNumista = 'https://en.numista.com/207104';
+  if (item.id === 'premiers-billets-serie-europa') directNumista = 'https://en.numista.com/201658';
+  if (item.id === 'serie-2002-signature-duisenberg') directNumista = 'https://en.numista.com/201655';
+
+  return banknote ? {
     numista: directNumista,
-    ebaySold: `https://www.ebay.fr/sch/i.html?_nkw=${q}&LH_Sold=1&LH_Complete=1`,
-    maShops: `https://www.ma-shops.com/shops/search.php?searchstr=${q}&catid=0&submitBtn=Search`
+    ebaySold: 'https://www.ebay.fr/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1',
+    specialist: 'https://www.catawiki.com/fr/s?q=' + q
+  } : {
+    numista: directNumista,
+    ebaySold: 'https://www.ebay.fr/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1',
+    specialist: 'https://www.ma-shops.com/shops/search.php?searchstr=' + q + '&catid=0&submitBtn=Search'
   };
 }
-
 function renderMarketPanel(item) {
   const e = getResaleEstimate(item);
   const links = buildMarketLinks(item);
   const m = item.valeur_marche;
+  const banknote = isBanknoteItem(item);
 
   return `
     <div class="card market-panel">
@@ -206,9 +285,9 @@ function renderMarketPanel(item) {
       </div>
 
       <div class="market-grid">
-        <div class="market-row"><span class="k">Pièce circulée</span><span class="v">${e.circulated}</span></div>
-        <div class="market-row"><span class="k">UNC / BU / FDC</span><span class="v">${e.unc}</span></div>
-        <div class="market-row"><span class="k">Conditionnement collection</span><span class="v">${e.collector}</span></div>
+        <div class="market-row"><span class="k">${banknote ? "Billet circulé" : "Pièce circulée"}</span><span class="v">${e.circulated}</span></div>
+        <div class="market-row"><span class="k">${banknote ? "UNC / SUP / FDC" : "UNC / BU / FDC"}</span><span class="v">${e.unc}</span></div>
+        <div class="market-row"><span class="k">${banknote ? "Critère collection" : "Conditionnement collection"}</span><span class="v">${e.collector}</span></div>
       </div>
 
       ${m ? `
@@ -227,7 +306,7 @@ function renderMarketPanel(item) {
         <div class="identify-links market-links">
           <a class="chip" target="_blank" rel="noopener" href="${links.numista}">Numista · cote & ventes réalisées</a>
           <a class="chip" target="_blank" rel="noopener" href="${links.ebaySold}">eBay · objets réellement vendus</a>
-          <a class="chip" target="_blank" rel="noopener" href="${links.maShops}">MA-Shops · vendeurs numismatiques pros</a>
+          <a class="chip" target="_blank" rel="noopener" href="${links.specialist}">${banknote ? "Catawiki · enchères numismatiques" : "MA-Shops · vendeurs numismatiques pros"}</a>
         </div>
       </div>
 
