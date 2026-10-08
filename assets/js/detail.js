@@ -313,7 +313,7 @@ function buildMarketLinks(item) {
 }
 function renderItemSource(item) {
   const label = item.source || 'Source de référence';
-  const url = item.photo?.source_url;
+  const url = item.source_url || item.photo?.source_url;
   return url
     ? `<a target="_blank" rel="noopener" href="${url}">${label}</a>`
     : label;
