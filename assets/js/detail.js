@@ -363,7 +363,7 @@ function renderSpecimenFrame(item, type) {
   if (item.photo) {
     if (item.photo.combined) {
       return `
-        <div class="specimen-frame">
+        <div class="specimen-frame ${type === 'billet' ? 'square' : ''}">
           <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
           <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="eager" fetchpriority="high" decoding="async"></div>
         </div>
@@ -371,7 +371,7 @@ function renderSpecimenFrame(item, type) {
         <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
     }
     return `
-      <button type="button" class="specimen-frame" id="specimen-frame" aria-label="Afficher le revers">
+      <button type="button" class="specimen-frame ${type === 'billet' ? 'square' : ''}" id="specimen-frame" aria-label="Afficher le revers">
         <span class="specimen-badge real">✓ ${detailPhotoBadgeLabel(item)}</span>
         <div class="specimen-flip" id="specimen-flip">
           <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="eager" fetchpriority="high" decoding="async"></div>
