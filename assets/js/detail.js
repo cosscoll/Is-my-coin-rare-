@@ -319,7 +319,7 @@ function renderMarketPanel(item) {
 
       <div class="market-proof">
         <h4>Comparer avec des prix crédibles</h4>
-        <p>Le site privilégie les <strong>transactions réellement conclues</strong>. Une annonce encore en ligne, même à 10 000 €, ne prouve pas qu’une pièce vaut ce prix.</p>
+        <p>Le site privilégie les <strong>transactions réellement conclues</strong>. Une annonce encore en ligne, même à 10 000 €, ne prouve pas qu’un exemplaire vaut ce prix.</p>
         <div class="identify-links market-links">
           <a class="chip" target="_blank" rel="noopener" href="${links.numista}">Numista · cote & ventes réalisées</a>
           <a class="chip" target="_blank" rel="noopener" href="${links.ebaySold}">eBay · objets réellement vendus</a>
@@ -427,7 +427,7 @@ async function boot() {
         <div class="section-block">
           <h2>03 — Voir une vraie photo</h2>
           ${hasPhoto ? `
-            <p style="font-size:14px;">${item.photo.representative ? "Le visuel affiché ci-contre est un exemplaire réel représentatif de cette fiche. La fiche couvre plusieurs millésimes ou variantes : vérifiez aussi les critères et l’année de votre pièce." : "Les visuels affichés ci-contre correspondent aux faces de cette pièce. Vous pouvez comparer directement votre exemplaire avec eux."}</p><p class="source-line">${renderPhotoCredit(item)}</p>
+            <p style="font-size:14px;">${item.photo.representative ? "Le visuel affiché ci-contre est un exemplaire réel représentatif de cette fiche. La fiche couvre plusieurs millésimes ou variantes : vérifiez aussi les critères et l’année de votre exemplaire." : "Les visuels affichés ci-contre correspondent aux faces de cette pièce. Vous pouvez comparer directement votre exemplaire avec eux."}</p><p class="source-line">${renderPhotoCredit(item)}</p>
           ` : `
             <p style="font-size:14px;margin-bottom:10px;">Aucune photo vérifiée n'est encore disponible pour cette fiche. Pour comparer avec un exemplaire authentique :</p>
             <div class="identify-links">
