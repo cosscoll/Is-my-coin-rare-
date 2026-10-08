@@ -62,6 +62,16 @@ const billetsHtml = fs.readFileSync(path.join(root,'billets.html'),'utf8');
 const rareGuide = fs.readFileSync(path.join(root,'guides/pieces-2-euros-rares.html'),'utf8');
 const countryCount = new Set(pieces.map(x => x.pays)).size;
 const requiredCountryCount = 25;
+const yearsFor = item => {
+  const nums = [...String(item.annees || '').matchAll(/(19|20)\d{2}/g)].map(m => Number(m[0]));
+  if (!nums.length) return [];
+  const start = nums[0];
+  const end = /en cours/i.test(item.annees || '') ? 2026 : (nums[1] || start);
+  const out = [];
+  for (let y = start; y <= Math.min(end, 2026); y++) out.push(y);
+  return out;
+};
+const catalogueYears = [...new Set(pieces.flatMap(yearsFor))].sort((a,b) => a-b);
 const countrySlug = value => String(value || '')
   .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -76,7 +86,18 @@ for (const country of new Set(pieces.map(x => x.pays))) {
     if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`page pays ${country}: canonical absent ou incorrect`);
   }
 }
-const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
+for (const year of catalogueYears) {
+  const rel = path.join('annees', year + '.html');
+  const file = path.join(root, rel);
+  if (!fs.existsSync(file)) errors.push(`page année absente: ${rel}`);
+  else {
+    const html = fs.readFileSync(file, 'utf8');
+    const expected = 'https://cosscoll.github.io/Is-my-coin-rare-/annees/' + year + '.html';
+    if (!html.includes('<link rel="canonical" href="' + expected + '">')) errors.push(`page année ${year}: canonical absent ou incorrect`);
+  }
+  if (!sitemap.includes('/annees/' + year + '.html')) errors.push(`sitemap: année absente ${year}`);
+}
+const expectedSitemapUrls = 12 + countryCount + catalogueYears.length + pieces.length + billets.length;
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 const rareCount = pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete)).length;
 
