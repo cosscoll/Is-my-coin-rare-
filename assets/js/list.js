@@ -7,6 +7,7 @@ const CATEGORIE_LABELS = {
   'premiere-frappe': 'Première frappe',
   'erreur-de-frappe': 'Erreur de frappe',
   'petit-pays': 'Petit tirage national',
+  'serie-courante': 'Série courante',
   'signature': 'Signature BCE',
   'numero-de-serie': 'Numéro de série',
   'code-imprimeur': 'Code imprimeur',

@@ -7,6 +7,7 @@ const CATEGORIE_LABELS = {
   'premiere-frappe': 'Première frappe',
   'erreur-de-frappe': 'Erreur de frappe',
   'petit-pays': 'Petit tirage national',
+  'serie-courante': 'Série courante',
   'signature': 'Signature BCE',
   'numero-de-serie': 'Numéro de série',
   'code-imprimeur': 'Code imprimeur',
@@ -229,6 +230,12 @@ function getResaleEstimate(item) {
   };
 
   const estimate = { ...(base[item.rarete] || base['commune']) };
+  if (item.categorie === 'serie-courante') {
+    estimate.headline = '2–4 €';
+    estimate.circulated = 'En général proche de la valeur faciale (2 €)';
+    estimate.unc = 'Environ 2,50–4 € selon millésime et état';
+    estimate.collector = 'Un coffret officiel, une qualité Proof ou un millésime particulier doit être évalué séparément';
+  }
 
   if (item.pays === 'Andorre' && item.rarete === 'rare') {
     estimate.headline = '25–50 €';

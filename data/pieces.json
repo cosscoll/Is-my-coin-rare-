@@ -6612,5 +6612,311 @@
       "source_name": "2euro.emuenzen.de",
       "source_url": "https://2euro.emuenzen.de/en/coins/42-germany-2008-hamburg-st-michael-s-church"
     }
+  },
+  {
+    "id": "bg-2e-serie-courante-2026",
+    "pays": "Bulgarie",
+    "valeur": "2€",
+    "annees": "2026–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante nationale : tirage variable selon le millésime, sans plafond de collection comparable à une émission commémorative limitée.",
+    "criteres": [
+      {
+        "titre": "Portrait de Païssi de Hilendar",
+        "detail": "La face nationale de 2€ représente Païssi de Hilendar, figure du réveil national bulgare et auteur de l’Histoire slavo-bulgare."
+      },
+      {
+        "titre": "Inscriptions en cyrillique",
+        "detail": "Repérez « БЪЛГАРИЯ » à droite et « ЕВРО » à gauche du portrait, avec le millésime d’émission."
+      },
+      {
+        "titre": "Tranche spécifique",
+        "detail": "La tranche porte « БОЖЕ ПАЗИ БЪЛГАРИЯ » (Que Dieu protège la Bulgarie), avec la seconde moitié de l’inscription inversée."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Il s’agit de la 2€ courante bulgare introduite avec l’adoption de l’euro le 1er janvier 2026. La pièce standard n’est pas rare par nature : sa valeur de collection dépend surtout du millésime, de l’état et d’éventuelles variantes documentées.",
+    "source": "Commission européenne — faces nationales de la Bulgarie ; Banque centrale européenne — introduction de l’euro en Bulgarie le 1er janvier 2026",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2026-01/2-euro_bulgaria.jpg?itok=Ei10c0xv",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/bulgaria_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "hr-2e-serie-courante-2023",
+    "pays": "Croatie",
+    "valeur": "2€",
+    "annees": "2023–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante nationale : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Carte de la Croatie",
+        "detail": "La 2€ croate représente la carte géographique de la République de Croatie."
+      },
+      {
+        "titre": "Damier croate",
+        "detail": "Le motif national est posé sur le damier rouge et blanc caractéristique des armoiries croates."
+      },
+      {
+        "titre": "Première circulation en 2023",
+        "detail": "L’euro est entré en circulation en Croatie le 1er janvier 2023."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La 2€ courante croate appartient à la série nationale lancée lors de l’adoption de l’euro en 2023. Un exemplaire standard vaut généralement près de sa valeur faciale, hors état exceptionnel ou variété reconnue.",
+    "source": "Commission européenne — faces nationales de la Croatie ; Banque centrale européenne — introduction de l’euro en Croatie le 1er janvier 2023",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-12/20220119_Geographical-Map-HR.jpg?itok=RdaPmLbj",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/croatia_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "nl-2e-beatrix-2002-2013",
+    "pays": "Pays-Bas",
+    "valeur": "2€",
+    "annees": "2002–2013",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Reine Beatrix",
+        "detail": "La première série néerlandaise montre le profil de la reine Beatrix."
+      },
+      {
+        "titre": "Légende nationale",
+        "detail": "L’inscription « Beatrix Koningin der Nederlanden » entoure ou accompagne le portrait selon la valeur."
+      },
+      {
+        "titre": "Première série",
+        "detail": "Cette face nationale a été utilisée avant le passage au portrait du roi Willem-Alexander."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La 2€ Beatrix est une pièce courante des Pays-Bas. La plupart des millésimes standards restent proches de la valeur faciale ; certaines présentations ou variantes peuvent toutefois intéresser les collectionneurs.",
+    "source": "Commission européenne — faces nationales des Pays-Bas",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_15.png?itok=InbdJu6M",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/netherlands_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "nl-2e-willem-alexander-2014",
+    "pays": "Pays-Bas",
+    "valeur": "2€",
+    "annees": "2014–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Roi Willem-Alexander",
+        "detail": "Depuis 2014, les 1€ et 2€ néerlandaises portent l’effigie du roi Willem-Alexander."
+      },
+      {
+        "titre": "Trois lignes verticales",
+        "detail": "À droite du portrait apparaissent trois lignes verticales séparant le millésime, les marques et les inscriptions royales."
+      },
+      {
+        "titre": "Tranche",
+        "detail": "La tranche porte « GOD * ZIJ * MET * ONS * »."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Cette série est la 2€ nationale courante des Pays-Bas depuis 2014. La rareté doit être appréciée millésime par millésime et non à partir du seul portrait.",
+    "source": "Commission européenne — faces nationales des Pays-Bas",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_16.png?itok=geepvg_V",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/netherlands_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "pt-2e-serie-courante-2002",
+    "pays": "Portugal",
+    "valeur": "2€",
+    "annees": "2002–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Sceau royal de 1144",
+        "detail": "Les pièces portugaises de 1€ et 2€ utilisent le sceau de 1144 d’Afonso Henriques, premier roi du Portugal."
+      },
+      {
+        "titre": "Châteaux et armoiries",
+        "detail": "Le sceau est entouré de châteaux et d’armoiries, éléments inspirés des origines de l’histoire portugaise."
+      },
+      {
+        "titre": "Tranche",
+        "detail": "La tranche de la 2€ comporte cinq armoiries et sept châteaux répartis régulièrement."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La 2€ nationale portugaise standard est une pièce de circulation. Sa cote dépend du millésime et de l’état ; la face nationale seule ne suffit pas à la considérer comme rare.",
+    "source": "Commission européenne — faces nationales du Portugal",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_18.png?itok=Aqkp7MUo",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/portugal_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "sk-2e-serie-courante-2009",
+    "pays": "Slovaquie",
+    "valeur": "2€",
+    "annees": "2009–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante nationale : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Double croix",
+        "detail": "La 2€ slovaque représente une double croix posée sur trois collines."
+      },
+      {
+        "titre": "Trois reliefs symboliques",
+        "detail": "Les trois collines représentent les massifs des Tatras, de Mátra et de Fatra."
+      },
+      {
+        "titre": "Entrée dans l’euro en 2009",
+        "detail": "La Slovaquie utilise l’euro comme monnaie légale depuis le 1er janvier 2009."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "La 2€ slovaque standard est une pièce courante. Certaines années ou variantes peuvent être moins fréquentes, mais le motif national de base n’est pas rare à lui seul.",
+    "source": "Commission européenne — faces nationales de la Slovaquie ; Banque centrale européenne — passage à l’euro en Slovaquie",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_19.png?itok=pQIs4eAT",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/slovakia_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "es-2e-premiere-serie-2002-2009",
+    "pays": "Espagne",
+    "valeur": "2€",
+    "annees": "2002–2009",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Roi Juan Carlos I",
+        "detail": "La première série espagnole des 1€ et 2€ porte l’effigie du roi Juan Carlos I."
+      },
+      {
+        "titre": "Première disposition des étoiles",
+        "detail": "Les premières frappes précèdent la révision de mise en page appliquée en 2010 pour suivre les recommandations européennes."
+      },
+      {
+        "titre": "Tranche",
+        "detail": "La tranche porte « 2** » répété six fois, alternativement droit et inversé."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Cette première série espagnole est une monnaie courante. Certains millésimes ou qualités de frappe peuvent être plus recherchés, mais la plupart des exemplaires circulés restent proches de 2 €.",
+    "source": "Commission européenne — faces nationales de l’Espagne",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_23.png?itok=lllGJwkU",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/spain_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "es-2e-serie-modifiee-2010-2014",
+    "pays": "Espagne",
+    "valeur": "2€",
+    "annees": "2010–2014",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Roi Juan Carlos I",
+        "detail": "Le portrait reste celui de Juan Carlos I, mais la présentation nationale est modifiée à partir de 2010."
+      },
+      {
+        "titre": "Révision de 2010",
+        "detail": "Le millésime, la marque d’atelier et le nom du pays passent dans la partie intérieure, tandis que les étoiles sont représentées comme sur le drapeau européen."
+      },
+      {
+        "titre": "Période courte",
+        "detail": "Cette version précède l’arrivée du portrait de Felipe VI en 2015."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Cette version 2010–2014 constitue une variante de série nationale plutôt qu’une émission rare. L’intérêt dépend principalement du millésime, de l’état et de la qualité de frappe.",
+    "source": "Commission européenne — faces nationales de l’Espagne",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_22.png?itok=5cueAhp1",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/spain_en",
+      "representative": true
+    }
+  },
+  {
+    "id": "es-2e-felipe-vi-2015",
+    "pays": "Espagne",
+    "valeur": "2€",
+    "annees": "2015–en cours",
+    "categorie": "serie-courante",
+    "tirage": "Série courante : tirage variable selon le millésime.",
+    "criteres": [
+      {
+        "titre": "Roi Felipe VI",
+        "detail": "Depuis 2015, les pièces espagnoles de 1€ et 2€ portent l’effigie du roi Felipe VI."
+      },
+      {
+        "titre": "Inscription ESPAÑA",
+        "detail": "Le nom du pays et le millésime figurent à gauche du portrait, avec la marque d’atelier à droite."
+      },
+      {
+        "titre": "Tranche",
+        "detail": "La tranche porte « 2** » répété six fois, alternativement droit et inversé."
+      }
+    ],
+    "rarete": "commune",
+    "explication": "Il s’agit de la série nationale espagnole actuelle. Un exemplaire standard n’est pas rare en soi ; les écarts de valeur viennent surtout du millésime, de l’état et d’éventuelles variantes.",
+    "source": "Commission européenne — faces nationales de l’Espagne",
+    "photo": {
+      "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2017-01/euro_coin_2_euro_21.png?itok=plMUfe9z",
+      "verso": "https://en.numista.com/catalogue/photos/autriche/65abd5073dbe78.91512037-original.jpg",
+      "credit": "Face nationale : Commission européenne · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0",
+      "source_name": "Commission européenne",
+      "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/spain_en",
+      "representative": true
+    }
   }
 ]

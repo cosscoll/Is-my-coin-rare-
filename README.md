@@ -50,7 +50,7 @@ Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
 
 ## Étendue de la base de données
 
-`data/pieces.json` contient désormais **204 fiches** couvrant **19 pays et micro-États**, principalement des pièces de 2€ commémoratives (millésimes 2004 à 2018 dans le détail, plus quelques émissions récentes notables), avec le **tirage officiel exact** pour la grande majorité d'entre elles, sourcé auprès de fleur-de-coin.com (mintages officiels) et recoupé avec Numista. L'Allemagne y figure avec le détail des 5 ateliers de frappe (Berlin/Munich/Stuttgart/Karlsruhe/Hambourg) pour chaque millésime, ainsi qu'une variante d'erreur de frappe documentée (Hambourg 2008, carte de l'Europe erronée sur environ 600 000 exemplaires de l'atelier de Stuttgart). Le niveau de rareté de ces fiches est **calculé automatiquement à partir du tirage réel** selon le barème suivant : moins de 50 000 pièces → Très rare · 50 000 à moins de 300 000 → Rare · 300 000 à moins de 1 500 000 → Recherchée · 1 500 000 à moins de 5 000 000 → Peu commune · 5 000 000 et plus → Commune. Ce barème est une convention numismatique courante, pas une cotation officielle : la demande réelle des collectionneurs (popularité du thème, état de conservation) peut faire varier la cote au-delà de ce que le tirage seul indique.
+`data/pieces.json` contient désormais **213 fiches** couvrant **25 pays et micro-États**, principalement des pièces de 2€ commémoratives (millésimes 2004 à 2018 dans le détail, plus quelques émissions récentes notables), avec le **tirage officiel exact** pour la grande majorité d'entre elles, sourcé auprès de fleur-de-coin.com (mintages officiels) et recoupé avec Numista. L'Allemagne y figure avec le détail des 5 ateliers de frappe (Berlin/Munich/Stuttgart/Karlsruhe/Hambourg) pour chaque millésime, ainsi qu'une variante d'erreur de frappe documentée (Hambourg 2008, carte de l'Europe erronée sur environ 600 000 exemplaires de l'atelier de Stuttgart). Le niveau de rareté de ces fiches est **calculé automatiquement à partir du tirage réel** selon le barème suivant : moins de 50 000 pièces → Très rare · 50 000 à moins de 300 000 → Rare · 300 000 à moins de 1 500 000 → Recherchée · 1 500 000 à moins de 5 000 000 → Peu commune · 5 000 000 et plus → Commune. Ce barème est une convention numismatique courante, pas une cotation officielle : la demande réelle des collectionneurs (popularité du thème, état de conservation) peut faire varier la cote au-delà de ce que le tirage seul indique.
 
 S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
 
@@ -58,7 +58,7 @@ Ceci ne couvre pas encore l'intégralité des ~584 variantes de 2€ commémorat
 
 ## Photos des pièces
 
-Les **204 fiches sur 204** disposent désormais d’un visuel réel associé. Les fiches correspondant à une émission précise affichent l’avers et le revers. Les fiches regroupant plusieurs millésimes, une série complète ou une famille d’erreurs utilisent un **visuel réel représentatif**, clairement signalé comme tel afin de ne pas le présenter comme l’unique variante possible.
+Les **213 fiches sur 213** disposent désormais d’un visuel réel associé. Les fiches correspondant à une émission précise affichent l’avers et le revers. Les fiches regroupant plusieurs millésimes, une série complète ou une famille d’erreurs utilisent un **visuel réel représentatif**, clairement signalé comme tel afin de ne pas le présenter comme l’unique variante possible.
 
 Chaque objet `photo` conserve les références du visuel (`recto`, `verso`, `source_name`, `source_url` et, lorsqu’ils sont disponibles, `credit` / `licence`). Le champ `combined` permet d’afficher correctement une photographie de référence qui montre les deux faces sur un même visuel.
 
@@ -85,7 +85,7 @@ Les fichiers `data/pieces.json` et `data/billets.json` contiennent une sélectio
   "pays": "Pays ou zone d'émission",
   "valeur": "Valeur faciale",
   "annees": "Année(s) concernée(s)",
-  "categorie": "commemorative | premiere-frappe | erreur-de-frappe | petit-pays | signature | numero-de-serie | code-imprimeur | coupure-retiree | erreur-impression | premiere-emission",
+  "categorie": "commemorative | premiere-frappe | erreur-de-frappe | petit-pays | serie-courante | signature | numero-de-serie | code-imprimeur | coupure-retiree | erreur-impression | premiere-emission",
   "tirage": "Description qualitative du tirage — éviter les chiffres non vérifiés",
   "criteres": [{ "titre": "…", "detail": "…" }],
   "rarete": "commune | peu-commune | recherchee | rare | tres-rare",
