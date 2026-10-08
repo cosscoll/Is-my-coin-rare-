@@ -355,7 +355,7 @@ function renderMarketPanel(item) {
 
       <div class="market-proof">
         <h4>Comparer avec des prix crédibles</h4>
-        <p>Le site privilégie les <strong>transactions réellement conclues</strong>. Une annonce encore en ligne, même à 10 000 €, ne prouve pas qu’un exemplaire vaut ce prix.</p>
+        <p>Le site privilégie les <strong>transactions réellement conclues</strong> quand elles sont disponibles. Une annonce encore en ligne, même à 10 000 €, ne prouve pas qu’un exemplaire vaut ce prix.</p>
         <div class="identify-links market-links">
           <a class="chip" target="_blank" rel="noopener" href="${links.numista}">Numista · cote & ventes réalisées</a>
           <a class="chip" target="_blank" rel="noopener" href="${links.ebaySold}">eBay · objets réellement vendus</a>
@@ -504,7 +504,7 @@ async function boot() {
         </div>
 
         <div class="section-block">
-          <h2>04 — Valeur de revente & transactions vérifiées</h2>
+          <h2>04 — Valeur de revente & références de marché</h2>
           ${renderMarketPanel(item)}
         </div>
 
