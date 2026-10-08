@@ -343,14 +343,14 @@ function renderSpecimenFrame(item) {
         <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
     }
     return `
-      <div class="specimen-frame" id="specimen-frame">
+      <button type="button" class="specimen-frame" id="specimen-frame" aria-label="Afficher le revers">
         <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
         <div class="specimen-flip" id="specimen-flip">
           <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
           <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
         </div>
-      </div>
-      <p class="specimen-hint">Cliquez pour voir le revers</p>
+      </button>
+      <p class="specimen-hint">Cliquez ou appuyez sur Entrée pour voir le revers</p>
       <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
   }
   return `
@@ -362,6 +362,21 @@ function renderSpecimenFrame(item) {
       </div>
     </div>
     <p class="specimen-hint">Aucune photo vérifiée pour cette fiche</p>`;
+}
+
+function renderRelatedItems(type, item, items) {
+  const related = items.filter(x => x.id !== item.id && x.pays === item.pays).slice(0, 4);
+  const countryLink = type === 'piece'
+    ? `<a class="chip" href="${countryHref(item.pays)}">Toutes les pièces de ${item.pays}</a>`
+    : '';
+  const cards = related.map(x => `
+    <a class="related-card card" href="${detailHref(type, x)}">
+      <strong>${x.nom || (x.pays + ' — ' + x.valeur)}</strong>
+      <span>${x.annees} · ${raretyLabel(x.rarete)}</span>
+    </a>`).join('');
+  return `
+    <div class="related-actions">${countryLink}<a class="chip" href="${siteBase()}${type === 'piece' ? 'pieces.html' : 'billets.html'}">Retour au catalogue</a></div>
+    ${cards ? `<div class="related-grid">${cards}</div>` : ''}`;
 }
 
 async function boot() {
@@ -445,7 +460,12 @@ async function boot() {
         </div>
 
         <div class="section-block">
-          <h2>05 — Estimation &amp; vérification</h2>
+          <h2>05 — À voir aussi</h2>
+          ${renderRelatedItems(type, item, items)}
+        </div>
+
+        <div class="section-block">
+          <h2>06 — Estimation &amp; vérification</h2>
           <div class="disclaimer-box">
             <span class="ico">&#9888;</span>
             <div>
@@ -494,7 +514,10 @@ async function boot() {
   if (hasPhoto && !item.photo.combined) {
     const frame = document.getElementById('specimen-frame');
     const flipEl = document.getElementById('specimen-flip');
-    frame.addEventListener('click', () => flipEl.classList.toggle('flipped'));
+    frame.addEventListener('click', () => {
+      const flipped = flipEl.classList.toggle('flipped');
+      frame.setAttribute('aria-label', flipped ? 'Afficher l’avers' : 'Afficher le revers');
+    });
   }
 }
 
