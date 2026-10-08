@@ -7218,13 +7218,13 @@
     "pays": "Vatican",
     "valeur": "2€",
     "annees": "2019",
-    "nom": "2€ « 90th anniversary of the foundation of the Vatican City State »",
+    "nom": "2€ « 90e anniversaire de la fondation de l’État de la Cité du Vatican »",
     "categorie": "commemorative",
     "tirage": "91 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "90th anniversary of the foundation of the Vatican City State"
+        "detail": "90e anniversaire de la fondation de l’État de la Cité du Vatican"
       },
       {
         "titre": "Date d’émission officielle",
@@ -7237,7 +7237,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Vatican, émise en 2019, compte 91 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 90th anniversary of the foundation of the Vatican City State",
+    "source": "Commission européenne — 90e anniversaire de la fondation de l’État de la Cité du Vatican",
     "date_emission": "2019-03-04",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2019-05/90th_anniversary_of_the_foundation_of_the_vatican_city_state.jpg?itok=-iU0K2yO",
@@ -7248,7 +7248,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 91000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/90th-anniversary-foundation-vatican-city-state_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/90th-anniversary-foundation-vatican-city-state_en",
+    "sujet_original": "90th anniversary of the foundation of the Vatican City State"
   },
   {
     "id": "grece-2e-2019-centenary-of-the-birth-of-manolis-andronicos",
@@ -8015,13 +8016,13 @@
     "pays": "Luxembourg",
     "valeur": "2€",
     "annees": "2019",
-    "nom": "2€ « The 100th anniversary of the universal suffrage »",
+    "nom": "2€ « 100e anniversaire du suffrage universel »",
     "categorie": "commemorative",
     "tirage": "500 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "The 100th anniversary of the universal suffrage"
+        "detail": "100e anniversaire du suffrage universel"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8034,7 +8035,7 @@
     ],
     "rarete": "recherchee",
     "explication": "Cette émission commémorative officielle de Luxembourg, émise en 2019, compte 500 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — The 100th anniversary of the universal suffrage",
+    "source": "Commission européenne — 100e anniversaire du suffrage universel",
     "date_emission": "2019-09-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-02/universal_suffrage.jpg?itok=tQuc3Qhd",
@@ -8045,20 +8046,21 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 500000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100th-anniversary-universal-suffrage_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100th-anniversary-universal-suffrage_en",
+    "sujet_original": "The 100th anniversary of the universal suffrage"
   },
   {
     "id": "belgique-2e-2019-25th-anniversary-of-the-european-monetary-institute-emi",
     "pays": "Belgique",
     "valeur": "2€",
     "annees": "2019",
-    "nom": "2€ « 25th anniversary of the European Monetary Institute (EMI) »",
+    "nom": "2€ « 25e anniversaire de l’Institut monétaire européen (IME) »",
     "categorie": "commemorative",
     "tirage": "155 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "25th anniversary of the European Monetary Institute (EMI)"
+        "detail": "25e anniversaire de l’Institut monétaire européen (IME)"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8071,7 +8073,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Belgique, émise en 2019, compte 155 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 25th anniversary of the European Monetary Institute (EMI)",
+    "source": "Commission européenne — 25e anniversaire de l’Institut monétaire européen (IME)",
     "date_emission": "2019-01-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2019-05/25th_anniversary_of_the_european_monetary_institute_emi.jpg?itok=fE3X-ATl",
@@ -8082,20 +8084,21 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 155000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/25th-anniversary-european-monetary-institute-emi_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/25th-anniversary-european-monetary-institute-emi_en",
+    "sujet_original": "25th anniversary of the European Monetary Institute (EMI)"
   },
   {
     "id": "andorre-2e-2019-600-years-of-the-council-of-the-land",
     "pays": "Andorre",
     "valeur": "2€",
     "annees": "2019",
-    "nom": "2€ « 600 years of the Council of the Land »",
+    "nom": "2€ « 600 ans du Conseil de la Terre »",
     "categorie": "commemorative",
     "tirage": "60 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "600 years of the Council of the Land"
+        "detail": "600 ans du Conseil de la Terre"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8108,7 +8111,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Andorre, émise en 2019, compte 60 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 600 years of the Council of the Land",
+    "source": "Commission européenne — 600 ans du Conseil de la Terre",
     "date_emission": "2019-12-05",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-02/council_of_the_land.jpg?itok=UGRtpyt_",
@@ -8119,7 +8122,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 60000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/600-years-council-land_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/600-years-council-land_en",
+    "sujet_original": "600 years of the Council of the Land"
   },
   {
     "id": "lituanie-2e-2019-samogitia-lithuanian-etnographic-regions",
@@ -8163,13 +8167,13 @@
     "pays": "Portugal",
     "valeur": "2€",
     "annees": "2019",
-    "nom": "2€ « 500 years of the first circumnavigation organised and led by the Portuguese explorer and navigator Fernão De Magalhães »",
+    "nom": "2€ « 500 ans de la première circumnavigation organisée et menée par l’explorateur et navigateur portugais Fernão de Magalhães »",
     "categorie": "commemorative",
     "tirage": "750 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "500 years of the first circumnavigation organised and led by the Portuguese explorer and navigator Fernão De Magalhães"
+        "detail": "500 ans de la première circumnavigation organisée et menée par l’explorateur et navigateur portugais Fernão de Magalhães"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8182,7 +8186,7 @@
     ],
     "rarete": "recherchee",
     "explication": "Cette émission commémorative officielle de Portugal, émise en 2019, compte 750 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 500 years of the first circumnavigation organised and led by the Portuguese explorer and navigator Fernão De Magalhães",
+    "source": "Commission européenne — 500 ans de la première circumnavigation organisée et menée par l’explorateur et navigateur portugais Fernão de Magalhães",
     "date_emission": "2019-07-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-02/magalhaes_2019.png?itok=wP2JeNrE",
@@ -8193,7 +8197,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 750000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/500-years-first-circumnavigation-organised-and-led-portuguese-explorer-and-navigator-fernao-de_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/500-years-first-circumnavigation-organised-and-led-portuguese-explorer-and-navigator-fernao-de_en",
+    "sujet_original": "500 years of the first circumnavigation organised and led by the Portuguese explorer and navigator Fernão De Magalhães"
   },
   {
     "id": "italie-2e-2020-150th-anniversary-of-the-birth-of-maria-montessori",
@@ -8390,13 +8395,13 @@
     "pays": "Monaco",
     "valeur": "2€",
     "annees": "2020",
-    "nom": "2€ « The 300th anniversary of the birth of Prince Honoré III »",
+    "nom": "2€ « 300e anniversaire de la naissance du prince Honoré III »",
     "categorie": "commemorative",
     "tirage": "15 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "The 300th anniversary of the birth of Prince Honoré III"
+        "detail": "300e anniversaire de la naissance du prince Honoré III"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8409,7 +8414,7 @@
     ],
     "rarete": "tres-rare",
     "explication": "Cette émission commémorative officielle de Monaco, émise en 2020, compte 15 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Très rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — The 300th anniversary of the birth of Prince Honoré III",
+    "source": "Commission européenne — 300e anniversaire de la naissance du prince Honoré III",
     "date_emission": "2020-06-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-05/monaco-2020_honore-iii.png?itok=wirpwKCj",
@@ -8420,20 +8425,21 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 15000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/300th-anniversary-birth-prince-honore-iii_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/300th-anniversary-birth-prince-honore-iii_en",
+    "sujet_original": "The 300th anniversary of the birth of Prince Honoré III"
   },
   {
     "id": "portugal-2e-2020-730th-anniversary-of-the-university-of-coimbra",
     "pays": "Portugal",
     "valeur": "2€",
     "annees": "2020",
-    "nom": "2€ « 730th anniversary of the University of Coimbra »",
+    "nom": "2€ « 730e anniversaire de l’Université de Coimbra »",
     "categorie": "commemorative",
     "tirage": "360 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "730th anniversary of the University of Coimbra"
+        "detail": "730e anniversaire de l’Université de Coimbra"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8446,7 +8452,7 @@
     ],
     "rarete": "recherchee",
     "explication": "Cette émission commémorative officielle de Portugal, émise en 2020, compte 360 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 730th anniversary of the University of Coimbra",
+    "source": "Commission européenne — 730e anniversaire de l’Université de Coimbra",
     "date_emission": "2020-11-20",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/coimbra.jpg?itok=guTPWGTV",
@@ -8457,7 +8463,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 360000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/730th-anniversary-university-coimbra_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/730th-anniversary-university-coimbra_en",
+    "sujet_original": "730th anniversary of the University of Coimbra"
   },
   {
     "id": "estonie-2e-2020-the-bicentenary-of-the-discovery-of-antarctica",
@@ -8616,13 +8623,13 @@
     "pays": "Grèce",
     "valeur": "2€",
     "annees": "2020",
-    "nom": "2€ « 100 years since the union of Thrace with Greece »",
+    "nom": "2€ « 100 ans de l’union de la Thrace avec la Grèce »",
     "categorie": "commemorative",
     "tirage": "750 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "100 years since the union of Thrace with Greece"
+        "detail": "100 ans de l’union de la Thrace avec la Grèce"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8635,7 +8642,7 @@
     ],
     "rarete": "recherchee",
     "explication": "Cette émission commémorative officielle de Grèce, émise en 2020, compte 750 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Recherchée ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 100 years since the union of Thrace with Greece",
+    "source": "Commission européenne — 100 ans de l’union de la Thrace avec la Grèce",
     "date_emission": "2020-05-04",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/thrace.jpg?itok=4uOS3jBE",
@@ -8646,20 +8653,21 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 750000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100-years-union-thrace-greece_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100-years-union-thrace-greece_en",
+    "sujet_original": "100 years since the union of Thrace with Greece"
   },
   {
     "id": "andorre-2e-2020-50-years-of-universal-female-suffrage",
     "pays": "Andorre",
     "valeur": "2€",
     "annees": "2020",
-    "nom": "2€ « 50 years of Universal Female Suffrage »",
+    "nom": "2€ « 50 ans du suffrage universel féminin »",
     "categorie": "commemorative",
     "tirage": "60 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "50 years of Universal Female Suffrage"
+        "detail": "50 ans du suffrage universel féminin"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8672,7 +8680,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Andorre, émise en 2020, compte 60 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 50 years of Universal Female Suffrage",
+    "source": "Commission européenne — 50 ans du suffrage universel féminin",
     "date_emission": "2020-07-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-12/andorra_-_2_euro_commemorative_coin_-_50_years_of_universal_female_suffrage_2020_final_version.jpg?itok=qSCZK5rx",
@@ -8683,7 +8691,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 60000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/50-years-universal-female-suffrage_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/50-years-universal-female-suffrage_en",
+    "sujet_original": "50 years of Universal Female Suffrage"
   },
   {
     "id": "slovenie-2e-2020-the-500th-anniversary-of-the-birth-of-adam-bohoric",
@@ -8917,13 +8926,13 @@
     "pays": "Vatican",
     "valeur": "2€",
     "annees": "2020",
-    "nom": "2€ « 100th Anniversary of the Birth of Pope John Paul II »",
+    "nom": "2€ « 100e anniversaire de la naissance du pape Jean-Paul II »",
     "categorie": "commemorative",
     "tirage": "101 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "100th Anniversary of the Birth of Pope John Paul II"
+        "detail": "100e anniversaire de la naissance du pape Jean-Paul II"
       },
       {
         "titre": "Date d’émission officielle",
@@ -8936,7 +8945,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Vatican, émise en 2020, compte 101 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 100th Anniversary of the Birth of Pope John Paul II",
+    "source": "Commission européenne — 100e anniversaire de la naissance du pape Jean-Paul II",
     "date_emission": "2020-05-12",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2020-05/vatican-2020.png?itok=A5k_kAme",
@@ -8947,7 +8956,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 101000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100th-anniversary-birth-pope-john-paul-ii_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/100th-anniversary-birth-pope-john-paul-ii_en",
+    "sujet_original": "100th Anniversary of the Birth of Pope John Paul II"
   },
   {
     "id": "lituanie-2e-2020-unesco-cultural-heritage-kryziu-kalnas-the-hill-of-crosses",
@@ -10550,13 +10560,13 @@
     "pays": "Saint-Marin",
     "valeur": "2€",
     "annees": "2022",
-    "nom": "2€ « 530th anniversary of the disappearance of Piero della Francesca »",
+    "nom": "2€ « 530e anniversaire de la disparition de Piero della Francesca »",
     "categorie": "commemorative",
     "tirage": "55 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "530th anniversary of the disappearance of Piero della Francesca"
+        "detail": "530e anniversaire de la disparition de Piero della Francesca"
       },
       {
         "titre": "Date d’émission officielle",
@@ -10569,7 +10579,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Saint-Marin, émise en 2022, compte 55 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — 530th anniversary of the disappearance of Piero della Francesca",
+    "source": "Commission européenne — 530e anniversaire de la disparition de Piero della Francesca",
     "date_emission": "October 2022",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/embed_medium/public/2023-04/Piero%20della%20Francesca.jpg?itok=SnBdknoO",
@@ -10580,7 +10590,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 55000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/530th-anniversary-disappearance-piero-della-francesca_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/530th-anniversary-disappearance-piero-della-francesca_en",
+    "sujet_original": "530th anniversary of the disappearance of Piero della Francesca"
   },
   {
     "id": "portugal-2e-2022-the-100th-anniversary-of-the-crossing-the-south-atlantic-ocean-by-air-ac",
@@ -11042,13 +11053,13 @@
     "pays": "France",
     "valeur": "2€",
     "annees": "2023",
-    "nom": "2€ « Rugby World Cup France 2023 »",
+    "nom": "2€ « Coupe du monde de rugby France 2023 »",
     "categorie": "commemorative",
     "tirage": "15 000 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "Rugby World Cup France 2023"
+        "detail": "Coupe du monde de rugby France 2023"
       },
       {
         "titre": "Date d’émission officielle",
@@ -11061,7 +11072,7 @@
     ],
     "rarete": "commune",
     "explication": "Cette émission commémorative officielle de France, émise en 2023, compte 15 000 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Commune ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — Rugby World Cup France 2023",
+    "source": "Commission européenne — Coupe du monde de rugby France 2023",
     "date_emission": "June 2023",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/styles/embed_medium/public/2023-10/Rugby%20World%20Cup%20France%202023.png?itok=KuKXD4ZY",
@@ -11072,7 +11083,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 15000000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/rugby-world-cup-france-2023_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/rugby-world-cup-france-2023_en",
+    "sujet_original": "Rugby World Cup France 2023"
   },
   {
     "id": "saint-marin-2e-2023-the-500th-anniversary-of-the-death-of-luca-signorelli",
@@ -11839,13 +11851,13 @@
     "pays": "Andorre",
     "valeur": "2€",
     "annees": "2024",
-    "nom": "2€ « UCI Mountain Bike World Championships 2024 »",
+    "nom": "2€ « Championnats du monde UCI de VTT 2024 »",
     "categorie": "commemorative",
     "tirage": "60 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "UCI Mountain Bike World Championships 2024"
+        "detail": "Championnats du monde UCI de VTT 2024"
       },
       {
         "titre": "Date d’émission officielle",
@@ -11858,7 +11870,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Andorre, émise en 2024, compte 60 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — UCI Mountain Bike World Championships 2024",
+    "source": "Commission européenne — Championnats du monde UCI de VTT 2024",
     "date_emission": "2024-10-01",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/2025-02/Andorra---2-euro-commemorative-coin-2024---UCI-Mountain-Bike-World-Championships-2024.jpg",
@@ -11869,7 +11881,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 60000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/uci-mountain-bike-world-championships-2024_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/uci-mountain-bike-world-championships-2024_en",
+    "sujet_original": "UCI Mountain Bike World Championships 2024"
   },
   {
     "id": "luxembourg-2e-2024-the-175th-anniversary-of-the-death-of-grand-duke-guillaume-ii",
@@ -12294,13 +12307,13 @@
     "pays": "Malte",
     "valeur": "2€",
     "annees": "2024",
-    "nom": "2€ « Iċ-Ċittadella (The Citadel) »",
+    "nom": "2€ « Iċ-Ċittadella (La Citadelle) »",
     "categorie": "commemorative",
     "tirage": "85 500 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "Iċ-Ċittadella (The Citadel)"
+        "detail": "Iċ-Ċittadella (La Citadelle)"
       },
       {
         "titre": "Date d’émission officielle",
@@ -12313,7 +12326,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Malte, émise en 2024, compte 85 500 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — Iċ-Ċittadella (The Citadel)",
+    "source": "Commission européenne — Iċ-Ċittadella (La Citadelle)",
     "date_emission": "June 2024",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/2024-07/cittadella.jpg",
@@ -12324,20 +12337,21 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 85500,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/ic-cittadella-citadel_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/ic-cittadella-citadel_en",
+    "sujet_original": "Iċ-Ċittadella (The Citadel)"
   },
   {
     "id": "croatie-2e-2024-the-500th-anniversary-of-marko-marulic-s-enduring-legacy",
     "pays": "Croatie",
     "valeur": "2€",
     "annees": "2024",
-    "nom": "2€ « The 500th anniversary of Marko Marulić’s enduring legacy »",
+    "nom": "2€ « 500e anniversaire de l’héritage durable de Marko Marulić »",
     "categorie": "commemorative",
     "tirage": "200 000 pièces (tirage officiel)",
     "criteres": [
       {
         "titre": "Sujet commémoré",
-        "detail": "The 500th anniversary of Marko Marulić’s enduring legacy"
+        "detail": "500e anniversaire de l’héritage durable de Marko Marulić"
       },
       {
         "titre": "Date d’émission officielle",
@@ -12350,7 +12364,7 @@
     ],
     "rarete": "rare",
     "explication": "Cette émission commémorative officielle de Croatie, émise en 2024, compte 200 000 exemplaires. Selon le barème EuroRare fondé sur le tirage, elle est classée « Rare ». La valeur réelle dépend ensuite de l’état, de la demande et du conditionnement.",
-    "source": "Commission européenne — The 500th anniversary of Marko Marulić’s enduring legacy",
+    "source": "Commission européenne — 500e anniversaire de l’héritage durable de Marko Marulić",
     "date_emission": "October 2024",
     "photo": {
       "recto": "https://economy-finance.ec.europa.eu/sites/default/files/2025-02/HR-2024_Marulic.jpg",
@@ -12361,7 +12375,8 @@
       "licence": "Revers CC BY-NC 4.0"
     },
     "tirage_nombre": 200000,
-    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/500th-anniversary-marko-marulics-enduring-legacy_en"
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins/500th-anniversary-marko-marulics-enduring-legacy_en",
+    "sujet_original": "The 500th anniversary of Marko Marulić’s enduring legacy"
   },
   {
     "id": "vatican-2e-2024-the-150th-anniversary-of-the-birth-of-guglielmo-marconi",
