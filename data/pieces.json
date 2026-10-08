@@ -30,7 +30,8 @@
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/coins/comm/html/comm_2004.fr.html",
       "representative": true
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins_en"
   },
   {
     "id": "saint-marin-2e-commemoratives",
@@ -65,7 +66,8 @@
       "representative": true,
       "credit": "Face nationale : source officielle indiquée · revers : © brismike",
       "licence": "Revers CC BY-NC 4.0"
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/commemorative-coins_en"
   },
   {
     "id": "andorre-premieres-frappes",
@@ -98,7 +100,8 @@
       "source_name": "uCoin",
       "source_url": "https://en.ucoin.net/coin/andorra-2-euro-2014-2025/?tid=42269",
       "representative": true
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/andorra_en"
   },
   {
     "id": "finlande-1999-2001-premiere-serie",
@@ -131,7 +134,8 @@
       "source_name": "Numista (avers) · CNumis (revers)",
       "source_url": "https://fr.numista.com/94",
       "representative": true
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/finland_en"
   },
   {
     "id": "allemagne-fehlpragung-fautees",
@@ -198,7 +202,8 @@
       "source_url": "https://www.cgb.fr/banque-centrale-europeenne-2-euro-france-frappe-fautee-1999-sup,v20_1479,a.html",
       "representative": true,
       "combined": true
-    }
+    },
+    "source_url": "https://www.cgb.fr/banque-centrale-europeenne-2-euro-france-frappe-fautee-1999-sup,v20_1479,a.html"
   },
   {
     "id": "luxembourg-2e-courantes",
@@ -229,7 +234,8 @@
       "representative": true,
       "credit": "Face nationale : source officielle indiquée · revers : © brismike",
       "licence": "Revers CC BY-NC 4.0"
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/luxembourg_en"
   },
   {
     "id": "slovenie-2007-premiere-annee",
@@ -258,7 +264,8 @@
       "source_name": "Exemplaire réel photographié · référence Commission européenne",
       "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/slovenia_en",
       "representative": true
-    }
+    },
+    "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/slovenia_en"
   },
   {
     "id": "ad-2e-2014-20-ans-au-sein-du-conseil-de",
