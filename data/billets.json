@@ -128,7 +128,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/500euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "erreurs-impression-billets",
@@ -235,7 +236,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/5euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-5e-europa-2013",
@@ -267,7 +269,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/5euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-10e-premiere-serie-2002",
@@ -299,7 +302,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/10euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-10e-europa-2014",
@@ -331,7 +335,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/10euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-20e-premiere-serie-2002",
@@ -363,7 +368,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/20euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-20e-europa-2015",
@@ -395,7 +401,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/20euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-50e-premiere-serie-2002",
@@ -427,7 +434,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-50e-europa-2017",
@@ -459,7 +467,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/50euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-100e-premiere-serie-2002",
@@ -491,7 +500,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/100euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-100e-europa-2019",
@@ -523,7 +533,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/100euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-200e-premiere-serie-2002",
@@ -555,7 +566,8 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/200euro_back_ES1_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   },
   {
     "id": "billet-200e-europa-2019",
@@ -587,6 +599,7 @@
       "verso": "https://www.ecb.europa.eu/shared/dist/plugins/banknotes/img/carousel-thumbs/200euro_back_ES2_thumb.png",
       "source_name": "Banque centrale européenne",
       "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
-    }
+    },
+    "source_url": "https://www.ecb.europa.eu/euro/banknotes/current/denominations/html/index.en.html"
   }
 ]
