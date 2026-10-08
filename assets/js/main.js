@@ -83,6 +83,12 @@ function renderFooter() {
   root.innerHTML = `
     <footer>
       <div class="wrap">
+        <nav class="footer-nav" aria-label="Informations EuroRare">
+          <a href="${siteBase()}methodologie.html">Méthodologie</a>
+          <a href="${siteBase()}sources.html">Sources</a>
+          <a href="${siteBase()}guides/">Guides</a>
+          <a href="${siteBase()}confidentialite.html">Confidentialité</a>
+        </nav>
         <p>EuroRare est un projet pédagogique indépendant. Les niveaux de rareté et fourchettes de valeur sont indicatifs et ne remplacent pas l'expertise d'un professionnel de la numismatique.</p>
       </div>
     </footer>`;
