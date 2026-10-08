@@ -78,12 +78,12 @@ for (const country of new Set(pieces.map(x => x.pays))) {
 }
 const expectedSitemapUrls = 12 + countryCount + pieces.length + billets.length;
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
-const rareCount = pieces.filter(x => ['rare','tres-rare'].includes(x.rarete)).length;
+const rareCount = pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete)).length;
 
 if (!piecesHtml.includes(`Parcourez ${pieces.length} fiches de pièces`)) errors.push(`pieces.html: compteur SEO obsolète (attendu ${pieces.length})`);
 if (!billetsHtml.includes(`Parcourez ${billets.length} fiches de billets`)) errors.push(`billets.html: compteur SEO obsolète (attendu ${billets.length})`);
 if (!rareGuide.includes(`<h2>${rareCount} fiches actuellement classées Rare ou Très rare</h2>`)) errors.push(`guide rareté: compteur obsolète (attendu ${rareCount})`);
-for (const item of pieces.filter(x => ['rare','tres-rare'].includes(x.rarete))) {
+for (const item of pieces.filter(x => x.valeur === '2€' && ['rare','tres-rare'].includes(x.rarete))) {
   if (!rareGuide.includes('../pieces/' + item.id + '.html')) errors.push(`guide rareté: lien cassé ou absent ${item.id}`);
 }
 if (sitemapUrlCount !== expectedSitemapUrls) errors.push(`sitemap: ${sitemapUrlCount} URL, attendu ${expectedSitemapUrls}`);
