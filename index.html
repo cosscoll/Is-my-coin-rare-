@@ -77,13 +77,15 @@
 <script>
   renderHUD(null, null);
   renderFooter();
-  fetch('data/pieces.json').then(r => r.json()).then(p => {
-    fetch('data/billets.json').then(r => r.json()).then(b => {
-      countUp(document.getElementById('stat-pieces'), p.length);
-      countUp(document.getElementById('stat-billets'), b.length);
-      const pays = new Set(p.map(i => i.pays));
-      countUp(document.getElementById('stat-pays'), pays.size);
-    });
+  Promise.all([
+    fetch('data/pieces.json').then(r => r.json()),
+    fetch('data/billets.json').then(r => r.json())
+  ]).then(([p, b]) => {
+    countUp(document.getElementById('stat-pieces'), p.length);
+    countUp(document.getElementById('stat-billets'), b.length);
+    countUp(document.getElementById('stat-pays'), new Set(p.map(i => i.pays)).size);
+  }).catch(() => {
+    // Les valeurs statiques correctes restent affichées si le réseau échoue.
   });
 </script>
 </body>
