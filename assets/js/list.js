@@ -74,7 +74,7 @@ function renderInspector(type, item) {
     ${item.nom ? `<p style="font-size:13px;margin-bottom:10px;font-style:italic;">${item.nom}</p>` : ''}
     ${raretyBadge(item.rarete, 'sm')}
     ${item.photo ? `<p class="inspector-credit">${renderListPhotoCredit(item)}</p>` : ''}
-    <a class="go-btn" href="detail.html?type=${type}&id=${item.id}">Voir la fiche complète &rarr;</a>
+    <a class="go-btn" href="${detailHref(type, item)}">Voir la fiche complète &rarr;</a>
   `;
 
   if (item.photo && !item.photo.combined) {
@@ -140,7 +140,7 @@ async function initListPage(type, dataPath) {
       return;
     }
     grid.innerHTML = list.map((i, idx) => `
-      <a class="card item-card" data-idx="${idx}" href="detail.html?type=${type}&id=${i.id}">
+      <a class="card item-card" data-idx="${idx}" href="${detailHref(type, i)}">
         <div class="item-card-top">
           <div>
             <div class="pays">${i.pays}</div>
@@ -250,7 +250,7 @@ function initIdentifyWizard(type, items, filterRefs) {
         <h4>${matches.length ? `${matches.length} fiche${matches.length > 1 ? 's' : ''} correspondante${matches.length > 1 ? 's' : ''}` : 'Aucune correspondance directe'}</h4>
         <div class="identify-results-list">
         ${matches.length ? matches.map(i => `
-          <a class="identify-result-item" href="detail.html?type=${type}&id=${i.id}">
+          <a class="identify-result-item" href="${detailHref(type, i)}">
             <span>${i.nom ? i.nom : (i.pays + ' — ' + i.valeur)} <span style="color:var(--text-faint)">(${i.annees})</span></span>
             ${raretyBadge(i.rarete, 'sm')}
           </a>
