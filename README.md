@@ -54,7 +54,7 @@ Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
 
 S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
 
-Ceci ne couvre pas encore l'intégralité des ~584 variantes de 2€ commémoratives émises depuis 2004 (notamment les millésimes 2019-2026 pour la plupart des pays, ainsi que les Pays-Bas, le Portugal, San Marin (détail par millésime), la Slovaquie, la Slovénie (au-delà de 2007) et l'Espagne) : voir la section suivante pour l'étendre.
+Le catalogue couvre désormais les séries nationales de 2€ des 25 juridictions émettrices actuellement concernées, mais il ne couvre pas encore chaque émission commémorative individuellement. La principale lacune restante concerne les commémoratives 2019–2026 et le détail exhaustif par millésime de plusieurs pays ; ces ajouts doivent être faits uniquement à partir de fiches officielles ou de sources numismatiques recoupées.
 
 ## Photos des pièces
 
