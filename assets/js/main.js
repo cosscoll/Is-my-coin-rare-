@@ -40,6 +40,16 @@ function siteBase() {
   return (document.body && document.body.dataset && document.body.dataset.base) || '';
 }
 
+function countrySlug(value) {
+  return String(value || '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function countryHref(country) {
+  return `${siteBase()}pays/${countrySlug(country)}.html`;
+}
+
 function detailHref(type, item) {
   const folder = type === 'billet' ? 'billets' : 'pieces';
   return `${siteBase()}${folder}/${item.id}.html`;
@@ -204,8 +214,14 @@ function renderMyCoinWidget() {
 function openMyCoinLightbox(photo) {
   const box = document.createElement('div');
   box.className = 'mycoin-lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.setAttribute('aria-label', 'Photo agrandie');
   box.innerHTML = `<img src="${photo}" alt="Photo de votre pièce, agrandie">`;
-  box.addEventListener('click', () => box.remove());
+  const close = () => box.remove();
+  box.addEventListener('click', close);
+  const onKey = (e) => { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onKey); } };
+  document.addEventListener('keydown', onKey);
   document.body.appendChild(box);
 }
 
@@ -270,10 +286,13 @@ function openAnalysisModal() {
   const box = document.createElement('div');
   box.className = 'analysis-modal';
   box.id = 'analysis-modal';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.setAttribute('aria-labelledby', 'analysis-title');
   box.innerHTML = `
     <div class="analysis-panel">
       <button class="analysis-close" id="analysis-close" aria-label="Fermer">&times;</button>
-      <h3>Recherche de correspondance</h3>
+      <h3 id="analysis-title">Recherche de correspondance</h3>
       <div id="analysis-body">
         <div class="analysis-loading">
           <div class="analysis-spinner"></div>
@@ -283,7 +302,16 @@ function openAnalysisModal() {
     </div>`;
   document.body.appendChild(box);
   box.addEventListener('click', (e) => { if (e.target === box) box.remove(); });
-  document.getElementById('analysis-close').addEventListener('click', () => box.remove());
+  const closeBtn = document.getElementById('analysis-close');
+  closeBtn.addEventListener('click', () => box.remove());
+  const onKey = (e) => {
+    if (e.key === 'Escape' && document.body.contains(box)) {
+      box.remove();
+      document.removeEventListener('keydown', onKey);
+    }
+  };
+  document.addEventListener('keydown', onKey);
+  closeBtn.focus();
   return box;
 }
 
