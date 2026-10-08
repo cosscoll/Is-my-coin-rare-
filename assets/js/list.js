@@ -21,6 +21,18 @@ function categorieLabel(c) { return CATEGORIE_LABELS[c] || c; }
    Inspector — real-photo side panel (list pages)
    --------------------------------------------------------- */
 
+function renderListPhotoCredit(item) {
+  const p = item.photo || {};
+  const bits = [];
+  if (p.credit) bits.push(p.credit);
+  if (p.licence) bits.push(p.licence);
+  if (p.source_name) bits.push(`Source : ${p.source_name}`);
+  const label = bits.join(' · ') || 'Source du visuel';
+  return p.source_url
+    ? `<a target="_blank" rel="noopener" href="${p.source_url}">${label}</a>`
+    : label;
+}
+
 function renderInspector(type, item) {
   const panel = document.getElementById('inspector');
   if (!panel) return;
