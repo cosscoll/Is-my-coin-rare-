@@ -44,23 +44,25 @@ function write(rel, content) {
   fs.writeFileSync(file, content);
 }
 
-function coinPage(item) {
-  const rel=`pieces/${item.id}.html`, url=site+rel;
-  const subject=item.nom||`${item.valeur} ${item.pays}`;
+function compactRelated(x) {
+  return { id:x.id, pays:x.pays, nom:x.nom || null, valeur:x.valeur, annees:x.annees, rarete:x.rarete };
+}
+
+function coinPage(item){
+  const rel=`pieces/${item.id}.html`,url=site+rel,subject=item.nom||`${item.valeur} ${item.pays}`;
   const title=short(`${subject} ${item.pays} ${item.annees} : valeur et rareté | EuroRare`,68);
   const desc=short(`${subject} ${item.pays} ${item.annees} : ${txt(item.tirage)}. Valeur estimée, critères d'identification et visuels de référence.`,158);
-  const img=item.photo?.recto||'';
-  const sourceHref=item.source_url||item.photo?.source_url||'';
+  const img=item.photo?.recto||'',sourceHref=item.source_url||item.photo?.source_url||'';
   const criteria=(item.criteres||[]).map(c=>`<li><strong>${esc(c.titre)}</strong> — ${esc(c.detail)}</li>`).join('');
   const itemYears=yearsFor(item);
   const yearLinks=itemYears.length<=8?itemYears.map(y=>`<a href="../annees/${y}.html">${y}</a>`).join(' · '):`${itemYears[0]}–${itemYears[itemYears.length-1]}`;
+  const related=pieces.filter(x=>x.id!==item.id&&x.pays===item.pays).slice(0,4).map(compactRelated);
+  const pageData=JSON.stringify({item,related}).replace(/</g,'\\u003c');
   const schema={'@context':'https://schema.org','@graph':[
     {'@type':'WebSite','@id':site+'#website',url:site,name:'EuroRare',inLanguage:'fr-FR'},
     {'@type':'WebPage','@id':url,url,name:title,description:desc,inLanguage:'fr-FR',isPartOf:{'@id':site+'#website'}},
     {'@type':'BreadcrumbList',itemListElement:[
-      {'@type':'ListItem',position:1,name:'EuroRare',item:site},
-      {'@type':'ListItem',position:2,name:'Pièces',item:site+'pieces.html'},
-      {'@type':'ListItem',position:3,name:`${item.pays} ${item.annees}`,item:url}
+      {'@type':'ListItem',position:1,name:'EuroRare',item:site},{'@type':'ListItem',position:2,name:'Pièces',item:site+'pieces.html'},{'@type':'ListItem',position:3,name:`${item.pays} ${item.annees}`,item:url}
     ]}
   ]};
   return `<!DOCTYPE html>
@@ -75,31 +77,31 @@ ${img?`<meta property="og:image" content="${esc(img)}"><meta name="twitter:card"
 <link rel="stylesheet" href="../assets/css/style.css"><script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
 </head><body data-base="../" data-type="piece" data-id="${esc(item.id)}">
 <div id="hud-root"></div><main class="wrap detail-hero"><div id="detail-root"><article class="seo-fallback card">
-<h1>${esc(item.pays)} — ${esc(item.valeur)} · ${esc(item.annees)}</h1>
-${item.nom?`<p><strong>${esc(item.nom)}</strong></p>`:''}
+<h1>${esc(item.pays)} — ${esc(item.valeur)} · ${esc(item.annees)}</h1>${item.nom?`<p><strong>${esc(item.nom)}</strong></p>`:''}
 <p>${esc(item.explication)}</p>
-<dl class="seo-facts"><div><dt>Rareté</dt><dd>${esc(rareLabel(item.rarete))}</dd></div><div><dt>Tirage</dt><dd>${esc(item.tirage)}</dd></div><div><dt>Catégorie</dt><dd>${esc(item.categorie)}</dd></div></dl>
+<dl class="seo-facts"><div><dt>Rareté</dt><dd>${esc(rareLabel(item.rarete))}</dd></div><div><dt>Tirage</dt><dd>${esc(item.tirage)}</dd></div><div><dt>Catégorie</dt><dd>${esc(item.categorie)}</dd></div>${item.date_emission?`<div><dt>Date d’émission</dt><dd>${esc(item.date_emission)}</dd></div>`:''}</dl>
 ${criteria?`<h2>Critères d’identification</h2><ul>${criteria}</ul>`:''}
 <p><strong>Parcourir :</strong> <a href="../pays/${slug(item.pays)}.html">${esc(item.pays)}</a>${itemYears.length?' · '+yearLinks:''}</p>
 <p><strong>Source :</strong> ${sourceHref?`<a href="${esc(sourceHref)}" target="_blank" rel="noopener">${esc(item.source||'Source de référence')}</a>`:esc(item.source||'Source de référence')}</p>
 </article></div></main><div id="footer-root"></div>
+<script type="application/json" id="page-data">${pageData}</script>
 <script src="../assets/js/main.js"></script><script src="../assets/js/detail.js"></script>
 </body></html>`;
 }
 
-function banknotePage(item) {
+function banknotePage(item){
   const rel=`billets/${item.id}.html`,url=site+rel,label=item.serie||item.pays;
   const title=short(`${item.valeur} ${label} : valeur, rareté et identification | EuroRare`,68);
   const desc=short(`${item.valeur}, ${label}, ${item.annees}. Critères d'identification, rareté, estimation de revente et références de marché.`,158);
   const img=item.photo?.recto||'',sourceHref=item.source_url||item.photo?.source_url||'';
   const criteria=(item.criteres||[]).map(c=>`<li><strong>${esc(c.titre)}</strong> — ${esc(c.detail)}</li>`).join('');
+  const related=billets.filter(x=>x.id!==item.id&&(x.serie===item.serie||x.pays===item.pays)).slice(0,4).map(compactRelated);
+  const pageData=JSON.stringify({item,related}).replace(/</g,'\\u003c');
   const schema={'@context':'https://schema.org','@graph':[
     {'@type':'WebSite','@id':site+'#website',url:site,name:'EuroRare',inLanguage:'fr-FR'},
     {'@type':'WebPage','@id':url,url,name:title,description:desc,inLanguage:'fr-FR',isPartOf:{'@id':site+'#website'}},
     {'@type':'BreadcrumbList',itemListElement:[
-      {'@type':'ListItem',position:1,name:'EuroRare',item:site},
-      {'@type':'ListItem',position:2,name:'Billets',item:site+'billets.html'},
-      {'@type':'ListItem',position:3,name:`${item.valeur} ${item.annees}`,item:url}
+      {'@type':'ListItem',position:1,name:'EuroRare',item:site},{'@type':'ListItem',position:2,name:'Billets',item:site+'billets.html'},{'@type':'ListItem',position:3,name:`${item.valeur} ${item.annees}`,item:url}
     ]}
   ]};
   return `<!DOCTYPE html>
@@ -119,6 +121,7 @@ ${img?`<meta property="og:image" content="${esc(img)}"><meta name="twitter:card"
 ${criteria?`<h2>Critères d’identification</h2><ul>${criteria}</ul>`:''}
 <p><strong>Source :</strong> ${sourceHref?`<a href="${esc(sourceHref)}" target="_blank" rel="noopener">${esc(item.source||'Source de référence')}</a>`:esc(item.source||'Source de référence')}</p>
 </article></div></main><div id="footer-root"></div>
+<script type="application/json" id="page-data">${pageData}</script>
 <script src="../assets/js/main.js"></script><script src="../assets/js/detail.js"></script>
 </body></html>`;
 }

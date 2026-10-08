@@ -415,6 +415,12 @@ function renderRelatedItems(type, item, items) {
     ${cards ? `<div class="related-grid">${cards}</div>` : ''}`;
 }
 
+function readEmbeddedPageData() {
+  const el = document.getElementById('page-data');
+  if (!el) return null;
+  try { return JSON.parse(el.textContent); } catch (_) { return null; }
+}
+
 async function boot() {
   const staticType = document.body?.dataset?.type;
   const type = staticType ? (staticType === 'billet' ? 'billet' : 'piece') : (qs('type') === 'billet' ? 'billet' : 'piece');
@@ -428,14 +434,21 @@ async function boot() {
   renderFooter();
 
   let items = [];
-  try {
-    items = await loadJSON(dataPath);
-  } catch (e) {
-    document.getElementById('detail-root').innerHTML = `<div class="empty-state">Impossible de charger cette fiche pour le moment.</div>`;
-    return;
+  let item = null;
+  const embedded = readEmbeddedPageData();
+  if (embedded && embedded.item && embedded.item.id === id) {
+    item = embedded.item;
+    items = [embedded.item, ...(embedded.related || [])];
+  } else {
+    try {
+      items = await loadJSON(dataPath);
+      item = items.find(i => i.id === id) || items[0];
+    } catch (e) {
+      document.getElementById('detail-root').innerHTML = `<div class="empty-state">Impossible de charger cette fiche pour le moment.</div>`;
+      return;
+    }
   }
 
-  const item = items.find(i => i.id === id) || items[0];
   if (!item) {
     document.getElementById('detail-root').innerHTML = `<div class="empty-state">Fiche introuvable.</div>`;
     return;
