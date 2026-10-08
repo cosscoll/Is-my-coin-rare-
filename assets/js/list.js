@@ -23,6 +23,13 @@ function categorieLabel(c) { return CATEGORIE_LABELS[c] || c; }
    Inspector — real-photo side panel (list pages)
    --------------------------------------------------------- */
 
+function photoBadgeLabel(item) {
+  const source = String(item.photo?.source_name || '');
+  if (item.photo?.representative) return 'Visuel représentatif';
+  if (/Banque centrale européenne|Commission européenne/i.test(source)) return 'Visuel officiel';
+  return 'Photo réelle';
+}
+
 function renderListPhotoCredit(item) {
   const p = item.photo || {};
   const bits = [];
@@ -47,7 +54,7 @@ function renderInspector(type, item) {
 
   const frameHtml = item.photo ? (item.photo.combined ? `
     <div class="specimen-frame">
-      <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
+      <span class="specimen-badge real">✓ ${photoBadgeLabel(item)}</span>
       <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers et revers" loading="lazy"></div>
     </div>
     <p class="specimen-hint">Avers et revers sur le même visuel</p>
@@ -157,7 +164,7 @@ async function initListPage(type, dataPath) {
         <p class="desc">${i.explication.slice(0, 100)}${i.explication.length > 100 ? '…' : ''}</p>
         <div class="bottom-row">
           ${raretyBadge(i.rarete, 'sm')}
-          ${i.photo ? '<span class="photo-flag">📷 photo réelle</span>' : ''}
+          ${i.photo ? '<span class="photo-flag">visuel disponible</span>' : ''}
         </div>
       </a>
     `).join('');
