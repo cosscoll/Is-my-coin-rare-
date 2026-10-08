@@ -18,7 +18,15 @@ Les niveaux de rareté, les fourchettes de valeur et les explications présenté
 /index.html              Page d'accueil (choix Pièces / Billets)
 /pieces.html              Liste filtrable des pièces + assistant d'identification
 /billets.html             Liste filtrable des billets + assistant d'identification
-/detail.html               Fiche de détail (photo réelle ou espace réservé, étapes d'identification, rareté)
+/detail.html               Compatibilité avec les anciennes URL paramétrées (noindex)
+/pieces/<id>.html           Pages SEO statiques et indexables des 204 fiches pièces
+/billets/<id>.html          Pages SEO statiques et indexables des fiches billets
+/pays/<pays>.html           Pages pays pour le maillage interne
+/guides/                    Guides éditoriaux
+/methodologie.html          Méthode de rareté et d'estimation
+/sources.html               Sources institutionnelles et marché
+/sitemap.xml                Plan de site SEO
+/robots.txt                 Directives d'exploration
 /assets/css/style.css      Feuille de style unique (thème « archive numismatique »)
 /assets/js/main.js         Utilitaires partagés (HUD, footer, badges de rareté, outil « Ma pièce »)
 /assets/js/list.js         Logique des pages de liste + assistant "Identifie ma pièce/mon billet"
@@ -42,7 +50,7 @@ Aucune étape de build n'est nécessaire : les fichiers sont servis tels quels.
 
 ## Étendue de la base de données
 
-`data/pieces.json` contient désormais **204 fiches** de pièces de 2€ commémoratives réelles (15 pays de la zone euro, millésimes 2004 à 2018 dans le détail, plus quelques émissions récentes notables), avec le **tirage officiel exact** pour la grande majorité d'entre elles, sourcé auprès de fleur-de-coin.com (mintages officiels) et recoupé avec Numista. L'Allemagne y figure avec le détail des 5 ateliers de frappe (Berlin/Munich/Stuttgart/Karlsruhe/Hambourg) pour chaque millésime, ainsi qu'une variante d'erreur de frappe documentée (Hambourg 2008, carte de l'Europe erronée sur environ 600 000 exemplaires de l'atelier de Stuttgart). Le niveau de rareté de ces fiches est **calculé automatiquement à partir du tirage réel** selon le barème suivant : moins de 50 000 pièces → Très rare · 50 000–300 000 → Rare · 300 000–1 500 000 → Recherchée · 1 500 000–5 000 000 → Peu commune · plus de 5 000 000 → Commune. Ce barème est une convention numismatique courante, pas une cotation officielle : la demande réelle des collectionneurs (popularité du thème, état de conservation) peut faire varier la cote au-delà de ce que le tirage seul indique.
+`data/pieces.json` contient désormais **204 fiches** couvrant **19 pays et micro-États**, principalement des pièces de 2€ commémoratives (millésimes 2004 à 2018 dans le détail, plus quelques émissions récentes notables), avec le **tirage officiel exact** pour la grande majorité d'entre elles, sourcé auprès de fleur-de-coin.com (mintages officiels) et recoupé avec Numista. L'Allemagne y figure avec le détail des 5 ateliers de frappe (Berlin/Munich/Stuttgart/Karlsruhe/Hambourg) pour chaque millésime, ainsi qu'une variante d'erreur de frappe documentée (Hambourg 2008, carte de l'Europe erronée sur environ 600 000 exemplaires de l'atelier de Stuttgart). Le niveau de rareté de ces fiches est **calculé automatiquement à partir du tirage réel** selon le barème suivant : moins de 50 000 pièces → Très rare · 50 000 à moins de 300 000 → Rare · 300 000 à moins de 1 500 000 → Recherchée · 1 500 000 à moins de 5 000 000 → Peu commune · 5 000 000 et plus → Commune. Ce barème est une convention numismatique courante, pas une cotation officielle : la demande réelle des collectionneurs (popularité du thème, état de conservation) peut faire varier la cote au-delà de ce que le tirage seul indique.
 
 S'y ajoutent 8 fiches « cas emblématiques » rédigées à la main (Vatican, Saint-Marin, Andorre première série, Allemagne/France fautées, etc.) pour les cas où aucun tirage exact fiable n'a été trouvé, avec un niveau de rareté qualitatif justifié dans le texte.
 
@@ -96,3 +104,16 @@ Pour ajouter une entrée, il suffit de l'ajouter au tableau JSON correspondant :
 - Les zones sûres iOS (`env(safe-area-inset-*)`) sont prises en compte dans le HUD et le pied de page.
 - Les vignettes de photo (`.specimen-frame`) utilisent `aspect-ratio` plutôt que des dimensions fixes, pour rester nettes et bien cadrées à toutes les tailles d'écran.
 - Plusieurs seuils responsive sont prévus (`max-width` et un filet de sécurité `aspect-ratio`) pour éviter tout chevauchement sur mobile.
+
+
+## SEO et validation
+
+Chaque fiche possède désormais une page HTML statique indexable avec title, meta description, canonical, OpenGraph, JSON-LD et breadcrumb. Les anciennes URL `detail.html?type=...` restent fonctionnelles mais la page générique est en `noindex,follow`.
+
+Le dépôt contient un contrôle automatique sans dépendance :
+
+```bash
+npm run validate
+```
+
+Le workflow GitHub Actions `.github/workflows/validate.yml` exécute ce contrôle à chaque push ou pull request afin de détecter les IDs dupliqués, champs manquants, pages SEO absentes, photos incomplètes, entrées manquantes dans le sitemap et erreurs de syntaxe JavaScript.
