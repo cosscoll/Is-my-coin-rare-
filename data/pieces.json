@@ -62,7 +62,9 @@
       "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
       "source_name": "Commission européenne",
       "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/san-marino_en",
-      "representative": true
+      "representative": true,
+      "credit": "Face nationale : source officielle indiquée · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
     }
   },
   {
@@ -224,7 +226,9 @@
       "verso": "https://en.numista.com/catalogue/photos/belgique/65ae8c6b83ac44.46950774-original.jpg",
       "source_name": "Commission européenne",
       "source_url": "https://economy-finance.ec.europa.eu/euro/euro-coins-and-notes/euro-coins/national-sides-euro-coins/luxembourg_en",
-      "representative": true
+      "representative": true,
+      "credit": "Face nationale : source officielle indiquée · revers : © brismike",
+      "licence": "Revers CC BY-NC 4.0"
     }
   },
   {
