@@ -15,6 +15,17 @@ const CATEGORIE_LABELS = {
   'premiere-emission': 'Première émission',
 };
 
+function renderPhotoCredit(item) {
+  const p = item.photo || {};
+  const bits = [];
+  if (p.credit) bits.push(p.credit);
+  if (p.licence) bits.push(p.licence);
+  if (p.source_name) bits.push(`Source : ${p.source_name}`);
+  const label = bits.join(' · ') || 'Source du visuel';
+  return p.source_url
+    ? `<a target="_blank" rel="noopener" href="${p.source_url}">${label}</a>`
+    : label;
+}
 function renderMarketPanel(item) {
   if (item.valeur_marche) {
     const m = item.valeur_marche;
@@ -41,14 +52,14 @@ function renderSpecimenFrame(item) {
   if (item.photo) {
     return `
       <div class="specimen-frame" id="specimen-frame">
-        <span class="specimen-badge real">✓ Photo réelle</span>
+        <span class="specimen-badge real">✓ ${item.photo.representative ? "Visuel réel représentatif" : "Photo réelle"}</span>
         <div class="specimen-flip" id="specimen-flip">
           <div class="specimen-face front"><img src="${item.photo.recto}" alt="${item.nom || item.pays} — avers" loading="lazy"></div>
           <div class="specimen-face back"><img src="${item.photo.verso}" alt="${item.nom || item.pays} — revers" loading="lazy"></div>
         </div>
       </div>
       <p class="specimen-hint">Cliquez pour voir le revers</p>
-      <p class="inspector-credit" style="text-align:center;">${item.photo.credit} (${item.photo.licence}) — via Numista</p>`;
+      <p class="inspector-credit" style="text-align:center;">${renderPhotoCredit(item)}</p>`;
   }
   return `
     <div class="specimen-frame">
@@ -124,7 +135,7 @@ async function boot() {
         <div class="section-block">
           <h2>03 — Voir une vraie photo</h2>
           ${hasPhoto ? `
-            <p style="font-size:14px;">La photo affichée ci-contre est un vrai cliché de cette pièce, référencé sur Numista sous licence ${item.photo.licence}. Vous pouvez comparer directement votre exemplaire avec ces deux faces.</p>
+            <p style="font-size:14px;">${item.photo.representative ? "Le visuel affiché ci-contre est un exemplaire réel représentatif de cette fiche. La fiche couvre plusieurs millésimes ou variantes : vérifiez aussi les critères et l’année de votre pièce." : "Les visuels affichés ci-contre correspondent aux faces de cette pièce. Vous pouvez comparer directement votre exemplaire avec eux."}</p><p class="source-line">${renderPhotoCredit(item)}</p>
           ` : `
             <p style="font-size:14px;margin-bottom:10px;">Aucune photo vérifiée n'est encore disponible pour cette fiche. Pour comparer avec un exemplaire authentique :</p>
             <div class="identify-links">
